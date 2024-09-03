@@ -1,31 +1,31 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
-public class Dog
+public class Unit3a_Dog
 {
   private int age;
   private String name;
 	
-  public Dog( String n )  
+  public Unit3a_Dog(String n )
   {
     age = 1;
     name = n;
   }
   
-	public Dog( String n, int a )  
+	public Unit3a_Dog(String n, int a )
 	{
- 	 //fill in this constructor
+ 	  age = a;
+      name = n;
 	}
   
   public void increaseAgeByOne()
   {
-  	 //fill in this method
+  	age += 1;
   }
   
   public int getPeopleAge( int val )
   {
-  	 //fill in this method
-  	 return 0;
+  	 return val*age;
   }
 	
   public int getAge()    {

@@ -22,9 +22,6 @@ public class Unit2c_QuadraticRunner
 		out.println("rootone :: " + String.format("%.2f",obj.getRootOne(a,b,c)));
 		out.println("rootone :: " + String.format("%.2f",obj.getRootTwo(a,b,c)));
 
-
-
-
 	}
 }
 

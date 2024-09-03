@@ -4,13 +4,13 @@
 
 import java.util.Scanner;
 
-public class Unit2b_PythagorasRunner
+public class Unit2c_PythagorasRunner
 {
 	public static void main( String[] args )
 	{
 		//add a Scanner for keyboard input
 		Scanner keyboard = new Scanner( System.in );
-		Unit2b_Pythagoras obj = new Unit2b_Pythagoras();
+		Unit2c_Pythagoras obj = new Unit2c_Pythagoras();
 
 		System.out.print( "Enter side1 :: " );
 		int side1 = keyboard.nextInt();

@@ -2,7 +2,7 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit2b_Pythagoras
+public class Unit2c_Pythagoras
 {
 	public static double getSide(int side1, int side2)
 	{
