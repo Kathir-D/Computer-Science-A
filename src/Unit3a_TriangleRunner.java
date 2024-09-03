@@ -4,7 +4,7 @@
 
 import java.util.Scanner; 
 
-public class Unit3A_TriangleRunner  //this class is used to test Triangle
+public class Unit3a_TriangleRunner  //this class is used to test Triangle
 {
 	public static void main( String[] args )
 	{
