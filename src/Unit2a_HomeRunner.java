@@ -6,12 +6,12 @@
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class Unit2_HomeRunner
+public class Unit2a_HomeRunner
 {
 	public static void main( String[] args )
 	{
 		Scanner keyboard = new Scanner( System.in );
-		Unit2_Home obj = new Unit2_Home();
+		Unit2a_Home obj = new Unit2a_Home();
 
 		out.print("Enter X1 :: ");
 		int x1 = keyboard.nextInt();
@@ -22,9 +22,7 @@ public class Unit2_HomeRunner
 		out.print("Enter Y2 :: ");
 		int y2 = keyboard.nextInt();
 
-		int x;
-		x = (int) obj.getDistance(x1,y1,x2,y2);
-		out.println(Math.abs(x));
+		out.println("Distance == " + Math.abs((int) obj.getDistance(x1,y1,x2,y2)));
 					
 	}
 }

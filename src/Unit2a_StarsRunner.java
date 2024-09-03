@@ -2,11 +2,11 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit2_StarsRunner
+public class Unit2a_StarsRunner
 {
    public static void main(String args[])
    {
-      Unit2_StarsAndStripes obj = new Unit2_StarsAndStripes();
+      Unit2a_StarsAndStripes obj = new Unit2a_StarsAndStripes();
 
       obj.printASmallBox();
       obj.printTwoBlankLines();

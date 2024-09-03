@@ -2,13 +2,10 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit2_Home
+public class Unit2b_Distance
 {
 	public static double getDistance(int xOne, int yOne, int xTwo, int yTwo )
 	{
-		int dist;
-		dist = (0+xOne+yOne+xTwo+yTwo);
-
-		return dist;
+		return (Math.sqrt((xTwo-xOne)^2+(yTwo-yOne)^2));
 	}
 }

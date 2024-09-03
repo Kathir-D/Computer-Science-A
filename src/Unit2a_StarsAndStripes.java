@@ -4,9 +4,9 @@
 
 import static java.lang.System.*;
 
-public class Unit2_StarsAndStripes
+public class Unit2a_StarsAndStripes
 {
-   public Unit2_StarsAndStripes()
+   public Unit2a_StarsAndStripes()
    {
       out.println("StarsAndStripes");
       printTwoBlankLines();
