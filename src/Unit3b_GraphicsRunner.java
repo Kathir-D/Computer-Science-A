@@ -15,7 +15,7 @@ public class Unit3b_GraphicsRunner extends JFrame
 
 		setSize(WIDTH,HEIGHT);
 
-		getContentPane().add(new Unit3b_BigHouse());
+		getContentPane().add(new Unit3c_SPONGE());
 		
 		//add other classes to run them 
 		//BigHouse, Robot, Character, or ShapePanel 
