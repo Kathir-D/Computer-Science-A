@@ -1,7 +1,3 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name -
-
 import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Canvas;
@@ -14,6 +10,7 @@ class Unit3c_Robot extends Canvas
       setBackground(Color.WHITE);   	
       setVisible(true);
    }
+
 
    public void paint( Graphics window )
    {
