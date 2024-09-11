@@ -1,6 +1,4 @@
-import java.awt.Graphics;
-import java.awt.Color;
-import java.awt.Canvas;
+import java.awt.*;
 
 class Unit3c_Robot extends Canvas
 {

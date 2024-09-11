@@ -2,9 +2,9 @@ import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Canvas;
 
-class Unit3c_SPONGE extends Canvas {
+class Unit3c_SpongeBob extends Canvas {
 
-    public Unit3c_SPONGE() {
+    public Unit3c_SpongeBob() {
         setSize(800, 600);
         setBackground(Color.WHITE);
         setVisible(true);
