@@ -8,35 +8,24 @@
 
 public class Unit4a_Social
 {
-//   private String socialNum;
-   private String socialNum = "456-56-234";
-   private int sum;
+    private String socialNum;
+    private int sum;
 
-	public Unit4a_Social()
-	{
-		String ssn = socialNum;
-		int s = sum;
-	}
+    public Unit4a_Social(String soc) {
+        socialNum = soc;
+        chopAndAdd();
+    }
 
-	public Unit4a_Social(String soc)
-	{
+    public void chopAndAdd() {
+        String[] parts = socialNum.split("-");
+        sum = 0;
 
-	}
+        for (String part : parts){
+            sum += Integer.parseInt(part);
+        }
+    }
 
-
-	public void setWord(String w)
-	{
-
-	}
-
-	public void chopAndAdd()
-	{
-		String sub = socialNum;
-		
-	}
-
-	public String toString()
-	{
-		return "SS# " + socialNum + " has a total of " + sum + "\n";
-	}
+    public String toString() {
+        return "SS# " + socialNum + " has a total of " + sum + "\n";
+    }
 }
