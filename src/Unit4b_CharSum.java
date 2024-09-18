@@ -4,7 +4,7 @@
 //Name -
 //Date -
 //Class -
-//Lab  - 
+//Lab  -
 
 public class Unit4b_CharSum
 {
@@ -17,20 +17,52 @@ public class Unit4b_CharSum
 	{
 		word = w;
 		letter = let;
-		sum = 0;
 
+		locateAndAdd();
 	}
 
-	public void locateAndAdd()
-	{
-		for (int i = 0; i<word.length(); i++) {
-			int[] total = (int) word.charAt(1);
+	public void locateAndAdd() {
+		sum = 0;
+
+//		for (int i = 0; i < word.length(); i++){
+//			sum += (int) word.charAt(i);
+//		}
+//
+//		for (int i = 0; i <word.length(); i++){
+//			if (letter == word.charAt(i)){
+//				sum -= (int) word.charAt(i);
+//			}
+//		}
+		if (word.indexOf(letter) > 0) {
+			sum += word.charAt((word.indexOf(letter)) - 1);
+		}
+		if (word.indexOf(letter) < word.length() - 1) {
+			sum += word.charAt((word.indexOf(letter)) + 1);
+		}
+
+		if (word.lastIndexOf(letter) > 0 && (word.lastIndexOf(letter)) != (word.indexOf(letter))) {
+			sum += word.charAt((word.lastIndexOf(letter)) - 1);
+		}
+		if (word.lastIndexOf(letter) < word.length() - 1 && (word.lastIndexOf(letter)) != (word.indexOf(letter))) {
+			sum += word.charAt((word.lastIndexOf(letter)) + 1);
 		}
 	}
 
+
+//	public void locateAndAdd() {
+//        sum = 0;
+//
+//        for (int i = 0; i < word.length(); i++) {
+//            if (word.charAt(i) != letter) {
+//                sum += (int) word.charAt(i);
+//            }
+//        }
+//    }
+
+
 	public String toString()
 	{
-		return "The letters surrounding the "+letter+"s in " + word + " have a total of " + sum + "\n";
+		return "The letters surrounding the "+ letter +"'s in " + word + " have a total of " + sum + "\n";
 	}
 }
 
