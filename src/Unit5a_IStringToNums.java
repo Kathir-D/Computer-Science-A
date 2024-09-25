@@ -3,7 +3,7 @@
 
 //converting Strings to numbers
 
-public class StringToNums
+public class Unit5a_IStringToNums
 {
   public static void main (String[] arg)
   {
@@ -11,7 +11,7 @@ public class StringToNums
 		System.out.println(intOne);
 		System.out.println(intOne/2);
 		
-		System.out.println("\n\n");
+		System.out.println();
 		
 		double decOne = Double.parseDouble("23.78");
 		System.out.println(decOne);
