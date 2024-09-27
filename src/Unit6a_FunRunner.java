@@ -17,6 +17,28 @@ public class Unit6a_FunRunner
 		System.out.println( it.check(183712983) ); 							 									
 	}
 }
+/*
+Lab Description : If a number greater than 10000, return "fall". If a number is than 9000, return
+"jump". Otherwise, return "fly".
+Sample Data :
+23433
+9500
+-129
+10987
+0
+9177
+0
+183712983
+Sample Output :
+fall
+fly
+jump
+fall
+jump
+fly
+jump
+fall
+ */
 
 /*
 fall
