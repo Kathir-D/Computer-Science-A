@@ -1,40 +1,31 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
-//Name -  
+//Name -
 
 import java.util.*;
 import static java.lang.System.*;
 
-public class Unit7b_RPSRunner
-{
-	public static void main(String args[])
-	{
-		Scanner sc = new Scanner(System.in);
-		Unit7b_RockPaperScissors game = new Unit7b_RockPaperScissors();
+public class Unit7b_RPSRunner {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String player = "";
+        String playAgain = "y";
 
+        while (playAgain.equals("y")) {
+            out.print("Rock-Paper-Scissors - pick your weapon[R,P,S]:: ");
+            player = sc.next().toUpperCase();
 
-//		while (true)
+            Unit7b_RockPaperScissors game = new Unit7b_RockPaperScissors(player);
+            game.setCompChoice();
 
-		String player = "";
-		int nums = Math.random(0,2);
-		switch (nums){
-			case 0:
-				player = "R";
-				break;
-			case 1:
-				player = "P"
-				break;
-			case 2:
+            out.println(game);
+            out.println(game.determineWinner());
 
-		}
-
-
-		out.print("type in your prompt [R,P,S] :: ");
-		char response = (char) sc.nextShort();
-
-	}
+            out.print("Do you want to play again? [y/n]:: ");
+            playAgain = sc.next().toLowerCase();
+        }
+    }
 }
-
 /*
 Lab Goal : The lab was designed to teach you how to use &&, ||, and !.
 Lab Description : Generate a random choice for the computer player. Next, the person player will
