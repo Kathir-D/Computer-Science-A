@@ -1,5 +1,5 @@
 # Computer Science A
- AP Computer Science A assigments from apluscompsci
+ AP Computer Science A assigments from apluscompsci.com
 
 ### Create a issue with the name of the assigment as given
     Filename = Unit # Day # as letter
