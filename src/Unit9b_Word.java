@@ -40,9 +40,9 @@ public class Unit9b_Word
  	public String toString()
  	{
 		 return "First character: " + getFirstChar() + "\n" +
-         "Last character: " + getLastChar() + "\n" +
-         "Backwards: " + getBackWards() + "\n" +
-         "Original word: " + word + "\n";
+				 "Last character: " + getLastChar() + "\n" +
+				 "Backwards: " + getBackWards() + "\n" +
+				 "Original word: " + word + "\n";
  }
 }
 
