@@ -24,56 +24,39 @@ public class Unit9b_WordRunner
 }
 
 /*
-  A+ Computer Science         	                                              BACKWARDS STRING 
-
-
-
-Lab Goal :   This lab was designed to teach you more about loops and the String class.
-
-Lab Description :   Take in one word and output the first letter, last letter, and the word backwards.
-
-
+Lab Goal : This lab was designed to teach you more about loops and the String class.
+Lab Description : Take in one word and output the first letter, last letter, and the word backwards.
 Sample Data :
-Files Needed ::
-Word.java
-WordRunner.java
 Hello
 World
 JukeBox
 TCEA
 UIL
-
-
-
 Sample Output :
 H
 o
 olleH
 Hello
-
-
 W
 d
 dlroW
 World
-
-
 J
 x
 xoBekuJ
 JukeBox
-
-
 T
 A
 AECT
 TCEA
-
-
 U
 L
 LIU
 UIL
-
-
+Files Needed ::
+Word.java
+WordRunner.java
+A+ Computer Science BACKWARDS
+STRING
+\
  */
