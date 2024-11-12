@@ -10,7 +10,7 @@ public class Unit10b_TriangleWord {
 	}
 
 	public String toString() {
-		
+
 		StringBuilder output = new StringBuilder();
 		for (int i = 0; i < word.length(); i++) {
 			for (int j = 0; j < word.length() - i - 1; j++) {
