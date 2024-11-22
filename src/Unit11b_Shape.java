@@ -4,7 +4,7 @@
 
 import java.awt.*;
 
-public class Unit3d_Shape {
+public class Unit11b_Shape {
     // instance variables
     private int xPos;
     private int yPos;
@@ -12,7 +12,7 @@ public class Unit3d_Shape {
     private int height;
     private Color color;
 
-    public Unit3d_Shape(int x, int y, int wid, int ht, Color col) {
+    public Unit11b_Shape(int x, int y, int wid, int ht, Color col) {
         xPos = x;
         yPos = y;
         width = wid;

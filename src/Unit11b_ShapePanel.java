@@ -7,9 +7,9 @@ import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
-public class Unit3d_ShapePanel extends JPanel {
+public class Unit11b_ShapePanel extends JPanel {
 
-    public Unit3d_ShapePanel() {
+    public Unit11b_ShapePanel() {
         setBackground(Color.WHITE);
         setVisible(true);
     }
