@@ -18,9 +18,6 @@ public class Unit11b_ShapePanel extends JPanel {
         paint(window);
     }
 
-    /*
-     * All of your test code should be placed in paint.
-     */
     public void paint(Graphics window) {
         Unit3d_Shape obj = new Unit3d_Shape(200, 200, 100, 100, Color.BLUE);
         Unit3d_Shape obj2 = new Unit3d_Shape(150, 320, 25, 100, Color.GRAY);
@@ -36,14 +33,5 @@ public class Unit11b_ShapePanel extends JPanel {
         obj.draw(window.create());
         obj2.draw(window.create());
         obj3.draw(window.create());
-
-        // instantiate a Shape
-        // tell your shape to draw
-
-        // instantiate a Shape
-        // tell your shape to draw
-
-        // instantiate a Shape
-        // tell your shape to draw
     }
 }

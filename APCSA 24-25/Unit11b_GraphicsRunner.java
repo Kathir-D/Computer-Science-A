@@ -16,9 +16,6 @@ public class Unit11b_GraphicsRunner extends JFrame
 		setSize(WIDTH,HEIGHT);
 
 		getContentPane().add(new Unit11b_ShapePanel());
-		
-		//add other classes to run them 
-		//BigHouse, Robot, Character, or ShapePanel 
 
 		setVisible(true);
 

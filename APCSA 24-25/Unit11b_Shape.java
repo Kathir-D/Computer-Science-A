@@ -5,7 +5,6 @@
 import java.awt.*;
 
 public class Unit11b_Shape {
-    // instance variables
     private int xPos;
     private int yPos;
     private int width;
