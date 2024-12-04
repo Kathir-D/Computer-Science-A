@@ -1,28 +1,25 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
-//Name -  
+//Name -
 
-public class Unit7a_BiggestDouble
-{
-	public static double getBiggest( double a, double b, double c, double d )
-	{
-		if (a>b && a>c && a>d){
-			return a;
-		}
-		if (b>a && b>c && b>d){
-			return b;
-		}
-		if (c>a && c>b && c>d){
-			return c;
-		}
-		if (d>a && d>b && d>c){
-			return d;
-		}
-		return 1231;
+public class Unit7a_BiggestDouble {
 
-	}
+  public static double getBiggest(double a, double b, double c, double d) {
+    if (a > b && a > c && a > d) {
+      return a;
+    }
+    if (b > a && b > c && b > d) {
+      return b;
+    }
+    if (c > a && c > b && c > d) {
+      return c;
+    }
+    if (d > a && d > b && d > c) {
+      return d;
+    }
+    return 1231;
+  }
 }
-
 /*
 Lab Goal : The lab was designed to teach you how to use &&, ||, and !.
 Lab Description : Compare four doubles to see which is the biggest.

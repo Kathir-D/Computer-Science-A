@@ -5,17 +5,14 @@
 
 import java.util.Scanner;
 
-public class Unit5a_IIfTwo
-{
-	public static void main(String args[])
-	{
-		Scanner keyboard = new Scanner(System.in);
-		System.out.print("Enter an deccimal value :: ");
-		double value = keyboard.nextDouble();
+public class Unit5a_IIfTwo {
 
-		//print out ben if value is greater than 1000
-		
-		//print out sam if value is less than -2000
-	}
+  public static void main(String args[]) {
+    Scanner keyboard = new Scanner(System.in);
+    System.out.print("Enter an deccimal value :: ");
+    double value = keyboard.nextDouble();
+    //print out ben if value is greater than 1000
+
+    //print out sam if value is less than -2000
+  }
 }
-

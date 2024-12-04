@@ -2,22 +2,20 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_GCD
-{
-	public static long getGCD( int numOne, int numTwo )
-	{
-		long gcd=0;
+public class Unit9a_GCD {
 
-		for (int i = 1; i < numTwo; i++){
-			if (numOne % i == 0 && numTwo % i == 0){
-				gcd = i;
-			}
-		}
+  public static long getGCD(int numOne, int numTwo) {
+    long gcd = 0;
 
-		return gcd;
-	}
+    for (int i = 1; i < numTwo; i++) {
+      if (numOne % i == 0 && numTwo % i == 0) {
+        gcd = i;
+      }
+    }
+
+    return gcd;
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use for loops and as a review of mod %.
 Lab Description : Determine the greatest common divisor between two numbers. The greatest

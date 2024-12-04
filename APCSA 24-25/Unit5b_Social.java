@@ -3,36 +3,31 @@
 //Name -
 //Date -
 
-public class Unit5b_Social
-{
-	private String num;
-	
-	public Unit5b_Social( String n )
-	{
-		num = n;
-	}
-	
-	private boolean isValid()
-	{
-        if (num.substring(3, 4).equals("-") && num.substring(6, 7).equals("-")) {
-            return true;
-        }
+public class Unit5b_Social {
 
-        return false;
-	}
-	
-   public String go()
-	{
-		String[] parts = num.split("-");
-        if (isValid()) {
-            return parts[2];
-        } else {
-            return "bad";
-        }
-	}
+  private String num;
+
+  public Unit5b_Social(String n) {
+    num = n;
+  }
+
+  private boolean isValid() {
+    if (num.substring(3, 4).equals("-") && num.substring(6, 7).equals("-")) {
+      return true;
+    }
+
+    return false;
+  }
+
+  public String go() {
+    String[] parts = num.split("-");
+    if (isValid()) {
+      return parts[2];
+    } else {
+      return "bad";
+    }
+  }
 }
-
-
 /*
 Lab Description : Given a string, check to see if the string is a valid social security number. For this
 program, social security numbers have a hyphen – at position 3 and at position 6. Return the last 4 numbers if

@@ -3,30 +3,30 @@
 //Name -
 //Date -
 
-import java.util.Scanner;
 import static java.lang.System.*;
 
-public class Unit2a_HomeRunner
-{
-	public static void main( String[] args )
-	{
-		Scanner keyboard = new Scanner( System.in );
-		Unit2a_Home obj = new Unit2a_Home();
+import java.util.Scanner;
 
-		out.print("Enter X1 :: ");
-		int x1 = keyboard.nextInt();
-		out.print("Enter Y1 :: ");
-		int y1 = keyboard.nextInt();
-		out.print("Enter X2 :: ");
-		int x2 = keyboard.nextInt();
-		out.print("Enter Y2 :: ");
-		int y2 = keyboard.nextInt();
+public class Unit2a_HomeRunner {
 
-		out.println("Distance == " + Math.abs((int) obj.getDistance(x1,y1,x2,y2)));
-					
-	}
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in);
+    Unit2a_Home obj = new Unit2a_Home();
+
+    out.print("Enter X1 :: ");
+    int x1 = keyboard.nextInt();
+    out.print("Enter Y1 :: ");
+    int y1 = keyboard.nextInt();
+    out.print("Enter X2 :: ");
+    int x2 = keyboard.nextInt();
+    out.print("Enter Y2 :: ");
+    int y2 = keyboard.nextInt();
+
+    out.println(
+      "Distance == " + Math.abs((int) obj.getDistance(x1, y1, x2, y2))
+    );
+  }
 }
-
 /*
 
 Sample Data :

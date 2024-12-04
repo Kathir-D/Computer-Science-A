@@ -3,28 +3,24 @@
 //Name -
 //Date -
 
-public class Unit3a_Triangle
-{
-	private int sideA, sideB, sideC;
-	public double perimeter;
+public class Unit3a_Triangle {
 
-	public Unit3a_Triangle(int a, int b, int c)
-	{
-		sideA = a;
-		sideB = b;
-		sideC = c;
-	}
+  private int sideA, sideB, sideC;
+  public double perimeter;
 
-	public void calcPerimeter()
-	{
-		perimeter = (sideA+sideB+sideC);
-	}
+  public Unit3a_Triangle(int a, int b, int c) {
+    sideA = a;
+    sideB = b;
+    sideC = c;
+  }
 
-	public double getArea( )
-	{
-		double s = perimeter/2;
-		return (Math.sqrt(s*(s-sideA)*(s-sideB)*(s-sideC)));
-	}
+  public void calcPerimeter() {
+    perimeter = (sideA + sideB + sideC);
+  }
+
+  public double getArea() {
+    double s = perimeter / 2;
+    return (Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC)));
+  }
 }
-
 // area= sqrt( s( s – a )( s – b )(s – c ))

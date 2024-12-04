@@ -1,29 +1,24 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
- 
-public class Unit10b_Triples
-{
-   private int number;
 
-	public Unit10b_Triples(int num)
-	{
-		number = num;
-	}
-	
-	private int greatestCommonFactor(int a, int b, int c)
-	{
+public class Unit10b_Triples {
 
-		return 1;
-	}
+  private int number;
 
-	public String toString()
-	{
-		String output="";
-		return output+"\n";
-	}
+  public Unit10b_Triples(int num) {
+    number = num;
+  }
+
+  private int greatestCommonFactor(int a, int b, int c) {
+    return 1;
+  }
+
+  public String toString() {
+    String output = "";
+    return output + "\n";
+  }
 }
-
 /*
 © A+ Computer Science – Nested Loops - www.apluscompsci.com
 Lab Goal : This lab was designed to teach you how to use nested loops. You will also learn more about

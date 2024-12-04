@@ -2,28 +2,26 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit10a_Box
-{
-	public static String go( int size )
-	{
-		String output="";
+public class Unit10a_Box {
 
-        for (int i = size; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                output += "*";
-            }
-            // Inner loop for "#"
-            for (int k = 0; k < (size - i + 1); k++) {
-                output += "#";
-            }
-            // Move to the next line after each row
-            output += "\n";
-        }
+  public static String go(int size) {
+    String output = "";
 
-		return output+"\n";
-	}
+    for (int i = size; i > 0; i--) {
+      for (int j = 0; j < i; j++) {
+        output += "*";
+      }
+      // Inner loop for "#"
+      for (int k = 0; k < (size - i + 1); k++) {
+        output += "#";
+      }
+      // Move to the next line after each row
+      output += "\n";
+    }
+
+    return output + "\n";
+  }
 }
-
 /*
 © A+ Computer Science – Nested Loops - www.apluscompsci.com
 Lab Goal : This lab was designed to teach you how to use nested loops. You will also learn how to make

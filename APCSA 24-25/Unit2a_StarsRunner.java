@@ -2,16 +2,13 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit2a_StarsRunner
-{
-   public static void main(String args[])
-   {
-      Unit2a_StarsAndStripes obj = new Unit2a_StarsAndStripes();
+public class Unit2a_StarsRunner {
 
-      obj.printASmallBox();
-      obj.printTwoBlankLines();
-      obj.printABigBox();
+  public static void main(String args[]) {
+    Unit2a_StarsAndStripes obj = new Unit2a_StarsAndStripes();
 
-
-   }
+    obj.printASmallBox();
+    obj.printTwoBlankLines();
+    obj.printABigBox();
+  }
 }

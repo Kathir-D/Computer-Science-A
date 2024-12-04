@@ -2,10 +2,9 @@
 // www.apluscompsci.com
 //Name -
 
-public class Unit6a_SocialRunner
-{
-	public static void main( String args[] )
-	{
-		//add test cases
-	}
+public class Unit6a_SocialRunner {
+
+  public static void main(String args[]) {
+    //add test cases
+  }
 }

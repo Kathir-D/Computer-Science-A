@@ -2,36 +2,32 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit8a_DigitMath
-{
-   public static int countDigits( int number )
-	{
-		int sum = 0;
-		while(number>0){
-			sum++;
-			number = number/10;
-		}
-		return sum;
-	}
+public class Unit8a_DigitMath {
 
-   public static int sumDigits( int number )
-	{
-		int sum = 0;
-		while (number > 0){
-			sum += number % 10;
-			number /= 10;
-		}
-		return sum;
-	}
+  public static int countDigits(int number) {
+    int sum = 0;
+    while (number > 0) {
+      sum++;
+      number = number / 10;
+    }
+    return sum;
+  }
 
-	//method go must call countDigits and sumDigits
-	//to receive full credit
-	public static double go( int number )
-	{
-		return (double) sumDigits(number) / countDigits(number);
-	}
+  public static int sumDigits(int number) {
+    int sum = 0;
+    while (number > 0) {
+      sum += number % 10;
+      number /= 10;
+    }
+    return sum;
+  }
+
+  //method go must call countDigits and sumDigits
+  //to receive full credit
+  public static double go(int number) {
+    return (double) sumDigits(number) / countDigits(number);
+  }
 }
-
 /*
 Lab Goal : This lab will focus on decision making and iteration [ looping ] while reviewing accessing
 numeric digits using mod and divide.

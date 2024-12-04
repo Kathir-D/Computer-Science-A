@@ -2,18 +2,16 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit5a_AsciiAdd
-{
-	public static boolean go(String a, int x)
-	{
-		if (a.length() > 1 && a.charAt(0) + a.charAt(a.length() - 1) > x) {
-			return true;
-		}
+public class Unit5a_AsciiAdd {
 
-		return false;
-	}
+  public static boolean go(String a, int x) {
+    if (a.length() > 1 && a.charAt(0) + a.charAt(a.length() - 1) > x) {
+      return true;
+    }
+
+    return false;
+  }
 }
-
 /*
 Lab Description : Given a string and an integer value x, check to see if the ASCII sum of the first letter
 and last letter are greater than x. Return true if the sum is greater than x. Return false if the sum is less than

@@ -1,27 +1,23 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
-//Name -  
+//Name -
 
 import java.util.Scanner;
 
-public class Unit8b_GuessRunner
-{
-	public static void main(String args[])
-	{
-		Scanner sc = new Scanner(System.in);
-		Unit8b_GuessingGame s = new Unit8b_GuessingGame(0);
-		String x = "y";
+public class Unit8b_GuessRunner {
 
-		while(x.toLowerCase().equals("y")){
-			s.toString();
-			System.out.println("Do you want to play again? (y or n) ");
-			x = sc.nextLine();
-		}
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    Unit8b_GuessingGame s = new Unit8b_GuessingGame(0);
+    String x = "y";
 
-
-	}
+    while (x.toLowerCase().equals("y")) {
+      s.toString();
+      System.out.println("Do you want to play again? (y or n) ");
+      x = sc.nextLine();
+    }
+  }
 }
-
 /*
 Lab Description : Create a guessing game that allows you to enter the number of numbers in the
 guessing game. The game will randomly( Math.random()) pick a number in the range provided and then

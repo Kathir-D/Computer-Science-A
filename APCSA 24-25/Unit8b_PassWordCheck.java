@@ -1,39 +1,35 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
-//Name -  
+//Name -
 
-import javax.sound.midi.Soundbank;
 import java.util.Scanner;
+import javax.sound.midi.Soundbank;
 
-class Unit8b_PassWordCheck
-{
-	private String password;
+class Unit8b_PassWordCheck {
 
-	public Unit8b_PassWordCheck()
-	{
-		password = "Dragons";
+  private String password;
 
-	}
+  public Unit8b_PassWordCheck() {
+    password = "Dragons";
+  }
 
-	public void check()
-	{
-		Scanner sc = new Scanner(System.in);
-		String guess = "";
-		boolean validity = false;
+  public void check() {
+    Scanner sc = new Scanner(System.in);
+    String guess = "";
+    boolean validity = false;
 
-		do {
-		System.out.print("Enter the password :: ");
-		guess = sc.nextLine();
-		if (guess.equals(password)){
-			validity = true;
-			System.out.println("VALID");
-		} else{
-			System.out.println("INVALID");
-		}
-		} while (validity == false);
-	}
+    do {
+      System.out.print("Enter the password :: ");
+      guess = sc.nextLine();
+      if (guess.equals(password)) {
+        validity = true;
+        System.out.println("VALID");
+      } else {
+        System.out.println("INVALID");
+      }
+    } while (validity == false);
+  }
 }
-
 /*
 Lab Description : Set up a password variable and assign a password to this variable. Run your
 program and type in invalid passwords to check and see if your boolean logic is correct. Once the correct

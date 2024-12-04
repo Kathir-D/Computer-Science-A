@@ -3,22 +3,17 @@
 
 //if statement example using booleans
 
-public class Unit5a_IIfOneBoolean
-{
-	public static void main(String args[])
-	{
-		boolean isOdd=true;
+public class Unit5a_IIfOneBoolean {
 
-		if(isOdd==true)
-		{
-		   System.out.println("isodd");
-		}
+  public static void main(String args[]) {
+    boolean isOdd = true;
 
-		if(isOdd==false)
-		{
-		   System.out.println("iseven");
-		}
+    if (isOdd == true) {
+      System.out.println("isodd");
+    }
 
-	}
+    if (isOdd == false) {
+      System.out.println("iseven");
+    }
+  }
 }
-

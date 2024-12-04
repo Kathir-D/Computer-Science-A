@@ -1,25 +1,23 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
 
-public class Unit7b_AngryBearRunner
-{
-   public static void main(String args[])
-	{
-		Unit7b_AngryBear a = new Unit7b_AngryBear( 10, 3 );
-	System.out.println( a.isAngry() );
-	Unit7b_AngryBear b = new Unit7b_AngryBear( 10, 35 );
-	System.out.println( b.isAngry() );
-	Unit7b_AngryBear c = new Unit7b_AngryBear( 1, 25 );
-	System.out.println( c.isAngry() );
-	Unit7b_AngryBear d = new Unit7b_AngryBear( 6, 40 );
-	System.out.println( d.isAngry() );
-	Unit7b_AngryBear e = new Unit7b_AngryBear( 1, 1 );
-	System.out.println( e.isAngry() );
-	Unit7b_AngryBear f = new Unit7b_AngryBear( 111, 111 );
-	System.out.println( f.isAngry() );
-	}
-}
+public class Unit7b_AngryBearRunner {
 
+  public static void main(String args[]) {
+    Unit7b_AngryBear a = new Unit7b_AngryBear(10, 3);
+    System.out.println(a.isAngry());
+    Unit7b_AngryBear b = new Unit7b_AngryBear(10, 35);
+    System.out.println(b.isAngry());
+    Unit7b_AngryBear c = new Unit7b_AngryBear(1, 25);
+    System.out.println(c.isAngry());
+    Unit7b_AngryBear d = new Unit7b_AngryBear(6, 40);
+    System.out.println(d.isAngry());
+    Unit7b_AngryBear e = new Unit7b_AngryBear(1, 1);
+    System.out.println(e.isAngry());
+    Unit7b_AngryBear f = new Unit7b_AngryBear(111, 111);
+    System.out.println(f.isAngry());
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you more about decision making and classes.
 Lab Description :

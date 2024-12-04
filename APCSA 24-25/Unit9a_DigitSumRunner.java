@@ -2,20 +2,18 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit9a_DigitSumRunner
-{
-	public static void main ( String[] args )
-	{
-        System.out.println( Unit9a_DigitSum.go( "33" ) );
-        System.out.println( Unit9a_DigitSum.go( "1010101" ) );
-        System.out.println( Unit9a_DigitSum.go( "ABC" ) );
-        System.out.println( Unit9a_DigitSum.go( "9A0B0#23?+" ) );
-        System.out.println( Unit9a_DigitSum.go( "0" ) );
-        System.out.println( Unit9a_DigitSum.go( "ABC7" ) );
-        System.out.println( Unit9a_DigitSum.go( "-3-3?1@#$%4" ) );
-	}
-}
+public class Unit9a_DigitSumRunner {
 
+  public static void main(String[] args) {
+    System.out.println(Unit9a_DigitSum.go("33"));
+    System.out.println(Unit9a_DigitSum.go("1010101"));
+    System.out.println(Unit9a_DigitSum.go("ABC"));
+    System.out.println(Unit9a_DigitSum.go("9A0B0#23?+"));
+    System.out.println(Unit9a_DigitSum.go("0"));
+    System.out.println(Unit9a_DigitSum.go("ABC7"));
+    System.out.println(Unit9a_DigitSum.go("-3-3?1@#$%4"));
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you how to use for loops to manipulate and traverse strings.
 You will need to know how to use loops and string methods to check each digit.

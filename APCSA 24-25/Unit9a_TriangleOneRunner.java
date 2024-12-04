@@ -2,20 +2,18 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_TriangleOneRunner
-{
-	public static void main ( String[] args )
-	{
-		String[] testCases = {"hippo", "abcd", "it", "a", "chicken"};
+public class Unit9a_TriangleOneRunner {
 
-        for (String word : testCases) {
-            System.out.println("Triangle for word: " + word);
-            Unit9a_TriangleOne.print(word);
-            System.out.println();
-        }
-	}
+  public static void main(String[] args) {
+    String[] testCases = { "hippo", "abcd", "it", "a", "chicken" };
+
+    for (String word : testCases) {
+      System.out.println("Triangle for word: " + word);
+      Unit9a_TriangleOne.print(word);
+      System.out.println();
+    }
+  }
 }
-
 /*
 © A+ Computer Science – for loops - www.apluscompsci.com
 Lab Goal : This lab was designed to teach you how to use for loops and how to make pretty shapes.

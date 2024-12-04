@@ -1,42 +1,38 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
-public class Unit3a_Dog
-{
+public class Unit3a_Dog {
+
   private int age;
   private String name;
-	
-  public Unit3a_Dog(String n )
-  {
+
+  public Unit3a_Dog(String n) {
     age = 1;
     name = n;
   }
-  
-	public Unit3a_Dog(String n, int a )
-	{
- 	  age = a;
-      name = n;
-	}
-  
-  public void increaseAgeByOne()
-  {
-  	age += 1;
+
+  public Unit3a_Dog(String n, int a) {
+    age = a;
+    name = n;
   }
-  
-  public int getPeopleAge( int val )
-  {
-  	 return val*age;
+
+  public void increaseAgeByOne() {
+    age += 1;
   }
-	
-  public int getAge()    {
+
+  public int getPeopleAge(int val) {
+    return val * age;
+  }
+
+  public int getAge() {
     return age;
   }
-	
-  public String getName()    {
+
+  public String getName() {
     return name;
   }
-	
-  public String toString()    {
+
+  public String toString() {
     return "Dog - " + name + " " + age;
   }
 }

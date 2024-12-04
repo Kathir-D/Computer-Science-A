@@ -2,23 +2,19 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_MultTensRunner
-{
-	public static void main( String[] args )
-	{
-		System.out.println( Unit9a_MultTens.go( 1 ) );
-		System.out.println( Unit9a_MultTens.go( 2 ) );
-		System.out.println( Unit9a_MultTens.go( 13 ) );
-		System.out.println( Unit9a_MultTens.go( 4 ) );
-		System.out.println( Unit9a_MultTens.go( 10 ) );
-		System.out.println( Unit9a_MultTens.go( -5 ) );
-		System.out.println( Unit9a_MultTens.go( 0 ) );
-		System.out.println( Unit9a_MultTens.go( 6 ) );
+public class Unit9a_MultTensRunner {
 
-
-	}
+  public static void main(String[] args) {
+    System.out.println(Unit9a_MultTens.go(1));
+    System.out.println(Unit9a_MultTens.go(2));
+    System.out.println(Unit9a_MultTens.go(13));
+    System.out.println(Unit9a_MultTens.go(4));
+    System.out.println(Unit9a_MultTens.go(10));
+    System.out.println(Unit9a_MultTens.go(-5));
+    System.out.println(Unit9a_MultTens.go(0));
+    System.out.println(Unit9a_MultTens.go(6));
+  }
 }
-
 /*
 Lab Goal : This lab will focus on variables, ifs, and loops.
 Lab Description : Write a method that will return multiples of ten based on the parameter passed in. If

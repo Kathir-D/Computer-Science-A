@@ -2,37 +2,34 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_CoolNumbers
-{
-	/*
-	 *method isCoolNumber will return true if
-	 *	num % 3-6 all have a remainder of 1
-	 *it will return false otherwize
-	 */
-	public static boolean isCoolNumber( int num )
-	{
-   		 if (num % 3 == 1 && num % 4 == 1 && num % 5 == 1 && num % 6 == 1) {
-			return true;
-	}
-		 return false;
-	}
-	
-	/*
-	 *method countCoolNumbers will return the count
-	 *of the coolNumbers between 6 and stop
-	 */
-	public static int countCoolNumbers( int stop )
-	{
-		int count = 0;
-		for (int i = 5; i < stop; i++){
-			if (isCoolNumber(i)){
-				count++;
-			}
-		}
-		return count;
-	}
-}
+public class Unit9a_CoolNumbers {
 
+  /*
+   *method isCoolNumber will return true if
+   *	num % 3-6 all have a remainder of 1
+   *it will return false otherwize
+   */
+  public static boolean isCoolNumber(int num) {
+    if (num % 3 == 1 && num % 4 == 1 && num % 5 == 1 && num % 6 == 1) {
+      return true;
+    }
+    return false;
+  }
+
+  /*
+   *method countCoolNumbers will return the count
+   *of the coolNumbers between 6 and stop
+   */
+  public static int countCoolNumbers(int stop) {
+    int count = 0;
+    for (int i = 5; i < stop; i++) {
+      if (isCoolNumber(i)) {
+        count++;
+      }
+    }
+    return count;
+  }
+}
 /*
 Lab Goal : This lab will focus on loops, decision making, and methods.
 Lab Description : Complete methods isCoolNum( n ) && countCoolNumbers( n ).

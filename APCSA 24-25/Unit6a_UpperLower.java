@@ -2,18 +2,16 @@
 // www.apluscompsci.com
 //Name -
 
-public class Unit6a_UpperLower
-{
-   public static String go( String a, boolean b )
-	{
-		if (b == true){
-			return a.toUpperCase();
-		} else {
-			return a.toLowerCase();
-		}
-	}
-}
+public class Unit6a_UpperLower {
 
+  public static String go(String a, boolean b) {
+    if (b == true) {
+      return a.toUpperCase();
+    } else {
+      return a.toLowerCase();
+    }
+  }
+}
 /*
 Lab Description : Return the given string all uppercase if the boolean parameter is true. Return the
 string all lowercase if the boolean parameter is false.

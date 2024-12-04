@@ -2,10 +2,9 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit4a_FirstLast
-{
-   public static String go( String a, String b )
-	{
-		return a.charAt(0)+""+b.charAt(b.length()-1);
-	}
+public class Unit4a_FirstLast {
+
+  public static String go(String a, String b) {
+    return a.charAt(0) + "" + b.charAt(b.length() - 1);
+  }
 }

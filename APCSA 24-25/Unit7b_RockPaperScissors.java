@@ -4,59 +4,72 @@
 
 import java.util.HashMap;
 
-public class Unit7b_RockPaperScissors
-{
-	private String playChoice;
-	private String compChoice;
-	private static HashMap<String, String> hm = new HashMap<>();
+public class Unit7b_RockPaperScissors {
 
+  private String playChoice;
+  private String compChoice;
+  private static HashMap<String, String> hm = new HashMap<>();
 
-	static {
-		hm.put("R", "Rock");
-		hm.put("P", "Paper");
-		hm.put("S", "Scissors");
-	}
+  static {
+    hm.put("R", "Rock");
+    hm.put("P", "Paper");
+    hm.put("S", "Scissors");
+  }
 
-	public Unit7b_RockPaperScissors(String player)
-	{
-	 playChoice = player;
-	}
+  public Unit7b_RockPaperScissors(String player) {
+    playChoice = player;
+  }
 
-	public String determineWinner()
+  public String determineWinner() {
+    if (playChoice.equals(compChoice)) {
+      return "!Draw Game!";
+    } else if (
+      (playChoice.equals("R") && compChoice.equals("S")) ||
+      (playChoice.equals("P") && compChoice.equals("R")) ||
+      (playChoice.equals("S") && compChoice.equals("P"))
+    ) {
+      return (
+        "!Player wins <<" +
+        hm.get(playChoice) +
+        " beats " +
+        hm.get(compChoice) +
+        ">>!"
+      );
+    } else {
+      return (
+        "!Computer wins <<" +
+        hm.get(compChoice) +
+        " beats " +
+        hm.get(playChoice) +
+        ">>!"
+      );
+    }
+  }
 
-	{
-		if (playChoice.equals(compChoice)) {
-			return "!Draw Game!";
-		} else if ((playChoice.equals("R") && compChoice.equals("S")) ||
-				   (playChoice.equals("P") && compChoice.equals("R")) ||
-				   (playChoice.equals("S") && compChoice.equals("P"))) {
-			return "!Player wins <<"+hm.get(playChoice)+" beats "+hm.get(compChoice)+">>!";
-		} else {
-			return "!Computer wins <<"+hm.get(compChoice)+" beats "+hm.get(playChoice)+">>!";
-		}
-	}
+  public void setCompChoice() {
+    int nums = (int) (Math.random() * 3);
+    switch (nums) {
+      case 0:
+        compChoice = "R";
+        break;
+      case 1:
+        compChoice = "P";
+        break;
+      case 2:
+        compChoice = "S";
+        break;
+    }
+  }
 
-	public void setCompChoice() {
-		int nums = (int) (Math.random() * 3);
-		switch (nums) {
-			case 0:
-				compChoice = "R";
-				break;
-			case 1:
-				compChoice = "P";
-				break;
-			case 2:
-				compChoice = "S";
-				break;
-		}
-	}
-
-	public String toString()
-	{
-		return "player had " + hm.get(playChoice) + "\ncomputer had " + hm.get(compChoice);
-	}
+  public String toString() {
+    return (
+      "player had " +
+      hm.get(playChoice) +
+      "\ncomputer had " +
+      hm.get(compChoice)
+    );
+  }
 }
-
 /*
 Lab Goal : The lab was designed to teach you how to use &&, ||, and !.
 Lab Description : Generate a random choice for the computer player. Next, the person player will

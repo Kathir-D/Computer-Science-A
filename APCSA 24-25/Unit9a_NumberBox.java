@@ -2,18 +2,16 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_NumberBox
-{
-	public static void print( int num )
-	{
-		int x = num;
-		for (int i = 1; i <= num; i++){
-			System.out.println("##" + i + "##---##" + x + "##---##" + i +"##");
-			x--;
-		}
-	}
-}
+public class Unit9a_NumberBox {
 
+  public static void print(int num) {
+    int x = num;
+    for (int i = 1; i <= num; i++) {
+      System.out.println("##" + i + "##---##" + x + "##---##" + i + "##");
+      x--;
+    }
+  }
+}
 /*
 Lab Goal : Write a program that will print out the box of # signs and numbers as show below.
 Lab Description : Demonstrate that you can write a simple loop to print out values.

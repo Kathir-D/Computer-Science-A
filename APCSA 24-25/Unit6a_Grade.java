@@ -2,29 +2,26 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit6a_Grade
-{
-	public static String getLetterGrade( int numGrade )
-	{
-		String letGrade="";
+public class Unit6a_Grade {
 
+  public static String getLetterGrade(int numGrade) {
+    String letGrade = "";
 
-		if (numGrade >= 90){
-			letGrade = "A";
-		}else if (numGrade >= 80 && numGrade < 90){
-			letGrade = "B";
-		} else if (numGrade >= 75 && numGrade < 80){
-			letGrade = "C";
-		} else if (numGrade >= 70 && numGrade < 75){
-			letGrade = "D";
-		} else {
-			letGrade = "F";
-		}
+    if (numGrade >= 90) {
+      letGrade = "A";
+    } else if (numGrade >= 80 && numGrade < 90) {
+      letGrade = "B";
+    } else if (numGrade >= 75 && numGrade < 80) {
+      letGrade = "C";
+    } else if (numGrade >= 70 && numGrade < 75) {
+      letGrade = "D";
+    } else {
+      letGrade = "F";
+    }
 
-		return numGrade + " is a " + letGrade;
-	}
+    return numGrade + " is a " + letGrade;
+  }
 }
-
 /*
 Lab Description : You will write a method that will received a numeric grade. The method will return
 the letter grade that corresponds with each numeric grade. Scanner is not required, but makes the lab much

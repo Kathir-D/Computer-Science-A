@@ -2,19 +2,19 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_ForLoopDemo
-{
-	public static void runForLoop(int start, int stop, int increment )
-	{
-		System.out.println("start " + start + " : stop " + stop + " : increment " + increment);
+public class Unit9a_ForLoopDemo {
 
-		for ( int i = start; i < stop; i += increment){
-   			System.out.print(i + " ");
-		}
-		System.out.println();
-	}
+  public static void runForLoop(int start, int stop, int increment) {
+    System.out.println(
+      "start " + start + " : stop " + stop + " : increment " + increment
+    );
+
+    for (int i = start; i < stop; i += increment) {
+      System.out.print(i + " ");
+    }
+    System.out.println();
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use a for loop.
 Lab Description : Demonstrate the workings of a for loop.

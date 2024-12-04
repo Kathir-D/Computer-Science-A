@@ -1,50 +1,47 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
-//Name -  
+//Name -
 
 import java.util.Scanner;
 
-public class Unit8b_GuessingGame
-{
-	private int upperBound;
+public class Unit8b_GuessingGame {
 
-	public Unit8b_GuessingGame(int stop)
-	{
-		upperBound = stop;
-	}
+  private int upperBound;
 
-	public void playGame()
-	{
-		Scanner sc = new Scanner(System.in);
-		int amt, random, choice;
-		boolean got = false;
-		int times = 0;
+  public Unit8b_GuessingGame(int stop) {
+    upperBound = stop;
+  }
 
-		System.out.print("Guessing Game - how many numbers? ");
-		amt = sc.nextInt();
-		random = (int) (Math.random() * (amt - 1 + 1)) + 1;
-		while (got == false){
-			System.out.print("Enter a number between 1 and " + amt + ": ");
-			choice = sc.nextInt();
-			times++;
-			if (choice == random){
-				got = true;
-			}
-		}
-		System.out.println("It took " + times + " guesses to guess " + random);
-		int percentError = ((times - 1) * 100) / times;
-		System.out.println("You guessed wrong " + percentError + " percent of the time.");
+  public void playGame() {
+    Scanner sc = new Scanner(System.in);
+    int amt, random, choice;
+    boolean got = false;
+    int times = 0;
 
-	}
+    System.out.print("Guessing Game - how many numbers? ");
+    amt = sc.nextInt();
+    random = (int) (Math.random() * (amt - 1 + 1)) + 1;
+    while (got == false) {
+      System.out.print("Enter a number between 1 and " + amt + ": ");
+      choice = sc.nextInt();
+      times++;
+      if (choice == random) {
+        got = true;
+      }
+    }
+    System.out.println("It took " + times + " guesses to guess " + random);
+    int percentError = ((times - 1) * 100) / times;
+    System.out.println(
+      "You guessed wrong " + percentError + " percent of the time."
+    );
+  }
 
-	public String toString()
-	{
-		String output="";
-		playGame();
-		return output;
-	}
+  public String toString() {
+    String output = "";
+    playGame();
+    return output;
+  }
 }
-
 /*
 Lab Description : Create a guessing game that allows you to enter the number of numbers in the
 guessing game. The game will randomly( Math.random()) pick a number in the range provided and then

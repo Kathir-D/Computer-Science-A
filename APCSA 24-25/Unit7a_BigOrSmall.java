@@ -2,23 +2,21 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit7a_BigOrSmall
-{
-	public static String check( int a, int b )
-	{
-		if (a>b && a%2!=0){
-			return "yes";
-		}
-		if (b>a && b%2!=0){
-			return "no";
-		}
-		if (a == b && a%2==0 && b%2==0 ){
-			return "aplus";
-		}
-		return "compsci";
-	}
-}
+public class Unit7a_BigOrSmall {
 
+  public static String check(int a, int b) {
+    if (a > b && a % 2 != 0) {
+      return "yes";
+    }
+    if (b > a && b % 2 != 0) {
+      return "no";
+    }
+    if (a == b && a % 2 == 0 && b % 2 == 0) {
+      return "aplus";
+    }
+    return "compsci";
+  }
+}
 /*
 Lab Goal : This lab will focus on decision making and if statements.
 Lab Description : Write a method / function to evaluate 2 integer parameters.

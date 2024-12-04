@@ -2,37 +2,35 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_VowelCounter
-{
-	public static String getNumberString( String s)
-	{
-		String[] vowels = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U",};
-		String[] arr = new String[s.length()];
-		StringBuilder y = new StringBuilder();
-		boolean isVowel = false;
+public class Unit9a_VowelCounter {
 
-		for (int i = 0; i < s.length(); i++){
-			arr[i] = s.substring(i,i+1);
-		}
+  public static String getNumberString(String s) {
+    String[] vowels = { "a", "e", "i", "o", "u", "A", "E", "I", "O", "U" };
+    String[] arr = new String[s.length()];
+    StringBuilder y = new StringBuilder();
+    boolean isVowel = false;
 
-        for (int i = 0; i < arr.length; i++){
-			isVowel = false;
-            for (String vowel : vowels) {
-                if (arr[i].equals(vowel)){
-                    y.append(i);
-                    isVowel = true;
-                    break;
-                }
-            }
-            if (!isVowel) {
-                y.append(arr[i]);
-            }
+    for (int i = 0; i < s.length(); i++) {
+      arr[i] = s.substring(i, i + 1);
+    }
+
+    for (int i = 0; i < arr.length; i++) {
+      isVowel = false;
+      for (String vowel : vowels) {
+        if (arr[i].equals(vowel)) {
+          y.append(i);
+          isVowel = true;
+          break;
         }
+      }
+      if (!isVowel) {
+        y.append(arr[i]);
+      }
+    }
 
-		return y.toString();
-	}
+    return y.toString();
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use for loops to take old strings and make a new
 strings. You will need to know how to use loops and how to manipulate the letters in strings

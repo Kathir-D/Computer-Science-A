@@ -2,16 +2,13 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit10b_TriplesRunner
-{
-   public static void main(String args[])
-   {
-       Unit10b_Triples triples = new Unit10b_Triples(110);
-       System.out.println(triples);
+public class Unit10b_TriplesRunner {
 
-	}
+  public static void main(String args[]) {
+    Unit10b_Triples triples = new Unit10b_Triples(110);
+    System.out.println(triples);
+  }
 }
-
 /*
 © A+ Computer Science – Nested Loops - www.apluscompsci.com
 Lab Goal : This lab was designed to teach you how to use nested loops. You will also learn more about

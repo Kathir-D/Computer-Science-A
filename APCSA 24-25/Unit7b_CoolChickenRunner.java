@@ -1,21 +1,19 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
 
-public class Unit7b_CoolChickenRunner
-{
-   public static void main(String args[])
-	{
-		Unit7b_CoolChicken a = new Unit7b_CoolChicken( 5.9, 7, "coolio" );
-		System.out.println( a.isCool() );
-		Unit7b_CoolChicken b = new Unit7b_CoolChicken( 150.5, 5, "foghorn" );
-		System.out.println( b.isCool() );
-		Unit7b_CoolChicken c = new Unit7b_CoolChicken( 314.1, 5, "notcool" );
-		System.out.println( c.isCool() );
-		Unit7b_CoolChicken d = new Unit7b_CoolChicken( 212, 56, "ralph" );
-		System.out.println( d.isCool() );
-	}
-}
+public class Unit7b_CoolChickenRunner {
 
+  public static void main(String args[]) {
+    Unit7b_CoolChicken a = new Unit7b_CoolChicken(5.9, 7, "coolio");
+    System.out.println(a.isCool());
+    Unit7b_CoolChicken b = new Unit7b_CoolChicken(150.5, 5, "foghorn");
+    System.out.println(b.isCool());
+    Unit7b_CoolChicken c = new Unit7b_CoolChicken(314.1, 5, "notcool");
+    System.out.println(c.isCool());
+    Unit7b_CoolChicken d = new Unit7b_CoolChicken(212, 56, "ralph");
+    System.out.println(d.isCool());
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you more about decision making and classes.
 Lab Description :

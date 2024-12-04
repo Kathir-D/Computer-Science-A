@@ -5,37 +5,32 @@
 //design your Car class
 //write all code for your Car class here
 //test your Car class with the CarRunner
-class Unit11a_Car{
+class Unit11a_Car {
 
-    private int miles;
-    private int oil;
+  private int miles;
+  private int oil;
 
+  public Unit11a_Car(int a, int b) {
+    miles = a;
+    oil = b;
+  }
 
-    public Unit11a_Car(int a, int b){
-        miles = a;
-        oil = b;
-
+  public boolean timeForOilChange() {
+    if (miles >= oil) {
+      setMiles(0);
+      return true;
     }
+    return false;
+  }
 
-    public boolean timeForOilChange(){
-        if(miles >= oil){
-            setMiles(0);
-            return true;
-        }
-        return false;
-    }
+  public void setMiles(int a) {
+    miles = a;
+  }
 
-    public void setMiles(int a){
-        miles = a;
-    }
-
-    public void addMiles(int a){
-        miles += a;
-    }
-
-
+  public void addMiles(int a) {
+    miles += a;
+  }
 }
-
 /*
 
 © A+ Computer Science – Classes - www.apluscompsci.com

@@ -1,16 +1,14 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
-//Name -  
+//Name -
 
-public class Unit8b_PassRunner
-{
-	public static void main( String args[] )
-	{
-		Unit8b_PassWordCheck test = new Unit8b_PassWordCheck();
-		test.check();
-	} 
+public class Unit8b_PassRunner {
+
+  public static void main(String args[]) {
+    Unit8b_PassWordCheck test = new Unit8b_PassWordCheck();
+    test.check();
+  }
 }
-
 /*
 Lab Description : Set up a password variable and assign a password to this variable. Run your
 program and type in invalid passwords to check and see if your boolean logic is correct. Once the correct

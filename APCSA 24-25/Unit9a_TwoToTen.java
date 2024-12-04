@@ -2,14 +2,12 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_TwoToTen
-{
-	public static long getBaseTen( String bin )
-	{
-		return Integer.parseInt(bin, 2);
-	}
-}
+public class Unit9a_TwoToTen {
 
+  public static long getBaseTen(String bin) {
+    return Integer.parseInt(bin, 2);
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you how to use for loops and a little bit about base conversion.
 Lab Description : Convert a base 2 – binary number to base ten.

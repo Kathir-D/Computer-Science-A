@@ -2,22 +2,20 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_GCDRunner
-{
-	public static void main ( String[] args )
-	{
-        System.out.println("The GCD of 5 and 25 is " + Unit9a_GCD.getGCD(5, 25));
-        System.out.println("The GCD of 4 and 400 is " + Unit9a_GCD.getGCD(4, 400));
-        System.out.println("The GCD of 8 and 80 is " + Unit9a_GCD.getGCD(8, 80));
-        System.out.println("The GCD of 15 and 45 is " + Unit9a_GCD.getGCD(15, 45));
-        System.out.println("The GCD of 6 and 66 is " + Unit9a_GCD.getGCD(6, 66));
-        System.out.println("The GCD of 9 and 9 is " + Unit9a_GCD.getGCD(9, 9));
-        System.out.println("The GCD of 9 and 543 is " + Unit9a_GCD.getGCD(9, 543));
-        System.out.println("The GCD of 15 and 40 is " + Unit9a_GCD.getGCD(15, 40));
-        System.out.println("The GCD of 6 and 51 is " + Unit9a_GCD.getGCD(6, 51));
-	}
-}
+public class Unit9a_GCDRunner {
 
+  public static void main(String[] args) {
+    System.out.println("The GCD of 5 and 25 is " + Unit9a_GCD.getGCD(5, 25));
+    System.out.println("The GCD of 4 and 400 is " + Unit9a_GCD.getGCD(4, 400));
+    System.out.println("The GCD of 8 and 80 is " + Unit9a_GCD.getGCD(8, 80));
+    System.out.println("The GCD of 15 and 45 is " + Unit9a_GCD.getGCD(15, 45));
+    System.out.println("The GCD of 6 and 66 is " + Unit9a_GCD.getGCD(6, 66));
+    System.out.println("The GCD of 9 and 9 is " + Unit9a_GCD.getGCD(9, 9));
+    System.out.println("The GCD of 9 and 543 is " + Unit9a_GCD.getGCD(9, 543));
+    System.out.println("The GCD of 15 and 40 is " + Unit9a_GCD.getGCD(15, 40));
+    System.out.println("The GCD of 6 and 51 is " + Unit9a_GCD.getGCD(6, 51));
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you how to use for loops and as a review of mod %.
 Lab Description : Determine the greatest common divisor between two numbers. The greatest

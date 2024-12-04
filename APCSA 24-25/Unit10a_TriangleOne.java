@@ -2,26 +2,24 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit10a_TriangleOne
-{
-   //this lab is setup with a single static method
-   //there are no instance variables or additional methods / constructors
+public class Unit10a_TriangleOne {
 
-	public static String go( String let, int size)
-	{
-		String output="";
+  //this lab is setup with a single static method
+  //there are no instance variables or additional methods / constructors
 
-		for (int i = 1; i < size+1; i++){
-			for (int x = 0; x < i; x++){
-				output += let;
-			}
-			output += "\n";
-		}
+  public static String go(String let, int size) {
+    String output = "";
 
-		return output;
-	}
+    for (int i = 1; i < size + 1; i++) {
+      for (int x = 0; x < i; x++) {
+        output += let;
+      }
+      output += "\n";
+    }
+
+    return output;
+  }
 }
-
 /*
 
 © A+ Computer Science – Nested Loops - www.apluscompsci.com

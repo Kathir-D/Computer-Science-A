@@ -3,61 +3,59 @@
 //Name -
 import java.util.*;
 
-public class Unit12a_CupRunner
-{
-	public static void main( String[] args )
-	{
-		System.out.println( "made a cup of 10" );
-		Unit12a_Cup c = new Unit12a_Cup( 10 );
-		System.out.println( "amt in cup " + c.getAmtInCup() );
-		System.out.println( "add " + c.add( 5 ) );
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "add " + c.add( 2 ) );
-		System.out.println( "num adds " + c.getNumAdds() );			
-		System.out.println( "is full " + c.isFull() );
-		System.out.println( "will overflow 10 " + c.willOverflow( 10 ) );	
-		System.out.println( "pour 7 ");
-		c.pour(7);
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "is full " + c.isFull() );				
-		System.out.println( "made a cup of 50" );
-		c = new Unit12a_Cup( 50 );
-		System.out.println( "will overflow 73 " + c.willOverflow( 73 ) );	
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "add " + c.add( 23 ) );
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "add " + c.add( 11 ) );
-		System.out.println( "num adds " + c.getNumAdds() );		
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "is full " + c.isFull() );
-		System.out.println( "will overflow 10 " + c.willOverflow( 10 ) );	
-		System.out.println( "pour 7 ");
-		c.pour(7);
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "is full " + c.isFull() );					
-		System.out.println( "made a cup of 30" );		
-		c = new Unit12a_Cup(30);
-		double[] r = {3,2,1};
-		System.out.println( "add lots " + c.addLots(r) );	
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "will overflow 10 " + c.willOverflow( 10 ) );				
-		double[] rr = {1,12,6};
-		System.out.println( "add lots " + c.addLots(rr) );	
-		System.out.println( "num adds " + c.getNumAdds() );	
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "is full " + c.isFull() );	
-		System.out.println( "will overflow 20 " + c.willOverflow( 20 ) );				
-		System.out.println( "add " + c.add( 9 ) );
-		System.out.println( "num adds " + c.getNumAdds() );		
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "is full " + c.isFull() );
-		System.out.println( "pour 10 ");
-		c.pour(10);	
-		System.out.println( "amt in cup " + c.getAmtInCup() );	
-		System.out.println( "is full " + c.isFull() );											
-	}
-}
+public class Unit12a_CupRunner {
 
+  public static void main(String[] args) {
+    System.out.println("made a cup of 10");
+    Unit12a_Cup c = new Unit12a_Cup(10);
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("add " + c.add(5));
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("add " + c.add(2));
+    System.out.println("num adds " + c.getNumAdds());
+    System.out.println("is full " + c.isFull());
+    System.out.println("will overflow 10 " + c.willOverflow(10));
+    System.out.println("pour 7 ");
+    c.pour(7);
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("is full " + c.isFull());
+    System.out.println("made a cup of 50");
+    c = new Unit12a_Cup(50);
+    System.out.println("will overflow 73 " + c.willOverflow(73));
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("add " + c.add(23));
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("add " + c.add(11));
+    System.out.println("num adds " + c.getNumAdds());
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("is full " + c.isFull());
+    System.out.println("will overflow 10 " + c.willOverflow(10));
+    System.out.println("pour 7 ");
+    c.pour(7);
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("is full " + c.isFull());
+    System.out.println("made a cup of 30");
+    c = new Unit12a_Cup(30);
+    double[] r = { 3, 2, 1 };
+    System.out.println("add lots " + c.addLots(r));
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("will overflow 10 " + c.willOverflow(10));
+    double[] rr = { 1, 12, 6 };
+    System.out.println("add lots " + c.addLots(rr));
+    System.out.println("num adds " + c.getNumAdds());
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("is full " + c.isFull());
+    System.out.println("will overflow 20 " + c.willOverflow(20));
+    System.out.println("add " + c.add(9));
+    System.out.println("num adds " + c.getNumAdds());
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("is full " + c.isFull());
+    System.out.println("pour 10 ");
+    c.pour(10);
+    System.out.println("amt in cup " + c.getAmtInCup());
+    System.out.println("is full " + c.isFull());
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you more designing and writing classes. Use the same runner
 code below and associated comments to create a Cup class.

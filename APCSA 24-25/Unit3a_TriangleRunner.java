@@ -2,30 +2,28 @@
 //www.apluscompsci.com
 //Name -
 
-import java.util.Scanner; 
+import java.util.Scanner;
 
-public class Unit3a_TriangleRunner  //this class is used to test Triangle
-{
-	public static void main( String[] args )
-	{
-		Scanner keyboard = new Scanner(System.in);
+public class Unit3a_TriangleRunner { //this class is used to test Triangle
 
-		//ask for user input
-		System.out.print("Enter side A ::  ");
-		int a = keyboard.nextInt();
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in);
 
-		System.out.print("Enter side B ::  ");
-		int b = keyboard.nextInt();
+    //ask for user input
+    System.out.print("Enter side A ::  ");
+    int a = keyboard.nextInt();
 
-		System.out.print("Enter side C ::  ");
-		int c = keyboard.nextInt();
+    System.out.print("Enter side B ::  ");
+    int b = keyboard.nextInt();
 
-		Unit3a_Triangle test = new Unit3a_Triangle(a,b,c);
-		test.calcPerimeter();
-		System.out.println( test.getArea() );
-	}
+    System.out.print("Enter side C ::  ");
+    int c = keyboard.nextInt();
+
+    Unit3a_Triangle test = new Unit3a_Triangle(a, b, c);
+    test.calcPerimeter();
+    System.out.println(test.getArea());
+  }
 }
-
 /*
 
 Sample Data :

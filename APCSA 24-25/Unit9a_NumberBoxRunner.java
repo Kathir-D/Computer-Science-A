@@ -2,20 +2,18 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_NumberBoxRunner
-{
-	public static void main ( String[] args )
-	{
-		//should work with any value passed to print	
-		System.out.println( "run 1" );
-		Unit9a_NumberBox.print( 3 );
-		System.out.println( "run 2" );			
-		Unit9a_NumberBox.print( 8 );
-		System.out.println( "run 3" );		
-		Unit9a_NumberBox.print( 11);
-	}
-}
+public class Unit9a_NumberBoxRunner {
 
+  public static void main(String[] args) {
+    //should work with any value passed to print
+    System.out.println("run 1");
+    Unit9a_NumberBox.print(3);
+    System.out.println("run 2");
+    Unit9a_NumberBox.print(8);
+    System.out.println("run 3");
+    Unit9a_NumberBox.print(11);
+  }
+}
 /*
 Lab Goal : Write a program that will print out the box of # signs and numbers as show below.
 Lab Description : Demonstrate that you can write a simple loop to print out values.

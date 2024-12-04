@@ -1,30 +1,26 @@
-public class Unit7b_CoolChicken
-{
-    private int wingCount;
-    private double speed;
-    private String name;
+public class Unit7b_CoolChicken {
 
-    public Unit7b_CoolChicken(double s, int wc, String n )
-    {
-      wingCount = wc;
-      speed = s;
-      name = n;
+  private int wingCount;
+  private double speed;
+  private String name;
+
+  public Unit7b_CoolChicken(double s, int wc, String n) {
+    wingCount = wc;
+    speed = s;
+    name = n;
+  }
+
+  public double maxSpeed() {
+    return wingCount * speed; //add code
+  }
+
+  public boolean isCool() {
+    if (maxSpeed() > 1000 && name.contains("cool")) {
+      return true;
     }
-    
-    public double maxSpeed()
-    {
-      return wingCount*speed;  //add code
-    }
-    
-    public boolean isCool()
-    {
-        if (maxSpeed() > 1000 && name.contains("cool")) {
-            return true;
-        }
-      return false;
-    }
+    return false;
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you more about decision making and classes.
 Lab Description :

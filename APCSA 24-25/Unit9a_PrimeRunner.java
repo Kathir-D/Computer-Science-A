@@ -2,22 +2,20 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_PrimeRunner
-{
-	public static void main ( String[] args )
-	{
-		int[] testCases = {24, 7, 100, 113, 65535, 2, 7334, 7919, 1115125003};
+public class Unit9a_PrimeRunner {
 
-        for (int num : testCases) {
-            if (Unit9a_Prime.isPrime(num)) {
-                System.out.println(num + " is prime.");
-            } else {
-                System.out.println(num + " is not prime.");
-            }
-        }
-	}	
+  public static void main(String[] args) {
+    int[] testCases = { 24, 7, 100, 113, 65535, 2, 7334, 7919, 1115125003 };
+
+    for (int num : testCases) {
+      if (Unit9a_Prime.isPrime(num)) {
+        System.out.println(num + " is prime.");
+      } else {
+        System.out.println(num + " is not prime.");
+      }
+    }
+  }
 }
-
 /*
 © A+ Computer Science – for loops - www.apluscompsci.com
 algorithm help

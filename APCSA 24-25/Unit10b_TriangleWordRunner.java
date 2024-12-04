@@ -2,28 +2,25 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit10b_TriangleWordRunner
-{
-   public static void main(String args[])
-   {
-       Unit10b_TriangleWord word1 = new Unit10b_TriangleWord("WOW");
-       System.out.println(word1);
+public class Unit10b_TriangleWordRunner {
 
-       Unit10b_TriangleWord word2 = new Unit10b_TriangleWord("BEN");
-       System.out.println(word2);
+  public static void main(String args[]) {
+    Unit10b_TriangleWord word1 = new Unit10b_TriangleWord("WOW");
+    System.out.println(word1);
 
-       Unit10b_TriangleWord word3 = new Unit10b_TriangleWord("SAMMY");
-       System.out.println(word3);
+    Unit10b_TriangleWord word2 = new Unit10b_TriangleWord("BEN");
+    System.out.println(word2);
 
-       Unit10b_TriangleWord word4 = new Unit10b_TriangleWord("WILE");
-       System.out.println(word4);
+    Unit10b_TriangleWord word3 = new Unit10b_TriangleWord("SAMMY");
+    System.out.println(word3);
 
-       Unit10b_TriangleWord word5 = new Unit10b_TriangleWord("APLUSCOMPSCI");
-       System.out.println(word5);
+    Unit10b_TriangleWord word4 = new Unit10b_TriangleWord("WILE");
+    System.out.println(word4);
 
-	}
+    Unit10b_TriangleWord word5 = new Unit10b_TriangleWord("APLUSCOMPSCI");
+    System.out.println(word5);
+  }
 }
-
 /*
 
 Page

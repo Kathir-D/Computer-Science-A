@@ -1,19 +1,22 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
-//Name -  
+//Name -
 
-public class Unit7a_StringRunner
-{
-	public static void main(String args[])
-	{
-		System.out.println(Unit7a_BiggestString.getBiggest("abc","cba","bca"));
-		System.out.println(Unit7a_BiggestString.getBiggest("one","fourteen","twenty"));
-		System.out.println(Unit7a_BiggestString.getBiggest("124323","20009","3434"));
-		System.out.println(Unit7a_BiggestString.getBiggest("abcde","ABCDE","1234234324"));
+public class Unit7a_StringRunner {
 
-	}
+  public static void main(String args[]) {
+    System.out.println(Unit7a_BiggestString.getBiggest("abc", "cba", "bca"));
+    System.out.println(
+      Unit7a_BiggestString.getBiggest("one", "fourteen", "twenty")
+    );
+    System.out.println(
+      Unit7a_BiggestString.getBiggest("124323", "20009", "3434")
+    );
+    System.out.println(
+      Unit7a_BiggestString.getBiggest("abcde", "ABCDE", "1234234324")
+    );
+  }
 }
-
 /*
 Lab Goal : The lab was designed to teach you how to use &&, ||, and !.
 Lab Description : Compare three Strings to see which is the biggest. When comparing the strings, use

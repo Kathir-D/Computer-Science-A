@@ -4,29 +4,26 @@
 
 import javax.swing.JFrame;
 
-public class Unit3b_GraphicsRunner extends JFrame
-{
-	private static final int WIDTH = 800;
-	private static final int HEIGHT = 600;
+public class Unit3b_GraphicsRunner extends JFrame {
 
-	public Unit3b_GraphicsRunner()
-	{
-		super("Graphics Runner");
+  private static final int WIDTH = 800;
+  private static final int HEIGHT = 600;
 
-		setSize(WIDTH,HEIGHT);
+  public Unit3b_GraphicsRunner() {
+    super("Graphics Runner");
+    setSize(WIDTH, HEIGHT);
 
-		getContentPane().add(new Unit3d_ShapePanel());
-		
-		//add other classes to run them 
-		//BigHouse, Robot, Character, or ShapePanel 
+    getContentPane().add(new Unit3d_ShapePanel());
 
-		setVisible(true);
+    //add other classes to run them
+    //BigHouse, Robot, Character, or ShapePanel
 
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	}
+    setVisible(true);
 
-	public static void main( String args[] )
-	{
-		Unit3b_GraphicsRunner run = new Unit3b_GraphicsRunner();
-	}
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  }
+
+  public static void main(String args[]) {
+    Unit3b_GraphicsRunner run = new Unit3b_GraphicsRunner();
+  }
 }

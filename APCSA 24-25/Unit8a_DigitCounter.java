@@ -2,19 +2,17 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit8a_DigitCounter
-{
-   public static int go( int number )
-	{
-		int sum = 0;
-		while(number>0){
-			sum++;
-			number = number/10;
-		}
-		return sum;
-	}
-}
+public class Unit8a_DigitCounter {
 
+  public static int go(int number) {
+    int sum = 0;
+    while (number > 0) {
+      sum++;
+      number = number / 10;
+    }
+    return sum;
+  }
+}
 /*
 Lab Goal : This lab will focus on decision making and iteration [ looping ] while reviewing accessing
 numeric digits using mod and divide.

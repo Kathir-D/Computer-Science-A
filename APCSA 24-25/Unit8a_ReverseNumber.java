@@ -2,20 +2,18 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit8a_ReverseNumber
-{
-	public static int getReverse( int number )
-	{
-		int rev=0;
-		while(number > 0){
-			rev = (rev*10) + number%10;
-			number /= 10;
-		}
+public class Unit8a_ReverseNumber {
 
-		return rev;
-	}	
+  public static int getReverse(int number) {
+    int rev = 0;
+    while (number > 0) {
+      rev = (rev * 10) + (number % 10);
+      number /= 10;
+    }
+
+    return rev;
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use a while loop.
 Lab Description : Write a program that will take an integer and reverse it. You must use a while loop

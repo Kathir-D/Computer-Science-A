@@ -2,17 +2,15 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit6a_StringFirstLetterCheck
-{
-	public static boolean checkFirstLetter( String wordOne, String wordTwo )
-	{
-		if (wordOne.substring(0,1).equals(wordTwo.substring(0,1))){
-			return true;
-		}
-		return false;
-	}
-}
+public class Unit6a_StringFirstLetterCheck {
 
+  public static boolean checkFirstLetter(String wordOne, String wordTwo) {
+    if (wordOne.substring(0, 1).equals(wordTwo.substring(0, 1))) {
+      return true;
+    }
+    return false;
+  }
+}
 /*
 Lab Description : Compare two Strings to see if each of the two Strings has the same first letter.
 Sample Data :

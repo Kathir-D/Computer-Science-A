@@ -2,23 +2,21 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit9a_DigitSum
-{
-	public static int go( String  w )
-	{
-        int s = 0;
+public class Unit9a_DigitSum {
 
-		for (int i = 0; i < w.length(); i++) {
-            char c = w.charAt(i);
-            if (Character.isDigit(c)) {
-                s += Character.getNumericValue(c);
-            }
-        }
+  public static int go(String w) {
+    int s = 0;
 
-        return s;
-	}
+    for (int i = 0; i < w.length(); i++) {
+      char c = w.charAt(i);
+      if (Character.isDigit(c)) {
+        s += Character.getNumericValue(c);
+      }
+    }
+
+    return s;
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use for loops to manipulate and traverse strings.
 You will need to know how to use loops and string methods to check each digit.

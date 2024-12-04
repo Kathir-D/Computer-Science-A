@@ -2,22 +2,20 @@
 // www.apluscompsci.com
 //Name -
 
-public class Unit6a_UpperLowerRunner
-{
-	public static void main( String args[] )
-	{
-		Unit6a_UpperLower s = new Unit6a_UpperLower();
-		System.out.println( s.go(  "D0g", true )  );
-		System.out.println( s.go(  "aplus", false )  );
-		System.out.println( s.go(  "catgiraffe", false )  );
-		System.out.println( s.go(  "ApLuS", true )  );
-		System.out.println( s.go(  "ApLuS", false )  );
-		System.out.println( s.go(  "#d0G#", true )  );
-		System.out.println( s.go(  "#d0G#", false )  );
-		System.out.println( s.go(  "aplusdog#13337#", false )  );
-	}
-}
+public class Unit6a_UpperLowerRunner {
 
+  public static void main(String args[]) {
+    Unit6a_UpperLower s = new Unit6a_UpperLower();
+    System.out.println(s.go("D0g", true));
+    System.out.println(s.go("aplus", false));
+    System.out.println(s.go("catgiraffe", false));
+    System.out.println(s.go("ApLuS", true));
+    System.out.println(s.go("ApLuS", false));
+    System.out.println(s.go("#d0G#", true));
+    System.out.println(s.go("#d0G#", false));
+    System.out.println(s.go("aplusdog#13337#", false));
+  }
+}
 /*
 Lab Description : Return the given string all uppercase if the boolean parameter is true. Return the
 string all lowercase if the boolean parameter is false.

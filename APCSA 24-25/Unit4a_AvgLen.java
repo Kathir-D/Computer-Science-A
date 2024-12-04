@@ -2,11 +2,9 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit4a_AvgLen
-{
-   public static double go( String a, String b )
-	{
+public class Unit4a_AvgLen {
 
-		return (((double) (a.length())+(b.length()))/2);
-	}
+  public static double go(String a, String b) {
+    return (((double) (a.length()) + (b.length())) / 2);
+  }
 }

@@ -2,52 +2,49 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit10a_TriangleFive
-{
-	public static String go( int amount, char letter )
-	{
-//		String[] arr = new String[26];
-//		String output="";
-//
-//        for (int i = 0; i < 26; i++) {
-//            arr[i] =  ("A" + i);
-//        }
-//
-//		int start = letter - 'A';
-//
-//		for (int i = 0; i < amount; i++) {
-//			for (int j = 0; j < amount - i; j++) {
-//				for (int k = 0; k < amount - j; k++) {
-//					output += arr[(start + j) % 26];
-//				} if (j < amount - i - 1) {
-//					output += " ";
-//				}
-//			}
-//			output += "\n";
-//		}
-//
-//		return output;
+public class Unit10a_TriangleFive {
 
-		StringBuilder output = new StringBuilder();
+  public static String go(int amount, char letter) {
+    //		String[] arr = new String[26];
+    //		String output="";
+    //
+    //        for (int i = 0; i < 26; i++) {
+    //            arr[i] =  ("A" + i);
+    //        }
+    //
+    //		int start = letter - 'A';
+    //
+    //		for (int i = 0; i < amount; i++) {
+    //			for (int j = 0; j < amount - i; j++) {
+    //				for (int k = 0; k < amount - j; k++) {
+    //					output += arr[(start + j) % 26];
+    //				} if (j < amount - i - 1) {
+    //					output += " ";
+    //				}
+    //			}
+    //			output += "\n";
+    //		}
+    //
+    //		return output;
 
-        int start = letter - 'A';
+    StringBuilder output = new StringBuilder();
 
-        for (int i = 0; i < amount; i++) {
-            for (int j = 0; j < amount - i; j++) {
-                char cur = (char) ('A' + (start + j) % 26);
-                output.append(String.valueOf(cur).repeat(amount - j));
-                if (j < amount - i - 1) {
-                    output.append(" ");
-                }
-            }
-            output.append("\n");
+    int start = letter - 'A';
+
+    for (int i = 0; i < amount; i++) {
+      for (int j = 0; j < amount - i; j++) {
+        char cur = (char) ('A' + ((start + j) % 26));
+        output.append(String.valueOf(cur).repeat(amount - j));
+        if (j < amount - i - 1) {
+          output.append(" ");
         }
+      }
+      output.append("\n");
+    }
 
-        return output.toString();
-
-	}
+    return output.toString();
+  }
 }
-
 /*
 
 Page

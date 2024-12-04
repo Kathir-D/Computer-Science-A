@@ -2,27 +2,25 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit6a_Decoder
-{
-	public String deCode( String s )
-	{
-		String result="";
+public class Unit6a_Decoder {
 
-		if ((int) s.charAt(0) >= 97){
-			return s.toUpperCase();
-		} else if ((int) s.charAt(0) >= 65 && (int) s.charAt(0) <= 90){
-			return s.toLowerCase();
-		} else if ((int) s.charAt(0) >= 48 && (int) s.charAt(0) <= 57){
-			int temp = Integer.parseInt(s);
-			temp += 17;
-			temp += 48;
-			return ""+(char)temp;
-		} else {
-			return "#";
-		}
-	}
+  public String deCode(String s) {
+    String result = "";
+
+    if ((int) s.charAt(0) >= 97) {
+      return s.toUpperCase();
+    } else if ((int) s.charAt(0) >= 65 && (int) s.charAt(0) <= 90) {
+      return s.toLowerCase();
+    } else if ((int) s.charAt(0) >= 48 && (int) s.charAt(0) <= 57) {
+      int temp = Integer.parseInt(s);
+      temp += 17;
+      temp += 48;
+      return "" + (char) temp;
+    } else {
+      return "#";
+    }
+  }
 }
-
 /*
 Lab Description : You are to decode each letter. The following explains how to decode each
 letter. You can easily do all of the conversions using the ASCII values of the letters.

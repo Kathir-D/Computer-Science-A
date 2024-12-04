@@ -2,21 +2,19 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit5a_WordMixer
-{
-	public static String moveEmAround(String a, int x)
-	{
-		if (x > a.length()) {
-			return "no can do";
-    	}
+public class Unit5a_WordMixer {
 
-		String cut = a.substring(0,x);
-		a = a.substring(x,a.length());
-		a = a + cut;
-		return a;
-	}
+  public static String moveEmAround(String a, int x) {
+    if (x > a.length()) {
+      return "no can do";
+    }
+
+    String cut = a.substring(0, x);
+    a = a.substring(x, a.length());
+    a = a + cut;
+    return a;
+  }
 }
-
 /*
 Lab Description : Given a string and an integer value x, return a new string with the first x characters of
 the original string now at the end. Make sure there are enough characters before attempting to move them to

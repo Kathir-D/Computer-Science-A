@@ -2,22 +2,20 @@
 // www.apluscompsci.com
 //Name -
 
-public class Unit6a_GradeRunner
-{
-	public static void main( String args[] )
-	{
-		System.out.println(Unit6a_Grade.getLetterGrade( 99 ) );
-		System.out.println(Unit6a_Grade.getLetterGrade( 78 ) );
-		System.out.println(Unit6a_Grade.getLetterGrade( 92 ) );
-		System.out.println(Unit6a_Grade.getLetterGrade( 31 ) );
-		System.out.println(Unit6a_Grade.getLetterGrade( 82 ) );
-		System.out.println(Unit6a_Grade.getLetterGrade( 77 ) );
-		System.out.println(Unit6a_Grade.getLetterGrade( 73 ) );
-		System.out.println(Unit6a_Grade.getLetterGrade( 55 ) );
-		System.out.println(Unit6a_Grade.getLetterGrade( 65 ) );
-	}
-}
+public class Unit6a_GradeRunner {
 
+  public static void main(String args[]) {
+    System.out.println(Unit6a_Grade.getLetterGrade(99));
+    System.out.println(Unit6a_Grade.getLetterGrade(78));
+    System.out.println(Unit6a_Grade.getLetterGrade(92));
+    System.out.println(Unit6a_Grade.getLetterGrade(31));
+    System.out.println(Unit6a_Grade.getLetterGrade(82));
+    System.out.println(Unit6a_Grade.getLetterGrade(77));
+    System.out.println(Unit6a_Grade.getLetterGrade(73));
+    System.out.println(Unit6a_Grade.getLetterGrade(55));
+    System.out.println(Unit6a_Grade.getLetterGrade(65));
+  }
+}
 /*
 Lab Description : You will write a method that will received a numeric grade. The method will return
 the letter grade that corresponds with each numeric grade. Scanner is not required, but makes the lab much

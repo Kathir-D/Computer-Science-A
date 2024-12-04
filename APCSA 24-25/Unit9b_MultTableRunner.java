@@ -2,27 +2,25 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9b_MultTableRunner
-{
-	public static void main ( String[] args )
-	{
-        Unit9b_MultTable table1 = new Unit9b_MultTable(5, 5);
-		table1.printTable();
+public class Unit9b_MultTableRunner {
 
-		Unit9b_MultTable table2 = new Unit9b_MultTable(3, 7);
-		table2.printTable();
+  public static void main(String[] args) {
+    Unit9b_MultTable table1 = new Unit9b_MultTable(5, 5);
+    table1.printTable();
 
-		Unit9b_MultTable table3 = new Unit9b_MultTable(1, 6);
-		table3.printTable();
+    Unit9b_MultTable table2 = new Unit9b_MultTable(3, 7);
+    table2.printTable();
 
-		Unit9b_MultTable table4 = new Unit9b_MultTable(9, 9);
-		table4.printTable();
+    Unit9b_MultTable table3 = new Unit9b_MultTable(1, 6);
+    table3.printTable();
 
-		Unit9b_MultTable table5 = new Unit9b_MultTable(7, 8);
-		table5.printTable();
-	}
+    Unit9b_MultTable table4 = new Unit9b_MultTable(9, 9);
+    table4.printTable();
+
+    Unit9b_MultTable table5 = new Unit9b_MultTable(7, 8);
+    table5.printTable();
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use for loops.
 Lab Description : Generate the multiplication table for any number up to ten.

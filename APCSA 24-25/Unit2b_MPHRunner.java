@@ -2,31 +2,26 @@
 //www.apluscompsci.com
 //Name -
 
-import java.util.Scanner;
 import static java.lang.System.*;
 
-public class Unit2b_MPHRunner
-{
-	public static void main( String[] args )
-	{
-		Scanner sc = new Scanner( System.in );
-		Unit2b_MilesPerHour obj = new Unit2b_MilesPerHour();
+import java.util.Scanner;
 
+public class Unit2b_MPHRunner {
 
-		out.print("Enter distance :: ");
-		int dist = sc.nextInt();
-		out.print("Enter hrs :: ");
-		int hrs = sc.nextInt();
-		out.print("Enter mins :: ");
-		int mins = sc.nextInt();
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    Unit2b_MilesPerHour obj = new Unit2b_MilesPerHour();
 
+    out.print("Enter distance :: ");
+    int dist = sc.nextInt();
+    out.print("Enter hrs :: ");
+    int hrs = sc.nextInt();
+    out.print("Enter mins :: ");
+    int mins = sc.nextInt();
 
-		out.println(Math.round((int) obj.getMPH(dist,hrs,mins)) + " MPH");
-
-
-	}
+    out.println(Math.round((int) obj.getMPH(dist, hrs, mins)) + " MPH");
+  }
 }
-
 /*
 
 45 0 32 = 84 MPH

@@ -2,29 +2,27 @@
 //www.apluscompsci.com
 //Name -
 
-import java.util.Scanner;
-
 import static java.lang.System.out;
 
-public class Unit10a_BoxRunner
-{
-   public static void main( String args[] )
-   {
-      Scanner keyboard = new Scanner(System.in);
-      String choice = "";
-      do {
-         out.print("Enter the size of the box: ");
-         int size = keyboard.nextInt();
+import java.util.Scanner;
 
-         // static methods can be called using the class name
-         System.out.println(Unit10a_Box.go(size));
+public class Unit10a_BoxRunner {
 
-         System.out.print("Do you want to enter more data? ");
-         choice = keyboard.next();
-      } while (choice.equalsIgnoreCase("Y"));
-   }
+  public static void main(String args[]) {
+    Scanner keyboard = new Scanner(System.in);
+    String choice = "";
+    do {
+      out.print("Enter the size of the box: ");
+      int size = keyboard.nextInt();
+
+      // static methods can be called using the class name
+      System.out.println(Unit10a_Box.go(size));
+
+      System.out.print("Do you want to enter more data? ");
+      choice = keyboard.next();
+    } while (choice.equalsIgnoreCase("Y"));
+  }
 }
-
 /*
 © A+ Computer Science – Nested Loops - www.apluscompsci.com
 Lab Goal : This lab was designed to teach you how to use nested loops. You will also learn how to make

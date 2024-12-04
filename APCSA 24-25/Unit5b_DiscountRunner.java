@@ -2,22 +2,20 @@
 //www.apluscompsci.com
 //Name -
 
-import static java.lang.System.*; 
+import static java.lang.System.*;
+
 import java.util.Scanner;
 
-public class Unit5b_DiscountRunner
-{
-	public static void main( String args[] )
-	{
-		Scanner keyboard = new Scanner(System.in);		
-		out.print("Enter the original bill amount :: ");
-		double amt = keyboard.nextDouble();
-		Unit5b_Discount d = new Unit5b_Discount( amt );
-		out.printf("Bill after discount :: %.2f \n\n" , d.getTheBill());
-	}
+public class Unit5b_DiscountRunner {
+
+  public static void main(String args[]) {
+    Scanner keyboard = new Scanner(System.in);
+    out.print("Enter the original bill amount :: ");
+    double amt = keyboard.nextDouble();
+    Unit5b_Discount d = new Unit5b_Discount(amt);
+    out.printf("Bill after discount :: %.2f \n\n", d.getTheBill());
+  }
 }
-
-
 /*
 Lab Description : Determine the amount of discount a person should receive. If the bill is more than
 2000, then the person should receive a 15% discount. If the bill is 2000 dollars or less, the person does not

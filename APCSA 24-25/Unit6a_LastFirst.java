@@ -2,20 +2,28 @@
 // www.apluscompsci.com
 //Name -
 
-public class Unit6a_LastFirst
-{
-	public static String check( String s)
-	{
-        if (Character.toString(s.charAt(0)).compareTo(Character.toString(s.charAt(s.length() - 1))) > 0) {
-            return "aplus";
-        } else if (Character.toString(s.charAt(0)).compareTo(Character.toString(s.charAt(s.length() - 1))) < 0) {
-            return "compsci";
-        } else {
-            return "apluscompsci";
-        }
-	}
-}
+public class Unit6a_LastFirst {
 
+  public static String check(String s) {
+    if (
+      Character.toString(s.charAt(0)).compareTo(
+        Character.toString(s.charAt(s.length() - 1))
+      ) >
+      0
+    ) {
+      return "aplus";
+    } else if (
+      Character.toString(s.charAt(0)).compareTo(
+        Character.toString(s.charAt(s.length() - 1))
+      ) <
+      0
+    ) {
+      return "compsci";
+    } else {
+      return "apluscompsci";
+    }
+  }
+}
 /*
 Lab Description : If the first letter is bigger than the last, return “aplus”. If the last letter is bigger
 than the first, return “compsci”. If the first and last letters are the same, return “apluscompsci”.

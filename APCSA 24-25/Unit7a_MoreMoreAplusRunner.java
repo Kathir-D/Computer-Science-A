@@ -2,27 +2,25 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit7a_MoreMoreAplusRunner
-{
-	public static void main( String args[] )
-	{
-		Unit7a_MoreMoreAplus s = new Unit7a_MoreMoreAplus();
-		System.out.println(  s.go(  "rundm")  );
-		System.out.println(  s.go(  "thweekendaplus")  );							
-		System.out.println(  s.go(  "aplusxxxaplus")  );
-		System.out.println(  s.go(  "apluaplus")  );
-		System.out.println(  s.go(  "pigs#apluscompsci#food")    );
-		System.out.println(  s.go(  "##catgiraffeapluscompsci")    );
-		System.out.println(  s.go(  "apluscatsanddogsaplus###")    );
-		System.out.println(  s.go(  "##")    );
-		System.out.println(  s.go(  "aplusdog#13337#pigaplusprogram")    );
-		System.out.println(  s.go(  "code#H00P#code1234")    );
-		System.out.println(  s.go(  "##wowgira77##eplus")    );
-		System.out.println(  s.go(  "catsandaplusdogsaplus###")    );
-		System.out.println(  s.go(  "7")    );
-	}
-}
+public class Unit7a_MoreMoreAplusRunner {
 
+  public static void main(String args[]) {
+    Unit7a_MoreMoreAplus s = new Unit7a_MoreMoreAplus();
+    System.out.println(s.go("rundm"));
+    System.out.println(s.go("thweekendaplus"));
+    System.out.println(s.go("aplusxxxaplus"));
+    System.out.println(s.go("apluaplus"));
+    System.out.println(s.go("pigs#apluscompsci#food"));
+    System.out.println(s.go("##catgiraffeapluscompsci"));
+    System.out.println(s.go("apluscatsanddogsaplus###"));
+    System.out.println(s.go("##"));
+    System.out.println(s.go("aplusdog#13337#pigaplusprogram"));
+    System.out.println(s.go("code#H00P#code1234"));
+    System.out.println(s.go("##wowgira77##eplus"));
+    System.out.println(s.go("catsandaplusdogsaplus###"));
+    System.out.println(s.go("7"));
+  }
+}
 /*
 Lab Goal : This lab will focus on strings, decision making [ if, if else, and if else if statements ], and logical
 operators.
@@ -60,5 +58,3 @@ sci
 plus
 a
  */
-
-

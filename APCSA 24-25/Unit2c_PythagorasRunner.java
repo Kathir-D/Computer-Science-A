@@ -4,23 +4,21 @@
 
 import java.util.Scanner;
 
-public class Unit2c_PythagorasRunner
-{
-	public static void main( String[] args )
-	{
-		//add a Scanner for keyboard input
-		Scanner keyboard = new Scanner( System.in );
-		Unit2c_Pythagoras obj = new Unit2c_Pythagoras();
+public class Unit2c_PythagorasRunner {
 
-		System.out.print( "Enter side1 :: " );
-		int side1 = keyboard.nextInt();
-		System.out.print( "Enter side2 :: " );
-		int side2 = keyboard.nextInt();
-		
-		System.out.println("Side C == "+ obj.getSide(side1,side2)+"\n\n" );
-	}
+  public static void main(String[] args) {
+    //add a Scanner for keyboard input
+    Scanner keyboard = new Scanner(System.in);
+    Unit2c_Pythagoras obj = new Unit2c_Pythagoras();
+
+    System.out.print("Enter side1 :: ");
+    int side1 = keyboard.nextInt();
+    System.out.print("Enter side2 :: ");
+    int side2 = keyboard.nextInt();
+
+    System.out.println("Side C == " + obj.getSide(side1, side2) + "\n\n");
+  }
 }
-
 /*
 
 Sample Data :

@@ -2,20 +2,46 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_CoolNumbersRunner
-{
-	public static void main( String[] args )
-	{
-        System.out.println(Unit9a_CoolNumbers.countCoolNumbers(250) + " cool numbers between 6 - " + 250);
-        System.out.println(Unit9a_CoolNumbers.countCoolNumbers(1250) + " cool numbers between 6 - " + 1250);
-        System.out.println(Unit9a_CoolNumbers.countCoolNumbers(2250) + " cool numbers between 6 - " + 2250);
-        System.out.println(Unit9a_CoolNumbers.countCoolNumbers(5500) + " cool numbers between 6 - " + 5500);
-        System.out.println(Unit9a_CoolNumbers.countCoolNumbers(9500) + " cool numbers between 6 - " + 9500);
-        System.out.println(Unit9a_CoolNumbers.countCoolNumbers(23500) + " cool numbers between 6 - " + 23500);
-        System.out.println(Unit9a_CoolNumbers.countCoolNumbers(32500) + " cool numbers between 6 - " + 32500);
-	}
-}
+public class Unit9a_CoolNumbersRunner {
 
+  public static void main(String[] args) {
+    System.out.println(
+      Unit9a_CoolNumbers.countCoolNumbers(250) +
+      " cool numbers between 6 - " +
+      250
+    );
+    System.out.println(
+      Unit9a_CoolNumbers.countCoolNumbers(1250) +
+      " cool numbers between 6 - " +
+      1250
+    );
+    System.out.println(
+      Unit9a_CoolNumbers.countCoolNumbers(2250) +
+      " cool numbers between 6 - " +
+      2250
+    );
+    System.out.println(
+      Unit9a_CoolNumbers.countCoolNumbers(5500) +
+      " cool numbers between 6 - " +
+      5500
+    );
+    System.out.println(
+      Unit9a_CoolNumbers.countCoolNumbers(9500) +
+      " cool numbers between 6 - " +
+      9500
+    );
+    System.out.println(
+      Unit9a_CoolNumbers.countCoolNumbers(23500) +
+      " cool numbers between 6 - " +
+      23500
+    );
+    System.out.println(
+      Unit9a_CoolNumbers.countCoolNumbers(32500) +
+      " cool numbers between 6 - " +
+      32500
+    );
+  }
+}
 /*
 Lab Goal : This lab will focus on loops, decision making, and methods.
 Lab Description : Complete methods isCoolNum( n ) && countCoolNumbers( n ).

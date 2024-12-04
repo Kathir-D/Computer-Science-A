@@ -2,21 +2,19 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_TriangleOne
-{
-	public static void print( String word )
-	{
-		String x = word;
-		for (int i = 1; i < word.length(); i++){
-			if (word.length() > 0) {
-				System.out.println(x);
-			}
-			x = word.substring(0,word.length()-i);
-		}
-		System.out.println(word.substring(0,1));
-	}
-}
+public class Unit9a_TriangleOne {
 
+  public static void print(String word) {
+    String x = word;
+    for (int i = 1; i < word.length(); i++) {
+      if (word.length() > 0) {
+        System.out.println(x);
+      }
+      x = word.substring(0, word.length() - i);
+    }
+    System.out.println(word.substring(0, 1));
+  }
+}
 /*
 © A+ Computer Science – for loops - www.apluscompsci.com
 Lab Goal : This lab was designed to teach you how to use for loops and how to make pretty shapes.

@@ -2,23 +2,20 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit8a_CountOdds
-{
-	public static int go( int number )
-	{
-		int sum = 0;
-			while (number > 0) {
-				if ((number % 10) % 2 == 1) {
-					sum++;
-				}
-				number /= 10;
-            }
+public class Unit8a_CountOdds {
 
-		return sum;
+  public static int go(int number) {
+    int sum = 0;
+    while (number > 0) {
+      if ((number % 10) % 2 == 1) {
+        sum++;
+      }
+      number /= 10;
+    }
 
-	}
+    return sum;
+  }
 }
-
 /*
 Lab Goal : This lab will focus on decision making and iteration [ looping ] while reviewing accessing
 numeric digits using mod and divide.

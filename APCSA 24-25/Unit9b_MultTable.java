@@ -1,30 +1,25 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
-//Name - 
+//Name -
 
-public class Unit9b_MultTable
-{
-	private int number;
-	private int stop;
+public class Unit9b_MultTable {
 
-	public Unit9b_MultTable(int n, int s)
-	{
-		number = n;
-		stop = s;
-	}
+  private int number;
+  private int stop;
 
-	public void printTable( )
-	{
-		System.out.println("multiplication table for "  + number);
-		for (int i = 1; i < stop + 1; i++){
-			System.out.println(i + " " + i*number);
-		}
-		System.out.println();
+  public Unit9b_MultTable(int n, int s) {
+    number = n;
+    stop = s;
+  }
 
-
-	}
+  public void printTable() {
+    System.out.println("multiplication table for " + number);
+    for (int i = 1; i < stop + 1; i++) {
+      System.out.println(i + " " + i * number);
+    }
+    System.out.println();
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use for loops.
 Lab Description : Generate the multiplication table for any number up to ten.

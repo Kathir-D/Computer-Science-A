@@ -6,37 +6,34 @@
 //write all code for your CookieJar class here
 //test your CookieJar class with the CookieJarRunner
 
-class Unit11a_CookieJar{
-    private int capacity;
-    private int currentAmount;
+class Unit11a_CookieJar {
 
-    public Unit11a_CookieJar(int a){
-        capacity = a;
+  private int capacity;
+  private int currentAmount;
+
+  public Unit11a_CookieJar(int a) {
+    capacity = a;
+  }
+
+  public boolean isFull() {
+    return currentAmount >= capacity;
+  }
+
+  public int addStuff(int amount) {
+    if (currentAmount + amount <= capacity) {
+      currentAmount += amount;
+      return -capacity + currentAmount;
+    } else {
+      int overflow = (currentAmount + amount) - capacity;
+      currentAmount = capacity;
+      return overflow;
     }
+  }
 
-    public boolean isFull() {
-        return currentAmount >= capacity;
-    }
-
-    public int addStuff(int amount) {
-        if (currentAmount + amount <= capacity) {
-            currentAmount += amount;
-            return -capacity+currentAmount;
-        } else {
-            int overflow = (currentAmount + amount) - capacity;
-            currentAmount = capacity;
-            return overflow;
-        }
-    }
-
-
-    public int spaceLeft(){
-        return capacity-currentAmount;
-    }
+  public int spaceLeft() {
+    return capacity - currentAmount;
+  }
 }
-
-
-
 /*
 
 © A+ Computer Science – Classes - www.apluscompsci.com

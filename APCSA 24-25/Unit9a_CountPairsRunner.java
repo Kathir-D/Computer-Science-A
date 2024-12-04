@@ -2,23 +2,22 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_CountPairsRunner
-{
-	public static void main(String[] args) {
-        System.out.println(Unit9a_CountPairs.pairCounter("ddogccatppig")); // 3
-        System.out.println(Unit9a_CountPairs.pairCounter("dogcatpig")); // 0
-        System.out.println(Unit9a_CountPairs.pairCounter("xxyyzz")); // 3
-        System.out.println(Unit9a_CountPairs.pairCounter("a")); // 0
-        System.out.println(Unit9a_CountPairs.pairCounter("abc")); // 0
-        System.out.println(Unit9a_CountPairs.pairCounter("aabb")); // 2
-        System.out.println(Unit9a_CountPairs.pairCounter("dogcatpigaabbcc")); // 3
-        System.out.println(Unit9a_CountPairs.pairCounter("aabbccdogcatpig")); // 3
-        System.out.println(Unit9a_CountPairs.pairCounter("dogabbcccatpig")); // 3
-        System.out.println(Unit9a_CountPairs.pairCounter("aaaa")); // 3
-        System.out.println(Unit9a_CountPairs.pairCounter("AAAAAAAAA")); // 8
-    }
-}
+public class Unit9a_CountPairsRunner {
 
+  public static void main(String[] args) {
+    System.out.println(Unit9a_CountPairs.pairCounter("ddogccatppig")); // 3
+    System.out.println(Unit9a_CountPairs.pairCounter("dogcatpig")); // 0
+    System.out.println(Unit9a_CountPairs.pairCounter("xxyyzz")); // 3
+    System.out.println(Unit9a_CountPairs.pairCounter("a")); // 0
+    System.out.println(Unit9a_CountPairs.pairCounter("abc")); // 0
+    System.out.println(Unit9a_CountPairs.pairCounter("aabb")); // 2
+    System.out.println(Unit9a_CountPairs.pairCounter("dogcatpigaabbcc")); // 3
+    System.out.println(Unit9a_CountPairs.pairCounter("aabbccdogcatpig")); // 3
+    System.out.println(Unit9a_CountPairs.pairCounter("dogabbcccatpig")); // 3
+    System.out.println(Unit9a_CountPairs.pairCounter("aaaa")); // 3
+    System.out.println(Unit9a_CountPairs.pairCounter("AAAAAAAAA")); // 8
+  }
+}
 /*
 Lab Goal : This lab will focus on loops, variables, if statements, and strings.
 Lab Description : Write a program that will go through a string and count up the number of letter pairs

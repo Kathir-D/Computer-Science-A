@@ -2,21 +2,16 @@
 //www.apluscompsci.com
 //Name -
 
+public class Unit5a_Social {
 
-public class Unit5a_Social
-{
-   public static String go( String a )
-	{
-        if (a.substring(3, 4).equals("-") && a.substring(6, 7).equals("-")) {
-			return "good";
-		}
+  public static String go(String a) {
+    if (a.substring(3, 4).equals("-") && a.substring(6, 7).equals("-")) {
+      return "good";
+    }
 
-        return "bad";
-	}
+    return "bad";
+  }
 }
-
-
-
 /*
 
 Lab Description : Given a string, check to see if the string is a valid social security number. For this

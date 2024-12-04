@@ -2,23 +2,19 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_CountPairs
-{
-	public static int pairCounter( String str )
-	{ 
-		int count = 0;
+public class Unit9a_CountPairs {
 
-        for (int i = 0; i < str.length() - 1; i++)
-        {
-            if (str.charAt(i) == str.charAt(i + 1))
-            {
-                count++;
-            }
-        }
-        return count;
-	}
+  public static int pairCounter(String str) {
+    int count = 0;
+
+    for (int i = 0; i < str.length() - 1; i++) {
+      if (str.charAt(i) == str.charAt(i + 1)) {
+        count++;
+      }
+    }
+    return count;
+  }
 }
-
 /*
 Lab Goal : This lab will focus on loops, variables, if statements, and strings.
 Lab Description : Write a program that will go through a string and count up the number of letter pairs

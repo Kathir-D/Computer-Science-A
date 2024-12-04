@@ -2,24 +2,20 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit6a_DecoderRunner
-{
-	public static void main( String args[] )
-	{
-		Unit6a_Decoder s = new Unit6a_Decoder();
-		System.out.println( s.deCode("a"));
-		System.out.println( s.deCode("A"));
-		System.out.println( s.deCode("b"));
-		System.out.println( s.deCode("0"));
-		System.out.println( s.deCode("T"));
-		System.out.println( s.deCode("*"));
-		System.out.println( s.deCode("H"));
-		System.out.println( s.deCode("T"));
+public class Unit6a_DecoderRunner {
 
-
-	}
+  public static void main(String args[]) {
+    Unit6a_Decoder s = new Unit6a_Decoder();
+    System.out.println(s.deCode("a"));
+    System.out.println(s.deCode("A"));
+    System.out.println(s.deCode("b"));
+    System.out.println(s.deCode("0"));
+    System.out.println(s.deCode("T"));
+    System.out.println(s.deCode("*"));
+    System.out.println(s.deCode("H"));
+    System.out.println(s.deCode("T"));
+  }
 }
-
 /*
 Lab Description : You are to decode each letter. The following explains how to decode each
 letter. You can easily do all of the conversions using the ASCII values of the letters.

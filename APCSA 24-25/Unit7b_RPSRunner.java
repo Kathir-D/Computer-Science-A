@@ -2,29 +2,31 @@
 // www.apluscompsci.com
 //Name -
 
-import java.util.*;
 import static java.lang.System.*;
 
+import java.util.*;
+
 public class Unit7b_RPSRunner {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        String player = "";
-        String playAgain = "y";
 
-        while (playAgain.equals("y")) {
-            out.print("Rock-Paper-Scissors - pick your weapon[R,P,S]:: ");
-            player = sc.next().toUpperCase();
+  public static void main(String args[]) {
+    Scanner sc = new Scanner(System.in);
+    String player = "";
+    String playAgain = "y";
 
-            Unit7b_RockPaperScissors game = new Unit7b_RockPaperScissors(player);
-            game.setCompChoice();
+    while (playAgain.equals("y")) {
+      out.print("Rock-Paper-Scissors - pick your weapon[R,P,S]:: ");
+      player = sc.next().toUpperCase();
 
-            out.println(game);
-            out.println(game.determineWinner());
+      Unit7b_RockPaperScissors game = new Unit7b_RockPaperScissors(player);
+      game.setCompChoice();
 
-            out.print("Do you want to play again? [y/n]:: ");
-            playAgain = sc.next().toLowerCase();
-        }
+      out.println(game);
+      out.println(game.determineWinner());
+
+      out.print("Do you want to play again? [y/n]:: ");
+      playAgain = sc.next().toLowerCase();
     }
+  }
 }
 /*
 Lab Goal : The lab was designed to teach you how to use &&, ||, and !.

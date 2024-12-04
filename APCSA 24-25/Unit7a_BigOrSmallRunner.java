@@ -2,22 +2,20 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit7a_BigOrSmallRunner
-{
-	public static void main( String args[] )
-	{
-		System.out.println( Unit7a_BigOrSmall.check( 10, 20) );
-		System.out.println( Unit7a_BigOrSmall.check( 20, 10) );
-		System.out.println( Unit7a_BigOrSmall.check( 20, 20) );
-		System.out.println( Unit7a_BigOrSmall.check( 10, 10) );
-		System.out.println( Unit7a_BigOrSmall.check( 0, 1) );
-		System.out.println( Unit7a_BigOrSmall.check( 1, 0 ) );
-		System.out.println( Unit7a_BigOrSmall.check( 3, 5) );
-		System.out.println( Unit7a_BigOrSmall.check( 5, 3 ) );
-		System.out.println( Unit7a_BigOrSmall.check( 5342, 323 ) );
-	}
-}
+public class Unit7a_BigOrSmallRunner {
 
+  public static void main(String args[]) {
+    System.out.println(Unit7a_BigOrSmall.check(10, 20));
+    System.out.println(Unit7a_BigOrSmall.check(20, 10));
+    System.out.println(Unit7a_BigOrSmall.check(20, 20));
+    System.out.println(Unit7a_BigOrSmall.check(10, 10));
+    System.out.println(Unit7a_BigOrSmall.check(0, 1));
+    System.out.println(Unit7a_BigOrSmall.check(1, 0));
+    System.out.println(Unit7a_BigOrSmall.check(3, 5));
+    System.out.println(Unit7a_BigOrSmall.check(5, 3));
+    System.out.println(Unit7a_BigOrSmall.check(5342, 323));
+  }
+}
 /*
 Lab Goal : This lab will focus on decision making and if statements.
 Lab Description : Write a method / function to evaluate 2 integer parameters.

@@ -2,23 +2,21 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_MultTens
-{
-	public static String go(  int x )
-	{
-		String y = "";
-		if (x <= 0){
-			return "aplus";
-		} else {
-			for (int i = 1; i <= x; i++) {
-				y += "" + (i * 10);
-			}
-		}
+public class Unit9a_MultTens {
 
-		return y;
-	}
+  public static String go(int x) {
+    String y = "";
+    if (x <= 0) {
+      return "aplus";
+    } else {
+      for (int i = 1; i <= x; i++) {
+        y += "" + (i * 10);
+      }
+    }
+
+    return y;
+  }
 }
-
 /*
 Lab Goal : This lab will focus on variables, ifs, and loops.
 Lab Description : Write a method that will return multiples of ten based on the parameter passed in. If

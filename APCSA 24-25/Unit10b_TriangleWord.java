@@ -3,32 +3,32 @@
 //Name -
 
 public class Unit10b_TriangleWord {
-	private String word;
 
-	public Unit10b_TriangleWord(String w) {
-		word = w;
-	}
+  private String word;
 
-	public String toString() {
+  public Unit10b_TriangleWord(String w) {
+    word = w;
+  }
 
-		StringBuilder output = new StringBuilder();
-		for (int i = 0; i < word.length(); i++) {
-			for (int j = 0; j < word.length() - i - 1; j++) {
-				output.append(" ");
-			}
-			for (int j = 0; j <= i; j++) {
-				output.append(word.charAt(j));
-				if (j < i) {
-					output.append(" ");
-				}
-			}
-			for (int j = i - 1; j >= 0; j--) {
-				output.append(word.charAt(j));
-			}
-			output.append("\n");
-		}
-		return output.toString();
-	}
+  public String toString() {
+    StringBuilder output = new StringBuilder();
+    for (int i = 0; i < word.length(); i++) {
+      for (int j = 0; j < word.length() - i - 1; j++) {
+        output.append(" ");
+      }
+      for (int j = 0; j <= i; j++) {
+        output.append(word.charAt(j));
+        if (j < i) {
+          output.append(" ");
+        }
+      }
+      for (int j = i - 1; j >= 0; j--) {
+        output.append(word.charAt(j));
+      }
+      output.append("\n");
+    }
+    return output.toString();
+  }
 }
 /*
 

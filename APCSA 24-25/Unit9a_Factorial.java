@@ -2,20 +2,18 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_Factorial
-{
-	public static long getFactorial( int num )
-	{
-		long factorial=1;
+public class Unit9a_Factorial {
 
-		for (int i = 0; i< num; i++){
-			factorial *= num-i;
-		}
+  public static long getFactorial(int num) {
+    long factorial = 1;
 
-		return factorial;
-	}
+    for (int i = 0; i < num; i++) {
+      factorial *= num - i;
+    }
+
+    return factorial;
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use for loops and what factorial is.
 Lab Description : Generate the factorial for any given number.

@@ -2,21 +2,17 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit8a_LetterRemoverRunner
-{
-	public static void main( String args[] )
-	{
-		Unit8a_LetterRemover s = new Unit8a_LetterRemover();
+public class Unit8a_LetterRemoverRunner {
 
-		System.out.println(s.removeLetters("ssssssssxssssesssssesss", 's'));
-		System.out.println(s.removeLetters("qwertyqwertyqwerty", 'a'));
-		System.out.println(s.removeLetters("abababababa", 'b'));
-		System.out.println(s.removeLetters("abaababababa", 'x'));
+  public static void main(String args[]) {
+    Unit8a_LetterRemover s = new Unit8a_LetterRemover();
 
-	}
+    System.out.println(s.removeLetters("ssssssssxssssesssssesss", 's'));
+    System.out.println(s.removeLetters("qwertyqwertyqwerty", 'a'));
+    System.out.println(s.removeLetters("abababababa", 'b'));
+    System.out.println(s.removeLetters("abaababababa", 'x'));
+  }
 }
-
-
 /*
 Lab Goal : This lab was designed to teach you how to use a while loop.
 Lab Description : Remove all instances of the specified removal letter from the original sentence.

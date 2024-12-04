@@ -5,40 +5,71 @@
 import java.awt.*;
 
 public class Unit11b_Shape {
-    private int xPos;
-    private int yPos;
-    private int width;
-    private int height;
-    private Color color;
 
-    public Unit11b_Shape(int x, int y, int wid, int ht, Color col) {
-        xPos = x;
-        yPos = y;
-        width = wid;
-        height = ht;
-        color = col;
-    }
+  private int xPos;
+  private int yPos;
+  private int width;
+  private int height;
+  private Color color;
 
-    public void draw(Graphics window) {
-        window.setColor(color);
-        window.fillRect(xPos, yPos, width, height);
-        window.setColor(Color.WHITE);
-        window.fillRect((int) (xPos + width * 0.1), (int) (yPos + height * 0.1), (int) (width * 0.8), (int) (height * 0.8));
-        window.setColor(Color.GREEN);
-        window.fillOval((int) (xPos + width * 0.1), (int) (yPos + height * 0.1), (int) (width * 0.8), (int) (height * 0.8));
-        window.setColor(Color.RED);
-        window.drawLine((int) (xPos - width * 0.1), (int) (yPos - height * 0.1), xPos, yPos);
-        window.drawLine((xPos + width), yPos, (int) (xPos + width * 1.1), (int) (yPos - height * 0.1));
-        window.setColor(Color.ORANGE);
-        window.fillRect((int) (xPos + width * 0.2), (int) (yPos + height * 1.0), (int) (width * 0.1), (int) (height * 0.4));
-        window.fillRect((int) (xPos + width * 0.7), (int) (yPos + height * 1.0), (int) (width * 0.1), (int) (height * 0.4));
-    }
+  public Unit11b_Shape(int x, int y, int wid, int ht, Color col) {
+    xPos = x;
+    yPos = y;
+    width = wid;
+    height = ht;
+    color = col;
+  }
 
-    public String toString() {
-        return xPos + " " + yPos + " " + width + " " + height + " " + color;
-    }
+  public void draw(Graphics window) {
+    window.setColor(color);
+    window.fillRect(xPos, yPos, width, height);
+    window.setColor(Color.WHITE);
+    window.fillRect(
+      (int) (xPos + width * 0.1),
+      (int) (yPos + height * 0.1),
+      (int) (width * 0.8),
+      (int) (height * 0.8)
+    );
+    window.setColor(Color.GREEN);
+    window.fillOval(
+      (int) (xPos + width * 0.1),
+      (int) (yPos + height * 0.1),
+      (int) (width * 0.8),
+      (int) (height * 0.8)
+    );
+    window.setColor(Color.RED);
+    window.drawLine(
+      (int) (xPos - width * 0.1),
+      (int) (yPos - height * 0.1),
+      xPos,
+      yPos
+    );
+    window.drawLine(
+      (xPos + width),
+      yPos,
+      (int) (xPos + width * 1.1),
+      (int) (yPos - height * 0.1)
+    );
+    window.setColor(Color.ORANGE);
+    window.fillRect(
+      (int) (xPos + width * 0.2),
+      (int) (yPos + height * 1.0),
+      (int) (width * 0.1),
+      (int) (height * 0.4)
+    );
+    window.fillRect(
+      (int) (xPos + width * 0.7),
+      (int) (yPos + height * 1.0),
+      (int) (width * 0.1),
+      (int) (height * 0.4)
+    );
+  }
+
+  public String toString() {
+    return xPos + " " + yPos + " " + width + " " + height + " " + color;
+  }
 }
-        /*
+/*
         window.setColor(color);
         window.fillRect(xPos,yPos,width,height);
         window.setColor(Color.WHITE);

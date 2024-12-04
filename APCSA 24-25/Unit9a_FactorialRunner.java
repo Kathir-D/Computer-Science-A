@@ -2,19 +2,20 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_FactorialRunner
-{
-	public static void main ( String[] args ) {
-		System.out.println("factorial of 5 is " + Unit9a_Factorial.getFactorial(5));
-		System.out.println("factorial of 4 is " + Unit9a_Factorial.getFactorial(4));
-		System.out.println("factorial of 8 is " + Unit9a_Factorial.getFactorial(8));
-		System.out.println("factorial of 15 is " + Unit9a_Factorial.getFactorial(15));
-		System.out.println("factorial of 6 is " + Unit9a_Factorial.getFactorial(6));
-		System.out.println("factorial of 9 is " + Unit9a_Factorial.getFactorial(9));
-		System.out.println("factorial of 3 is " + Unit9a_Factorial.getFactorial(3));
-	}
-}
+public class Unit9a_FactorialRunner {
 
+  public static void main(String[] args) {
+    System.out.println("factorial of 5 is " + Unit9a_Factorial.getFactorial(5));
+    System.out.println("factorial of 4 is " + Unit9a_Factorial.getFactorial(4));
+    System.out.println("factorial of 8 is " + Unit9a_Factorial.getFactorial(8));
+    System.out.println(
+      "factorial of 15 is " + Unit9a_Factorial.getFactorial(15)
+    );
+    System.out.println("factorial of 6 is " + Unit9a_Factorial.getFactorial(6));
+    System.out.println("factorial of 9 is " + Unit9a_Factorial.getFactorial(9));
+    System.out.println("factorial of 3 is " + Unit9a_Factorial.getFactorial(3));
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you how to use for loops and what factorial is.
 Lab Description : Generate the factorial for any given number.

@@ -1,33 +1,26 @@
 //(c) A+ Computer Science
 // www.apluscompsci.com
 
-public class Unit7b_AngryBear 
-{
-    private int days;
-    private int teeth;
-    
-    public Unit7b_AngryBear(int one, int two )
-    {
-    	days = one;
-        teeth = two;
-    }
-    
-    public boolean isAngry()
-    {
-        if (days > 3 && teeth < 10){
-            return true;
-        }
-        else if (teeth == 0){
-            return true;
-        }
-        else if (days > 5){
-            return true;
-        }
-        else return false;
+public class Unit7b_AngryBear {
 
-    }
+  private int days;
+  private int teeth;
+
+  public Unit7b_AngryBear(int one, int two) {
+    days = one;
+    teeth = two;
+  }
+
+  public boolean isAngry() {
+    if (days > 3 && teeth < 10) {
+      return true;
+    } else if (teeth == 0) {
+      return true;
+    } else if (days > 5) {
+      return true;
+    } else return false;
+  }
 }
-
 /*
 Lab Goal : This lab was designed to teach you more about decision making and classes.
 Lab Description :

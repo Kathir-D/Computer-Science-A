@@ -2,26 +2,24 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit10a_TriangleThree
-{
-	public static String go( int size, String let )
-	{
-		String output="";
+public class Unit10a_TriangleThree {
 
-		for (int i = 0; i < size; i++){
-			for (int j = 0; j < size - i - 1; j++){
-				output += " ";
-			}
-			for (int k = 0; k < i + 1; k++){
-				output += let;
-			}
-			output += "\n";
-		}
+  public static String go(int size, String let) {
+    String output = "";
 
-		return output+"\n";
-	}
+    for (int i = 0; i < size; i++) {
+      for (int j = 0; j < size - i - 1; j++) {
+        output += " ";
+      }
+      for (int k = 0; k < i + 1; k++) {
+        output += let;
+      }
+      output += "\n";
+    }
+
+    return output + "\n";
+  }
 }
-
 /*
 © A+ Computer Science – Nested Loops - www.apluscompsci.com
 Lab Goal : This lab was designed to teach you how to use nested loops. You will also learn how to make

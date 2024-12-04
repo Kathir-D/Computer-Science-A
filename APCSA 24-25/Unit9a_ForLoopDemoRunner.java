@@ -2,18 +2,16 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_ForLoopDemoRunner
-{
-	public static void main ( String[] args )
-	{
-		Unit9a_ForLoopDemo.runForLoop(2,90,5);
-  		Unit9a_ForLoopDemo.runForLoop(3, 76, 4);
-  		Unit9a_ForLoopDemo.runForLoop(-10, 8, 2);
-  		Unit9a_ForLoopDemo.runForLoop(5, 30, 2);
-  		Unit9a_ForLoopDemo.runForLoop(100, 150, 5);
-	}
-}
+public class Unit9a_ForLoopDemoRunner {
 
+  public static void main(String[] args) {
+    Unit9a_ForLoopDemo.runForLoop(2, 90, 5);
+    Unit9a_ForLoopDemo.runForLoop(3, 76, 4);
+    Unit9a_ForLoopDemo.runForLoop(-10, 8, 2);
+    Unit9a_ForLoopDemo.runForLoop(5, 30, 2);
+    Unit9a_ForLoopDemo.runForLoop(100, 150, 5);
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you how to use a for loop.
 Lab Description : Demonstrate the workings of a for loop.

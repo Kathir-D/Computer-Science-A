@@ -1,27 +1,25 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
-public class Unit11a_DogRunner
-{
-	public static void main( String[] args )
-	{
-		Unit11a_Dog d = new Unit11a_Dog( "rover" );
-		System.out.println( d.getPeopleAge( 7 ) );
-		d.increaseAgeByOne();
-		d.increaseAgeByOne();
-		System.out.println( d.getPeopleAge( 11 ) );
-		System.out.println( d.getName() );
-		d.increaseAgeByOne();
-		d.increaseAgeByOne();
-		d.increaseAgeByOne();
-		d.increaseAgeByOne();
-		System.out.println( d.getPeopleAge( 8 ) );
-		Unit11a_Dog g = new Unit11a_Dog( "bob", 3 );
-		System.out.println( g.getName() );
-		System.out.println( g.getPeopleAge( 5 ) );
-	}
-}
+public class Unit11a_DogRunner {
 
+  public static void main(String[] args) {
+    Unit11a_Dog d = new Unit11a_Dog("rover");
+    System.out.println(d.getPeopleAge(7));
+    d.increaseAgeByOne();
+    d.increaseAgeByOne();
+    System.out.println(d.getPeopleAge(11));
+    System.out.println(d.getName());
+    d.increaseAgeByOne();
+    d.increaseAgeByOne();
+    d.increaseAgeByOne();
+    d.increaseAgeByOne();
+    System.out.println(d.getPeopleAge(8));
+    Unit11a_Dog g = new Unit11a_Dog("bob", 3);
+    System.out.println(g.getName());
+    System.out.println(g.getPeopleAge(5));
+  }
+}
 /*
 
 Computer Science – Class Basics - © A+ Computer Science

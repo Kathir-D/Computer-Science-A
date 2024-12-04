@@ -4,28 +4,25 @@
 
 import java.util.Scanner;
 
-public class Unit10a_TriangleFiveRunner
-{
-   public static void main(String args[])
-   {
-       Scanner keyboard = new Scanner(System.in);
-        String choice = "";
-        do {
-            System.out.print("Enter the letter: ");
-            char letter = keyboard.next().charAt(0);
-            System.out.print("Enter the amount: ");
-            int amount = keyboard.nextInt();
+public class Unit10a_TriangleFiveRunner {
 
-            // static methods can be called using the class name
-            System.out.println(Unit10a_TriangleFive.go(amount, letter));
+  public static void main(String args[]) {
+    Scanner keyboard = new Scanner(System.in);
+    String choice = "";
+    do {
+      System.out.print("Enter the letter: ");
+      char letter = keyboard.next().charAt(0);
+      System.out.print("Enter the amount: ");
+      int amount = keyboard.nextInt();
 
-            System.out.print("Do you want to enter more data? ");
-            choice = keyboard.next();
-        } while (choice.equalsIgnoreCase("Y"));
+      // static methods can be called using the class name
+      System.out.println(Unit10a_TriangleFive.go(amount, letter));
 
-	}
+      System.out.print("Do you want to enter more data? ");
+      choice = keyboard.next();
+    } while (choice.equalsIgnoreCase("Y"));
+  }
 }
-
 /*
 
 Page

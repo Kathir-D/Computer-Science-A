@@ -2,29 +2,27 @@
 //www.apluscompsci.com
 //Name -
 
-import java.util.Scanner;
 import static java.lang.System.*;
 
-public class Unit2c_QuadraticRunner
-{
-	public static void main( String[] args )
-	{
-		Scanner sc = new Scanner( System.in );
-		Unit2c_Quadratic obj = new Unit2c_Quadratic();
+import java.util.Scanner;
 
-		System.out.print( "Enter a :: " );
-		int a = sc.nextInt();
-		System.out.print( "Enter b :: " );
-		int b = sc.nextInt();
-		System.out.print( "Enter c :: " );
-		int c = sc.nextInt();
+public class Unit2c_QuadraticRunner {
 
-		out.println("rootone :: " + String.format("%.2f",obj.getRootOne(a,b,c)));
-		out.println("rootone :: " + String.format("%.2f",obj.getRootTwo(a,b,c)));
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    Unit2c_Quadratic obj = new Unit2c_Quadratic();
 
-	}
+    System.out.print("Enter a :: ");
+    int a = sc.nextInt();
+    System.out.print("Enter b :: ");
+    int b = sc.nextInt();
+    System.out.print("Enter c :: ");
+    int c = sc.nextInt();
+
+    out.println("rootone :: " + String.format("%.2f", obj.getRootOne(a, b, c)));
+    out.println("rootone :: " + String.format("%.2f", obj.getRootTwo(a, b, c)));
+  }
 }
-
 /*
 
 Sample Data :

@@ -2,22 +2,28 @@
 //www.apluscompsci.com
 //Name
 
-public class Unit9a_VowelCounterRunner
-{
-	public static void main ( String[] args )
-	{
-        System.out.println(Unit9a_VowelCounter.getNumberString("abcdef"));
-        System.out.println(Unit9a_VowelCounter.getNumberString("hhhhhhh"));
-        System.out.println(Unit9a_VowelCounter.getNumberString("aaaaaaa"));
-        System.out.println(Unit9a_VowelCounter.getNumberString("catpigdatrathogbogfrogmoosegeese"));
-        System.out.println(Unit9a_VowelCounter.getNumberString("hhhhhhh1234356HHHHDH"));
-        System.out.println(Unit9a_VowelCounter.getNumberString("AEIOUaeiou87878alkjdaslwlejrlajflawjkflwj"));
-        System.out.println(Unit9a_VowelCounter.getNumberString(""));
-        System.out.println(Unit9a_VowelCounter.getNumberString("x"));
-        System.out.println(Unit9a_VowelCounter.getNumberString("e"));
-	}
-}
+public class Unit9a_VowelCounterRunner {
 
+  public static void main(String[] args) {
+    System.out.println(Unit9a_VowelCounter.getNumberString("abcdef"));
+    System.out.println(Unit9a_VowelCounter.getNumberString("hhhhhhh"));
+    System.out.println(Unit9a_VowelCounter.getNumberString("aaaaaaa"));
+    System.out.println(
+      Unit9a_VowelCounter.getNumberString("catpigdatrathogbogfrogmoosegeese")
+    );
+    System.out.println(
+      Unit9a_VowelCounter.getNumberString("hhhhhhh1234356HHHHDH")
+    );
+    System.out.println(
+      Unit9a_VowelCounter.getNumberString(
+        "AEIOUaeiou87878alkjdaslwlejrlajflawjkflwj"
+      )
+    );
+    System.out.println(Unit9a_VowelCounter.getNumberString(""));
+    System.out.println(Unit9a_VowelCounter.getNumberString("x"));
+    System.out.println(Unit9a_VowelCounter.getNumberString("e"));
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you how to use for loops to take old strings and make a new
 strings. You will need to know how to use loops and how to manipulate the letters in strings

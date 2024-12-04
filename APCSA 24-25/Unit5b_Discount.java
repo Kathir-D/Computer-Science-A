@@ -2,34 +2,29 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit5b_Discount
-{
-	private double amount;
-	
-	public Unit5b_Discount(double a )
-	{
-		amount = a;
-	}
-	
-	public boolean check()
-	{
-		if(amount > 2000){
-			return true;
-		} else {
-			return false;
-		}
+public class Unit5b_Discount {
+
+  private double amount;
+
+  public Unit5b_Discount(double a) {
+    amount = a;
+  }
+
+  public boolean check() {
+    if (amount > 2000) {
+      return true;
+    } else {
+      return false;
     }
-	
-	public double getTheBill()
-	{
-		if (check() == true){
-			amount -= (amount*0.15);
-		}
-		return amount;
-	}
+  }
+
+  public double getTheBill() {
+    if (check() == true) {
+      amount -= (amount * 0.15);
+    }
+    return amount;
+  }
 }
-
-
 /*
 Lab Description : Determine the amount of discount a person should receive. If the bill is more than
 2000, then the person should receive a 15% discount. If the bill is 2000 dollars or less, the person does not
