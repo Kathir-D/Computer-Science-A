@@ -1,2 +1,4 @@
 plugins:
   - prettier-plugin-java
+
+  # npx prettier --write "**/*.java"

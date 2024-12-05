@@ -41,7 +41,7 @@ chevrotain-allstar@0.3.1:
   dependencies:
     lodash-es "^4.17.21"
 
-chevrotain@11.0.3:
+chevrotain@^11.0.0, chevrotain@11.0.3:
   version "11.0.3"
   resolved "https://registry.npmjs.org/chevrotain/-/chevrotain-11.0.3.tgz"
   integrity sha512-ci2iJH6LeIkvP9eJW6gpueU8cnZhv85ELY8w8WiFtNjMHA5ad6pQLaJo9mEly/9qUyCpvqX8/POVUTf18/HFdw==
@@ -62,7 +62,7 @@ java-parser@2.3.2:
     chevrotain-allstar "0.3.1"
     lodash "4.17.21"
 
-lodash-es@4.17.21, lodash-es@^4.17.21:
+lodash-es@^4.17.21, lodash-es@4.17.21:
   version "4.17.21"
   resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
@@ -74,7 +74,7 @@ lodash@4.17.21:
 
 prettier-plugin-java@^2.6.5:
   version "2.6.5"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-java/-/prettier-plugin-java-2.6.5.tgz#b8c1ab70fc118675eb69b90212e34a5bc86c22aa"
+  resolved "https://registry.npmjs.org/prettier-plugin-java/-/prettier-plugin-java-2.6.5.tgz"
   integrity sha512-2RkPNXyYpP5dRhr04pz45n+e5LXwYWTh1JXrztiCkZTGGokIGYrfwUuGa8csnDoGbP6CDPgVm8zZSIm/9I0SRQ==
   dependencies:
     java-parser "2.3.2"
