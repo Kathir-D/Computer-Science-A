@@ -21,7 +21,6 @@ public class Unit13a_BoxRunner {
     }
   }
 }
-
 /*
  * /*
 Lab Goal : The lab was designed to teach you more about using data files.

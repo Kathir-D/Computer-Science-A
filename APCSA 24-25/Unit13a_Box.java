@@ -28,7 +28,6 @@ public class Unit13a_Box {
     return output + "\n";
   }
 }
-
 /*
 Lab Goal : The lab was designed to teach you more about using data files.
 Lab Description : Create letter boxes using the letter and size values read in from the file. Nested

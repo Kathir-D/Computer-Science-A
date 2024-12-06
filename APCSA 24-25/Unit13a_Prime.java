@@ -38,7 +38,6 @@ public class Unit13a_Prime {
     }
   }
 }
-
 /*
 Lab Goal : The lab was designed to teach you more about using data files.
 Lab Description : Create a prime class that will determine if any provided number is prime. Use this
