@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "prettier-plugin-java": "^2.6.5"
+  },
+  "dependencies": {
+    "pnpm": "^9.15.0"
   }
 }
