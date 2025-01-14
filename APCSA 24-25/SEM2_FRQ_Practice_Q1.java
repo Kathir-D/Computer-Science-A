@@ -1,6 +1,6 @@
 import java.lang.*;
 
-public class FRQ_Practice_Q1 {
+public class SEM2_FRQ_Practice_Q1 {
 
   private int currentFood;
 

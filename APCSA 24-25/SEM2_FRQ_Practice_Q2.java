@@ -1,4 +1,4 @@
-public class FRQ_Practice_Q2 {
+public class SEM2_FRQ_Practice_Q2 {
 
   private String name1;
   private String name2;
@@ -6,7 +6,7 @@ public class FRQ_Practice_Q2 {
   private int score1;
   private int score2;
 
-  public FRQ_Practice_Q2(String name1, String name2) {
+  public SEM2_FRQ_Practice_Q2(String name1, String name2) {
     this.name1 = name1;
     this.name2 = name2;
     activeTeam = this.name1;
