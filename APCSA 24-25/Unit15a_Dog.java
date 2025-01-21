@@ -1,33 +1,28 @@
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
-public class Unit15a_Dog
-{
-    private int age;
-    private String name;
-    
-    public Unit15a_Dog(int a, String n)
-    {
-    	age = a;
-    	name = n;
-    } 
-    	 
-    public String getName()
-    {
-    	return name;
-    }
-    
-    public int getAge()
-    {
-    	return age;
-    }
-    	    	
-    public String toString()
-    {
-    	return "" + age + " " + name;
-    }  
-}
+public class Unit15a_Dog {
 
+  private int age;
+  private String name;
+
+  public Unit15a_Dog(int a, String n) {
+    age = a;
+    name = n;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public String toString() {
+    return "" + age + " " + name;
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you more about arrays of references.
 Lab Description : Use the Dog, Doggies, and DoggiesRunner classes. Complete the

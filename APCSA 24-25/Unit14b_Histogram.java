@@ -47,7 +47,6 @@ public class Unit14b_Histogram {
     return output.toString().trim();
   }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use an array, create a class, and search for values.
 Lab Description : Take a list of numbers and a size. Create an array that size and load in the count of

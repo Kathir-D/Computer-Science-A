@@ -3,33 +3,28 @@
 
 import java.util.Scanner;
 
-public class Unit15a_DoggiesRunner
-{
-   public static void main( String[] args )
-   {
-		Scanner keyboard = new Scanner(System.in);
-		
-		System.out.print("How many Dogs are in the pack? :: ");
-		int size = keyboard.nextInt();
-		Unit15a_Doggies pack = new Unit15a_Doggies(size);
+public class Unit15a_DoggiesRunner {
 
-		for(int i=0; i<size; i++)
-{
-    //read in age and name of the dog
-    System.out.print("Enter the age :: ");
-    int age = keyboard.nextInt();
-    System.out.print("Enter the name :: ");
-    String name = keyboard.next();
-    
-    //call the method to add a new dog to the pack
-    pack.set(i, age, name);
-}
-		System.out.println("pack :: "+pack);
-		System.out.println("NAME OF OLDEST :: "+pack.getNameOfOldest());
-		System.out.println("NAME OF YOUNGEST :: "+pack.getNameOfYoungest());
-	}
-}
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in);
 
+    System.out.print("How many Dogs are in the pack? :: ");
+    int size = keyboard.nextInt();
+    Unit15a_Doggies pack = new Unit15a_Doggies(size);
+
+    for (int i = 0; i < size; i++) {
+      System.out.print("Enter the age :: ");
+      int age = keyboard.nextInt();
+      System.out.print("Enter the name :: ");
+      String name = keyboard.next();
+
+      pack.set(i, age, name);
+    }
+    System.out.println("pack :: " + pack);
+    System.out.println("NAME OF OLDEST :: " + pack.getNameOfOldest());
+    System.out.println("NAME OF YOUNGEST :: " + pack.getNameOfYoungest());
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you more about arrays of references.
 Lab Description : Use the Dog, Doggies, and DoggiesRunner classes. Complete the

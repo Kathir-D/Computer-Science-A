@@ -4,36 +4,35 @@
 
 public class Unit14b_Fibonacci {
 
-    private int[] fibSequence;
+  private int[] fibSequence;
 
-    public Unit14b_Fibonacci(int size) {
-            fibSequence = new int[size];
-            generateFibonacci(size);
+  public Unit14b_Fibonacci(int size) {
+    fibSequence = new int[size];
+    generateFibonacci(size);
+  }
+
+  private void generateFibonacci(int size) {
+    fibSequence[0] = 1;
+    fibSequence[1] = 1;
+    for (int i = 2; i < size; i++) {
+      fibSequence[i] = fibSequence[i - 1] + fibSequence[i - 2];
     }
+  }
 
-    private void generateFibonacci(int size) {
-        fibSequence[0] = 1;
-            fibSequence[1] = 1;
-            for (int i = 2; i < size; i++) {
-                fibSequence[i] = fibSequence[i - 1] + fibSequence[i - 2];
-            }
-
+  public int getFibo(int n) {
+    if (n < 1 || n > fibSequence.length) {
+      return -1;
     }
+    return fibSequence[n - 1];
+  }
 
-    public int getFibo(int n) {
-        if (n < 1 || n > fibSequence.length) {
-            return -1;
-        }
-        return fibSequence[n - 1];
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    for (int num : fibSequence) {
+      sb.append(num).append(" ");
     }
-
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        for (int num : fibSequence) {
-            sb.append(num).append(" ");
-        }
-        return sb.toString().trim();
-    }
+    return sb.toString().trim();
+  }
 }
 /*
 Lab Goal : The lab was designed to teach you how to use arrays to simplify solving more complex
