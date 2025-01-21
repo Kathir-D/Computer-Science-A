@@ -1,6 +1,5 @@
 import java.util.Arrays;
 
-//make your LVader class here
 public class Unit14b_LVader {
 
   private int[] stops;
@@ -43,13 +42,7 @@ public class Unit14b_LVader {
   public String toString() {
     return "" + Arrays.toString(stops);
   }
-
-
 }
-
-
-
-
 /*
 Lab Goal : This lab was designed to teach you how to use an array, create a class, and search for values.
 Lab Description :
