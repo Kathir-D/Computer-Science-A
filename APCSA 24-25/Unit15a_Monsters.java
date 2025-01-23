@@ -16,8 +16,12 @@ public class Unit15a_Monsters {
   }
 
   public Unit15a_Monster getLargest() {
-    if (myMonsters.length == 0) return null;
+    if (myMonsters.length == 0) {
+      return null;
+    }
+
     Unit15a_Monster largest = myMonsters[0];
+
     for (Unit15a_Monster m : myMonsters) {
       if (m.isBigger(largest)) largest = m;
     }
@@ -25,8 +29,12 @@ public class Unit15a_Monsters {
   }
 
   public Unit15a_Monster getSmallest() {
-    if (myMonsters.length == 0) return null;
+    if (myMonsters.length == 0) {
+      return null;
+    }
+
     Unit15a_Monster smallest = myMonsters[0];
+
     for (Unit15a_Monster m : myMonsters) {
       if (m.isSmaller(smallest)) smallest = m;
     }
