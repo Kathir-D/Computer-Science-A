@@ -9,32 +9,32 @@ public class Unit15b_GradeBookRunner {
   public static void main(String args[]) throws Exception {
     System.out.println("Welcome to the Class Stats program!");
 
-    Scanner kb = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     System.out.print("Enter the class name : ");
-    String className = kb.nextLine();
+    String className = sc.nextLine();
 
     System.out.print("Enter the number of students : ");
-    int numStudents = kb.nextInt();
-    kb.nextLine();
+    int numStudents = sc.nextInt();
+    sc.nextLine();
 
     Unit15b_Class theClass = new Unit15b_Class(className, numStudents);
 
     for (int i = 0; i < numStudents; i++) {
       System.out.print("Enter a student name : ");
-      String stuName = kb.nextLine();
+      String stuName = sc.nextLine();
 
       System.out.print("Enter the number of grades : ");
-      int c = kb.nextInt();
+      int c = sc.nextInt();
 
       double[] g = new double[c];
       for (int x = 0; x < c; x++) {
         System.out.print("Enter a grade : ");
-        g[x] = kb.nextDouble();
+        g[x] = sc.nextDouble();
       }
 
       theClass.addStudent(i, new Unit15b_Student(stuName, g));
-      kb.nextLine();
+      sc.nextLine();
     }
 
     System.out.println("\n\n" + theClass);
