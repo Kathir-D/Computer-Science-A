@@ -40,7 +40,7 @@ public class Unit15b_Class {
   public double getClassAverage() {
     double sum = 0.0;
     for (Unit15b_Student s : studentList) {
-       sum += s.getAverage();
+      sum += s.getAverage();
     }
     return sum / studentList.length;
   }
@@ -62,26 +62,30 @@ public class Unit15b_Class {
         lowest = s;
       }
     }
-    return "";
+    return lowest.getName();
   }
 
-  public String getFailureList(double failingGrade) {
+  public String getFailureList(double failingGrade) { // list so it needs to check for multiple
+    //    for (Unit15b_Student s : studentList) {
+    //      if (s.getAverage() < failingGrade) {
+    //        return s.getName();
+    //      }
+    //    }
+
+    StringBuilder listOfFailures = new StringBuilder();
     for (Unit15b_Student s : studentList) {
       if (s.getAverage() < failingGrade) {
-        return s.getName();
+        listOfFailures.append(s.getName());
+        listOfFailures.append(", ");
       }
     }
-
-    return "";
+    return listOfFailures.toString();
   }
 
   public String toString() {
-    
-
     return "";
   }
 }
-
 /*
 Lab Goal : This lab was designed to teach you more about arrays of references.
 Lab Description : You will create a Class that will store information about grades for an entire class of students.

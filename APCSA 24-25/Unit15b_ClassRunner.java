@@ -62,7 +62,6 @@ public class Unit15b_ClassRunner {
     out.println(String.format("Class Average = %.2f", test.getClassAverage()));
   }
 }
-
 /*
 Lab Goal : This lab was designed to teach you more about arrays of references.
 Lab Description : You will create a Class that will store information about grades for an entire class of students.
