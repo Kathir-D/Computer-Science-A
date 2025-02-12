@@ -2,11 +2,11 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit16x_ExpressionSolverRunner {
+public class Unit16b_ExpressionSolverRunner {
 
   public static void main(String args[]) {
     //add test cases
-    Unit16x_ExpressionSolver test = new Unit16x_ExpressionSolver("3 + 5");
+    Unit16b_ExpressionSolver test = new Unit16b_ExpressionSolver("3 + 5");
     test.solveExpression();
     System.out.println(test);
 

@@ -4,10 +4,10 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Unit16x_DigitDromeRunner {
+public class Unit16b_DigitDromeRunner {
 
   public static void main(String args[]) {
-    Unit16x_DigitDrome dd = new Unit16x_DigitDrome();
+    Unit16b_DigitDrome dd = new Unit16b_DigitDrome();
 
     System.out.println(dd.getLeft(92351));
     System.out.println(dd.getRight(92351));
@@ -19,31 +19,31 @@ public class Unit16x_DigitDromeRunner {
     System.out.println(dd.isPalin());
 
     x = new ArrayList<Integer>(Arrays.asList(2, 1, 2));
-    dd = new Unit16x_DigitDrome();
+    dd = new Unit16b_DigitDrome();
     dd.createGroup(x);
     System.out.println(dd);
     System.out.println(dd.isPalin());
 
     x = new ArrayList<Integer>(Arrays.asList(2152, 1, 333, 333, 1, 2152));
-    dd = new Unit16x_DigitDrome();
+    dd = new Unit16b_DigitDrome();
     dd.createGroup(x);
     System.out.println(dd);
     System.out.println(dd.isPalin());
 
     x = new ArrayList<Integer>(Arrays.asList(717));
-    dd = new Unit16x_DigitDrome();
+    dd = new Unit16b_DigitDrome();
     dd.createGroup(x);
     System.out.println(dd);
     System.out.println(dd.isPalin());
 
     x = new ArrayList<Integer>(Arrays.asList(81, 77));
-    dd = new Unit16x_DigitDrome();
+    dd = new Unit16b_DigitDrome();
     dd.createGroup(x);
     System.out.println(dd);
     System.out.println(dd.isPalin());
 
     x = new ArrayList<Integer>(Arrays.asList(81, 77, 9));
-    dd = new Unit16x_DigitDrome();
+    dd = new Unit16b_DigitDrome();
     dd.createGroup(x);
     System.out.println(dd);
     System.out.println(dd.isPalin());
@@ -51,13 +51,13 @@ public class Unit16x_DigitDromeRunner {
     x = new ArrayList<Integer>(
       Arrays.asList(1, 2, 3, 4, 5, 6, 8, 9, 81, 77, 9)
     );
-    dd = new Unit16x_DigitDrome();
+    dd = new Unit16b_DigitDrome();
     dd.createGroup(x);
     System.out.println(dd);
     System.out.println(dd.isPalin());
 
     x = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 10, 11, 12));
-    dd = new Unit16x_DigitDrome();
+    dd = new Unit16b_DigitDrome();
     dd.createGroup(x);
     System.out.println(dd);
     System.out.println(dd.isPalin());

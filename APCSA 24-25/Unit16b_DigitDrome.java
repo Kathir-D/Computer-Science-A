@@ -1,13 +1,14 @@
 import java.util.ArrayList;
 
-public class Unit16x_DigitDrome {
+public class Unit16b_DigitDrome {
+
   // IDK if this works correctly
 
   //create an arraylist instance variable
   private ArrayList<Integer> dd;
 
   //write a constructor
-  Unit16x_DigitDrome() {
+  Unit16b_DigitDrome() {
     dd = new ArrayList<Integer>();
   }
 
