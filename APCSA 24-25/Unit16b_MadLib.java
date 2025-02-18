@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Unit16b_MadLib {
+
   // idfk
 
   private ArrayList<String> verbs;
@@ -21,7 +22,7 @@ public class Unit16b_MadLib {
     adjectives = new ArrayList<>();
   }
 
-    public Unit16b_MadLib(String fileName) {
+  public Unit16b_MadLib(String fileName) {
     this();
     try {
       Scanner file = new Scanner(new File(fileName));
@@ -86,7 +87,16 @@ public class Unit16b_MadLib {
   }
 
   public String toString() {
-    return "nouns = " + nouns + "\n" + "verbs = " + verbs + "\n" + "adjectives = " + adjectives;
+    return (
+      "nouns = " +
+      nouns +
+      "\n" +
+      "verbs = " +
+      verbs +
+      "\n" +
+      "adjectives = " +
+      adjectives
+    );
   }
 }
 /*

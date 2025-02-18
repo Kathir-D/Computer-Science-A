@@ -10,7 +10,9 @@ public class Unit16c_StringStuffDigitRunner {
     Unit16c_StringStuffDigit s = new Unit16c_StringStuffDigit();
 
     ArrayList<String> sf1 = new ArrayList<>(Arrays.asList("7a7", "888", "9"));
-    ArrayList<String> sf2 = new ArrayList<>(Arrays.asList("1one", "three22", "z", "a7"));
+    ArrayList<String> sf2 = new ArrayList<>(
+      Arrays.asList("1one", "three22", "z", "a7")
+    );
     s.digitSort(sf1);
     s.digitSort(sf2);
     System.out.println(sf1);

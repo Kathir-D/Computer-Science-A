@@ -13,8 +13,15 @@ public class Unit16b_MadLibRunner {
     madLib.loadAdjectives("Unit16b_adjectives.dat");
 
     out.println("Here is your Mad Lib story:");
-    out.println("Once upon a time, there was a " + madLib.getRandomAdjective() + " " + madLib.getRandomNoun() + " who loved to " + madLib.getRandomVerb() + ".");
-
+    out.println(
+      "Once upon a time, there was a " +
+      madLib.getRandomAdjective() +
+      " " +
+      madLib.getRandomNoun() +
+      " who loved to " +
+      madLib.getRandomVerb() +
+      "."
+    );
   }
 }
 /*
