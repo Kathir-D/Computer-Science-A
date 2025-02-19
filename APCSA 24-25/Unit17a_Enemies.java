@@ -61,7 +61,13 @@ public class Unit17a_Enemies {
   // ADDS AN ENEMY TO THE ENEMY LIST
   public void addEnemy() throws IOException {
     if (Math.random() < 0.1) {
-      enemies.add(new Unit17a_Enemy(0, (int) (Math.random() * 500), (int) (Math.random() * 10) + 1));
+      enemies.add(
+        new Unit17a_Enemy(
+          0,
+          (int) (Math.random() * 500),
+          (int) (Math.random() * 10) + 1
+        )
+      );
     }
   }
 
