@@ -18,7 +18,7 @@ public class Unit17a_Enemy {
     this.y = y;
     this.speed = speed;
 
-    enemy = ImageIO.read(new File("enemy.gif"));
+    enemy = ImageIO.read(new File("APCSA 24-25/Unit17a_enemy.gif"));
   }
 
   public Image getEnemy() {

@@ -20,12 +20,28 @@ public class Unit17a_Enemies {
   // DRAW AND COLLISION METHOD
   public void drawAndCollision(Graphics2D g) throws IOException {
     // ADD ENEMIES
+    addEnemy();
 
     // REMOVE ENEMIES THAT GO OUT OF BOUND
+    for (int i = 0; i < enemies.size(); i++) {
+      if (enemies.get(i).getX() > 800) {
+        enemies.remove(i);
+      }
+    }
 
     // GO THROUGH THE LIST OF ENEMIES AND CALL THEIR draw() and move() method and check if their collide with guy if so then call the GAMEOVER() METHOD
+    for (int i = 0; i < enemies.size(); i++) {
+      enemies.get(i).draw(g);
+      enemies.get(i).move();
+      if (guy.collide(enemies.get(i).getX(), enemies.get(i).getY())) {
+        GAMEOVER(g);
+      }
+    }
 
     // IF THE PLAYER REACHES THE GRASS ON THE BOTTOM SIDE CALL THE VICTORY() method
+    if (guy.getY() > 400) {
+      VICTORY(g);
+    }
   }
 
   public void GAMEOVER(Graphics2D g) {
@@ -43,10 +59,14 @@ public class Unit17a_Enemies {
   }
 
   // ADDS AN ENEMY TO THE ENEMY LIST
-  public void addEnemy() throws IOException {}
+  public void addEnemy() throws IOException {
+    if (Math.random() < 0.1) {
+      enemies.add(new Unit17a_Enemy(0, (int) (Math.random() * 500), (int) (Math.random() * 10) + 1));
+    }
+  }
 
   // RETURN HOW MANY ENEMIES THERE ARE
   public int numEnemies() {
-    return 0;
+    return enemies.size();
   }
 }
