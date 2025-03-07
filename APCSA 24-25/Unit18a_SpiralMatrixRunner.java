@@ -15,7 +15,6 @@ public class Unit18a_SpiralMatrixRunner {
     System.out.println(spiralMatrix);
   }
 }
-
 /*
 Lab Goal : The lab was designed to help you review classes, objects, files, arrays, and matrices.
 Lab Description : Take each number and print a spiral matrix that size.

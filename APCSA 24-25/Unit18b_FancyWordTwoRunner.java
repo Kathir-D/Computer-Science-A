@@ -4,9 +4,15 @@
 
 public class Unit18b_FancyWordTwoRunner {
 
-  public static void main(String args[]) {}
-}
+  public static void main(String args[]) {
+    String[] words = { "HELLO", "CAT", "A", "DOGHOUSE", "ONE", "IT" };
 
+    for (String word : words) {
+      Unit18b_FancyWordTwo fancyWord = new Unit18b_FancyWordTwo(word);
+      System.out.println(fancyWord);
+    }
+  }
+}
 /*
 Lab Goal : This lab was designed to teach you how to use a matrix, an array of arrays.
 Lab Description : Take one word at a time and output the word as a square.

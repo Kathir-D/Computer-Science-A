@@ -7,20 +7,35 @@ public class Unit18b_FancyWordTwo {
   private String[][] mat;
 
   public Unit18b_FancyWordTwo(String s) {
-    //size the matrix
+    //      //3 more statements
+    //      //like the one I gave you
+    mat = new String[s.length()][s.length()];
 
-    //use Arrays.fill() to fill in the matrix with spaces
+    for (int i = 0; i < s.length(); i++) {
+      for (int j = 0; j < s.length(); j++) {
+        mat[i][j] = " ";
+      }
+    }
 
-    //use a for loop to load in the letters into the matrix
-
+    for (int i = 0; i < s.length(); i++) {
+      mat[0][i] = String.valueOf(s.charAt(i));
+      mat[s.length() - 1][i] = String.valueOf(s.charAt(s.length() - 1 - i));
+      mat[i][s.length() - 1] = String.valueOf(s.charAt(s.length() - 1 - i));
+      mat[i][0] = String.valueOf(s.charAt(i));
+    }
   }
 
   public String toString() {
     String output = "";
-    return output + "\n\n";
+    for (int r = 0; r < mat.length; r++) {
+      for (int c = 0; c < mat[r].length; c++) {
+        output += mat[r][c];
+      }
+      output += "\n";
+    }
+    return output;
   }
 }
-
 /*
 Lab Goal : This lab was designed to teach you how to use a matrix, an array of arrays.
 Lab Description : Take one word at a time and output the word as a square.
