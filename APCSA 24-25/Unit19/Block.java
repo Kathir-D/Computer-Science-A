@@ -68,8 +68,20 @@ public class Block {
   }
 
   public boolean equals(Object obj) {
-    return false;
+    if (obj == null || !(obj instanceof Block)) {
+      return false;
+    }
+    Block other = (Block) obj;
+    return (
+      xPos == other.xPos &&
+      yPos == other.yPos &&
+      width == other.width &&
+      height == other.height &&
+      color.equals(other.color)
+    );
   }
+
+  public void draw(Graphics window, Color col) {}
 
   public int getX() {
     return xPos;
