@@ -4,14 +4,14 @@
 
 import java.util.Scanner;
 
-public class Unit18a_SpiralMatrixRunner {
+public class SpiralMatrixRunner {
 
   public static void main(String args[]) {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Enter the size of the spiral matrix:");
     int size = scanner.nextInt();
 
-    Unit18a_SpiralMatrix spiralMatrix = new Unit18a_SpiralMatrix(size);
+    SpiralMatrix spiralMatrix = new SpiralMatrix(size);
     System.out.println(spiralMatrix);
   }
 }

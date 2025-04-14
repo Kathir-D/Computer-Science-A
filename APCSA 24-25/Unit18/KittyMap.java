@@ -2,11 +2,11 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit18b_KittyMap {
+public class KittyMap {
 
   private boolean[][] kittyGrid;
 
-  public Unit18b_KittyMap(int rows, int cols) {
+  public KittyMap(int rows, int cols) {
     kittyGrid = new boolean[rows][cols];
     for (int r = 0; r < rows; r++) {
       for (int c = 0; c < cols; c++) {
@@ -74,7 +74,6 @@ public class Unit18b_KittyMap {
     return output.toString().trim();
   }
 }
-
 /*
 Lab Goal : The lab was designed to teach you more about nested loops and matrices.
 Lab Description : Ben loves Kitties and his kitties are running free. You need to help Ben identify

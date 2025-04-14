@@ -2,16 +2,16 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit18a_SpiralMatrix {
+public class SpiralMatrix {
 
   private int[][] matrix;
   private int size;
 
-  public Unit18a_SpiralMatrix() {
+  public SpiralMatrix() {
     this.size = 0;
   }
 
-  public Unit18a_SpiralMatrix(int size) {
+  public SpiralMatrix(int size) {
     setSize(size);
   }
 

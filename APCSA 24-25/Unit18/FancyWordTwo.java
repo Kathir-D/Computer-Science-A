@@ -2,11 +2,11 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit18b_FancyWordTwo {
+public class FancyWordTwo {
 
   private String[][] mat;
 
-  public Unit18b_FancyWordTwo(String s) {
+  public FancyWordTwo(String s) {
     //      //3 more statements
     //      //like the one I gave you
     mat = new String[s.length()][s.length()];

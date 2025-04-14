@@ -4,10 +4,10 @@
 //Class -
 //Lab  -
 
-public class Unit18a_MatrixSumming1Runner {
+public class MatrixSumming1Runner {
 
   public static void main(String args[]) throws Exception {
-    System.out.println(Unit18a_MatrixSumming1.sum());
+    System.out.println(MatrixSumming1.sum());
   }
 }
 /*

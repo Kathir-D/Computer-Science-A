@@ -2,10 +2,10 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit18d_CipherRunner {
+public class CipherRunner {
 
   public static void main(String args[]) {
-    Unit18d_Cipher cs = new Unit18d_Caesar();
+    Cipher cs = new Caesar();
     System.out.println("chicken");
     System.out.println(cs.encode("chicken"));
     System.out.println(cs.decode(cs.encode("chicken")));

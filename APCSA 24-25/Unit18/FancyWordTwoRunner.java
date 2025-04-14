@@ -2,13 +2,13 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit18b_FancyWordTwoRunner {
+public class FancyWordTwoRunner {
 
   public static void main(String args[]) {
     String[] words = { "HELLO", "CAT", "A", "DOGHOUSE", "ONE", "IT" };
 
     for (String word : words) {
-      Unit18b_FancyWordTwo fancyWord = new Unit18b_FancyWordTwo(word);
+      FancyWordTwo fancyWord = new FancyWordTwo(word);
       System.out.println(fancyWord);
     }
   }

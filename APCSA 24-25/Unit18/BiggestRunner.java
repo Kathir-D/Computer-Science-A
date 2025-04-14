@@ -2,18 +2,14 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit18a_BiggestRunner {
+public class BiggestRunner {
 
   public static void main(String args[]) throws Exception {
     int[][] f1 = { { 1, 2, 3 }, { 5, 5, 5, 5 } };
-    System.out.println(
-      "The biggest number is :: " + Unit18a_Biggest.getBig(f1)
-    );
+    System.out.println("The biggest number is :: " + Biggest.getBig(f1));
 
     int[][] f2 = { { 1, 2, 3 }, { -5 }, { 11 }, { 21, 2 } };
-    System.out.println(
-      "The biggest number is :: " + Unit18a_Biggest.getBig(f2)
-    );
+    System.out.println("The biggest number is :: " + Biggest.getBig(f2));
 
     int[][] f3 = {
       { 1, 2 },
@@ -22,14 +18,10 @@ public class Unit18a_BiggestRunner {
       { 4, 5, 6, 7 },
       { 123124, 12312 },
     };
-    System.out.println(
-      "The biggest number is :: " + Unit18a_Biggest.getBig(f3)
-    );
+    System.out.println("The biggest number is :: " + Biggest.getBig(f3));
 
     int[][] f4 = { { -20, -40 }, { -234, -234234 } };
-    System.out.println(
-      "The biggest number is :: " + Unit18a_Biggest.getBig(f4)
-    );
+    System.out.println("The biggest number is :: " + Biggest.getBig(f4));
   }
 }
 /*

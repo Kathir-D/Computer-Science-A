@@ -6,11 +6,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Unit18a_MatrixSumming2Runner {
+public class MatrixSumming2Runner {
 
   public static void main(String args[]) throws IOException {
     Scanner file = new Scanner(new File("APCSA 24-25/Unit18a_matsum.dat"));
-    Unit18a_MatrixSumming2 matrix = new Unit18a_MatrixSumming2();
+    MatrixSumming2 matrix = new MatrixSumming2();
     int rows = file.nextInt();
 
     System.out.println("Matrix values");

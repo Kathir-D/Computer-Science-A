@@ -4,15 +4,15 @@
 
 import java.util.Random;
 
-public class Unit18c_Forest {
+public class Forest {
 
-  private Unit18c_Thing[][] grid;
+  private Thing[][] grid;
 
-  public Unit18c_Forest(int rows, int cols) {
+  public Forest(int rows, int cols) {
     final String[] typeList = "cat dog tree rock".split(" ");
     final String[] nameList =
       "a b c d e f g h i j k l m n o p q r t s u v w x y z".split(" ");
-    grid = new Unit18c_Thing[rows][cols];
+    grid = new Thing[rows][cols];
     Random rand = new Random();
 
     for (int r = 0; r < rows; r++) {
@@ -20,7 +20,7 @@ public class Unit18c_Forest {
         String type = typeList[rand.nextInt(typeList.length)];
         String name = nameList[rand.nextInt(nameList.length)];
         double size = 10 + (40 - 10) * rand.nextDouble(); // size between 10 and 40
-        grid[r][c] = new Unit18c_Thing(type, name, size);
+        grid[r][c] = new Thing(type, name, size);
       }
     }
   }
@@ -50,7 +50,7 @@ public class Unit18c_Forest {
         int newRow = r + i;
         int newCol = c + j;
         if (inBounds(newRow, newCol) && grid[newRow][newCol] != null) {
-          Unit18c_Thing neighbor = grid[newRow][newCol];
+          Thing neighbor = grid[newRow][newCol];
           if (
             neighbor.getType().equals("tree") ||
             neighbor.getType().equals("rock")
@@ -71,8 +71,8 @@ public class Unit18c_Forest {
 
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    for (Unit18c_Thing[] row : grid) {
-      for (Unit18c_Thing thing : row) {
+    for (Thing[] row : grid) {
+      for (Thing thing : row) {
         sb.append(thing == null ? "null " : thing.toString());
       }
       sb.append("\n");

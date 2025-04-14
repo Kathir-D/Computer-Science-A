@@ -2,7 +2,7 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit18a_Biggest {
+public class Biggest {
 
   public static int getBig(int[][] m) {
     int max = Integer.MIN_VALUE;

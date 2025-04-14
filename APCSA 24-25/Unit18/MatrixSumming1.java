@@ -1,4 +1,4 @@
-public class Unit18a_MatrixSumming1 {
+public class MatrixSumming1 {
 
   private static int[][] m = {
     { 1, 2, 3, 4, 5 },

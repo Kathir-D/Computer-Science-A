@@ -4,7 +4,7 @@
 
 import java.util.HashMap;
 
-public class Unit18d_Caesar implements Unit18d_Cipher {
+public class Caesar implements Cipher {
 
   // I used hashmaps, your not supposed to use hashmaps yet
 
@@ -14,12 +14,12 @@ public class Unit18d_Caesar implements Unit18d_Cipher {
   private HashMap<String, String> encod;
   private HashMap<String, String> decod;
 
-  public Unit18d_Caesar() {
+  public Caesar() {
     howFar = (int) (Math.random() * 26);
     shiftSt = alpha.substring(howFar) + alpha.substring(0, howFar);
   }
 
-  public Unit18d_Caesar(int far) {
+  public Caesar(int far) {
     howFar = far;
     shiftSt = alpha.substring(howFar) + alpha.substring(0, howFar);
   }

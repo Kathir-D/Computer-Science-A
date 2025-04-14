@@ -2,7 +2,7 @@
 //www.apluscompsci.com
 //Name -
 
-public class Unit18a_MatrixSumming2 {
+public class MatrixSumming2 {
 
   private int[][] m = {
     { 1, 2, 3, 4, 5 },

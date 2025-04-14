@@ -7,12 +7,12 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 
-public class Unit18b_APlusImage extends Canvas {
+public class APlusImage extends Canvas {
 
   private int[][] image;
   private String fileName;
 
-  public Unit18b_APlusImage() {
+  public APlusImage() {
     try {
       //read from the file
       //load the file information
@@ -25,7 +25,7 @@ public class Unit18b_APlusImage extends Canvas {
     setVisible(true);
   }
 
-  public Unit18b_APlusImage(String name) {
+  public APlusImage(String name) {
     try {
       //read from the file
       //load the file information

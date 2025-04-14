@@ -1,29 +1,18 @@
 //(c) A+ Computer Science
-// www.apluscompsci.com
-// Name -
+//www.apluscompsci.com
+//Name -
 
-public class Unit18c_Thing {
+import java.io.IOException;
 
-  private String type;
-  private String name;
-  private double size;
+public class ForestRunner {
 
-  public Unit18c_Thing(String t, String n, double s) {
-    type = t;
-    name = n;
-    size = s;
-  }
-
-  public String getType() {
-    return type;
-  }
-
-  public double getSize() {
-    return size;
-  }
-
-  public String toString() {
-    return type + " " + name + " " + String.format("%.2f", size) + " ";
+  public static void main(String args[]) throws IOException {
+    for (int i = 0; i < 3; i++) {
+      Forest woods = new Forest(7, 5);
+      System.out.println(woods + "\n\n");
+      System.out.println(woods.setTrappedToNull() + "\n\n");
+      System.out.println(woods + "\n\n");
+    }
   }
 }
 /*
