@@ -67,8 +67,6 @@ public class Block {
     window.fillRect(getX(), getY(), getWidth(), getHeight());
   }
 
-  public void draw(Graphics window, Color col) {}
-
   public boolean equals(Object obj) {
     return false;
   }

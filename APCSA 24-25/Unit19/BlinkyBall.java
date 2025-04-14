@@ -8,7 +8,6 @@ import java.awt.Graphics;
 
 class BlinkyBall extends Ball {
 
-  //constructors
   public BlinkyBall() {
     super();
   }
