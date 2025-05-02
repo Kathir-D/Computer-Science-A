@@ -63,7 +63,7 @@ public class Pong extends Canvas implements KeyListener, Runnable {
       graphToBack.setColor(Color.BLACK);
       graphToBack.fillRect(0, 0, getWidth(), getHeight());
       graphToBack.setColor(Color.RED);
-      graphToBack.drawString("GAME OVER", getWidth()/2, getHeight()/2);
+      graphToBack.drawString("GAME OVER", getWidth() / 2, getHeight() / 2);
     }
 
     if (!(ball.getY() >= 10 && ball.getY() <= 580)) {
@@ -76,7 +76,6 @@ public class Pong extends Canvas implements KeyListener, Runnable {
       ball.getY() <= leftPaddle.getY() + leftPaddle.getHeight()
     ) {
       ball.setXSpeed(-ball.getXSpeed());
-
     }
 
     if (
