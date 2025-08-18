@@ -31,12 +31,12 @@
 
 # Unit2a - WalkingTheDog
 
-### Unit2a_Home.java
+### CSA2425.Unit2a_Home.java
     //(c) A+ Computer Science
     //www.apluscompsci.com
     //Name -
     
-    public class Unit2a_Home
+    public class CSA2425.Unit2a_Home
     { 
 	    public static double getDistance(int xOne, int yOne, int xTwo, int yTwo )
 	    {
@@ -44,7 +44,7 @@
 	    }
     }
 
-### Unit2a_HomeRunner.java
+### CSA2425.Unit2a_HomeRunner.java
     //(c) A+ Computer Science
     //www.apluscompsci.com
     //Name -
@@ -53,12 +53,12 @@
     import java.util.Scanner;
     import static java.lang.System.*;
     
-    public class Unit2a_HomeRunner
+    public class CSA2425.Unit2a_HomeRunner
     {
         public static void main( String[] args )
         {
             Scanner sc = new Scanner( System.in );
-            Unit2a_Home s = new Unit2a_Home();
+            CSA2425.Unit2a_Home s = new CSA2425.Unit2a_Home();
 	    }
     }
     
