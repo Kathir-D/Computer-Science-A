@@ -26,6 +26,10 @@ public class Palin {
     s = word;
   }
 
+  public Palin() {
+    s = "";
+  }
+
   public int getLength() {
     return s.length();
   }

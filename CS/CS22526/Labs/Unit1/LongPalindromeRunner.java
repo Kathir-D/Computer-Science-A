@@ -13,17 +13,32 @@ import java.util.ArrayList;
 public class LongPalindromeRunner {
 
   public static void main(String args[]) {
-    String[] words = {
-      "bobcat",
-      "bobracecarcat",
-      "alligatorslikegroovycatslikemadamandrooroo",
-      "idrovetothelibraryinmyracecartolearnaboutpanama",
-    };
+    System.out.println(LongPalindrome.getAllPalins("bobcat"));
+    System.out.println(LongPalindrome.getLongestPalin("bobcat") + "\n");
 
-    // Process each test case
-    for (String word : words) {
-      System.out.println(LongPalindrome.getAllPalins(word));
-      System.out.println(LongPalindrome.getLongestPalin(word));
-    }
+    System.out.println(LongPalindrome.getAllPalins("bobracecarcat"));
+    System.out.println(LongPalindrome.getLongestPalin("bobracecarcat") + "\n");
+
+    System.out.println(
+      LongPalindrome.getAllPalins("alligatorslikegroovycatslikemadamandrooroo")
+    );
+    System.out.println(
+      LongPalindrome.getLongestPalin(
+        "alligatorslikegroovycatslikemadamandrooroo"
+      ) +
+      "\n"
+    );
+
+    System.out.println(
+      LongPalindrome.getAllPalins(
+        "idrovetothelibraryinmyracecartolearnaboutpanama"
+      )
+    );
+    System.out.println(
+      LongPalindrome.getLongestPalin(
+        "idrovetothelibraryinmyracecartolearnaboutpanama"
+      ) +
+      "\n"
+    );
   }
 }
