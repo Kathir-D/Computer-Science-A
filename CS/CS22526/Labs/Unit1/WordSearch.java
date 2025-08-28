@@ -103,12 +103,12 @@ public class WordSearch {
   }
 
   public boolean checkDiagUpRight(String w, int r, int c) {
-    if(c+w.length() > m.length || r-w.length() + 1 < 0) return false;
+    if (c + w.length() > m.length || r - w.length() + 1 < 0) return false;
 
     StringBuilder sb = new StringBuilder();
 
     for (int i = 0; i < w.length(); i++) {
-      sb.append(m[r-i][c+i]);
+      sb.append(m[r - i][c + i]);
     }
 
     return sb.toString().equals(w);
@@ -120,7 +120,7 @@ public class WordSearch {
     StringBuilder sb = new StringBuilder();
 
     for (int i = 0; i < w.length(); i++) {
-      sb.append(m[r-i][c-i]);
+      sb.append(m[r - i][c - i]);
     }
 
     return sb.toString().equals(w);
@@ -132,7 +132,7 @@ public class WordSearch {
     StringBuilder sb = new StringBuilder();
 
     for (int i = 0; i < w.length(); i++) {
-      sb.append(m[r+i][c-i]);
+      sb.append(m[r + i][c - i]);
     }
 
     return sb.toString().equals(w);
@@ -144,7 +144,7 @@ public class WordSearch {
     StringBuilder sb = new StringBuilder();
 
     for (int i = 0; i < w.length(); i++) {
-      sb.append(m[r+i][c+i]);
+      sb.append(m[r + i][c + i]);
     }
 
     return sb.toString().equals(w);
