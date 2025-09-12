@@ -62,30 +62,48 @@ public class RomanNumeral implements Comparable<RomanNumeral> {
   }
 
   public String getRoman() {
-    String s = "";
-    int temp = number;
-
-    for (int i = 0; i < NUMBERS.length; i++) {
-      while (temp >= NUMBERS[i]) {
-        s += LETTERS[i];
-        temp -= NUMBERS[i];
-      }
-    }
-    
-    return s;
+    return intToRoman(number);
   }
 
   public int getNumber() {
-    return number;
+    return romanToInt(roman);
+  }
+
+  private String intToRoman(int value) {
+    StringBuilder sb = new StringBuilder();
+    int temp = value;
+
+    for (int i = 0; i < NUMBERS.length; i++) {
+      while (temp >= NUMBERS[i]) {
+        sb.append(LETTERS[i]);
+        temp -= NUMBERS[i];
+      }
+    }
+
+    return sb.toString();
+  }
+
+  private int romanToInt(String r) {
+    int total = 0;
+    String remaining = r.toUpperCase();
+
+    for (int i = 0; i < NUMBERS.length; i++) {
+      String s = LETTERS[i];
+      while (remaining.startsWith(s)) {
+        total += NUMBERS[i];
+        remaining = remaining.substring(s.length());
+      }
+    }
+
+    return total;
   }
 
   public int compareTo(RomanNumeral r) {
-    return 0;
+    return this.getNumber() - r.getNumber();
   }
 
   @Override
   public String toString() {
-    setRoman(getRoman());
-    return roman;
+    return getRoman();
   }
 }
