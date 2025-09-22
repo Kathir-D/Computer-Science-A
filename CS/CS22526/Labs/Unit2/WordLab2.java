@@ -4,8 +4,6 @@ package CS22526.Labs.Unit2;
 //www.apluscompsci.com
 //Name -
 
-import static java.lang.System.*;
-
 public class WordLab2 implements Comparable<WordLab2> {
 
   private String word;
