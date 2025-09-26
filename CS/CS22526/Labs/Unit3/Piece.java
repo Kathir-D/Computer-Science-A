@@ -62,9 +62,29 @@ public class Piece extends Cell implements Nameable {
   public void draw(Graphics window) {
     window.setFont(new Font("TAHOMA", Font.BOLD, 28));
     window.setColor(getColor());
+    window.drawString(getName(), getX(), getY() + 25);
   }
 
   public String toString() {
-    return "X: "+ getX() + "\n" + "Y: " + getY() + "\n" + "Width: " + getWidth() + "\n" + "Height: " + getHeight() + "\n" + "Name: " + getName() + "\n" + "Color: " + getColor() + "\n";
+    return (
+      "X: " +
+      getX() +
+      "\n" +
+      "Y: " +
+      getY() +
+      "\n" +
+      "Width: " +
+      getWidth() +
+      "\n" +
+      "Height: " +
+      getHeight() +
+      "\n" +
+      "Name: " +
+      getName() +
+      "\n" +
+      "Color: " +
+      getColor() +
+      "\n"
+    );
   }
 }
