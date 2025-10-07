@@ -80,9 +80,7 @@ public class GameBoard extends Canvas implements MouseListener {
       int c = mouseX / 50 - 1;
       Piece piece = (Piece) board.getSpot(r, c);
       //if BUTTON1 was pressed and BUTTON1 was not pressed last mouse press
-      if (
-        mouseButton == MouseEvent.BUTTON1 && prevMouseButton != mouseButton
-      ) { //left mouse button pressed
+      if (mouseButton == MouseEvent.BUTTON1 && prevMouseButton != mouseButton) { //left mouse button pressed
         if (piece == null) {
           board.setSpot(
             r,
@@ -161,11 +159,14 @@ public class GameBoard extends Canvas implements MouseListener {
       Piece row1 = (Piece) board.getSpot(1, 1);
       Piece row2 = (Piece) board.getSpot(2, 2);
 
-      if (row0 != null && row1 != null && row2 != null &&
+      if (
+        row0 != null &&
+        row1 != null &&
+        row2 != null &&
         row0.getName().equals(row1.getName()) &&
         row0.getName().equals(row2.getName())
       ) {
-        winner = row0.getName() + " wins diagonaly!";
+        winner = row0.getName() + " wins diagonally!";
       }
     }
 
@@ -174,11 +175,14 @@ public class GameBoard extends Canvas implements MouseListener {
       Piece row1 = (Piece) board.getSpot(1, 1);
       Piece row2 = (Piece) board.getSpot(2, 0);
 
-      if (row0 != null && row1 != null && row2 != null &&
+      if (
+        row0 != null &&
+        row1 != null &&
+        row2 != null &&
         row0.getName().equals(row1.getName()) &&
         row0.getName().equals(row2.getName())
       ) {
-        winner = row0.getName() + " wins diagonaly!";
+        winner = row0.getName() + " wins diagonally!";
       }
     }
 
