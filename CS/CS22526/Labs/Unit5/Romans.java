@@ -13,11 +13,6 @@ public class Romans
 	{
 		m = new TreeMap<String, Integer>();
 		
-		/*
-			Symbol	I	V	X		L		C		D		M
-			Value		1	5	10		50		100	500	1000
-		*/
-		
 		m.put( "I", 1 );
 		m.put( "V", 5 );
 		m.put( "X", 10 );
@@ -29,7 +24,20 @@ public class Romans
 	
 	public int getNumber( String s )
 	{
-		return m.get( s );
+    if(s.length() == 1){
+      return  m.get(s);
+    }
+
+    String[] sArr = s.split(" ");
+    int t = 0;
+
+    for(String str : sArr){
+      if(m.containsKey(str)){
+        t += m.get(str);
+      }
+    }
+
+		return t;
 	}
 
 }

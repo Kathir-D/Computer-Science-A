@@ -11,8 +11,17 @@ public class Words
 	
 	public Words()
 	{
-		//create a new map
-		//load in values						
+		m = new HashMap<String, Integer>();
+    m.put("zero", 0);
+    m.put("one", 1);
+    m.put("two", 2);
+    m.put("three", 3);
+    m.put("four", 4);
+    m.put("five", 5);
+    m.put("six", 6);
+    m.put("seven", 7);
+    m.put("eight", 8);
+    m.put("nine", 9);
 	}
 	
 	public int getNumber( String s )
