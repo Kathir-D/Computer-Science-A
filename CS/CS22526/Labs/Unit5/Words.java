@@ -1,17 +1,17 @@
 package CS22526.Labs.Unit5;
+
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
 
 import java.util.*;
 
-public class Words
-{
-	private Map<String, Integer> m;
-	
-	public Words()
-	{
-		m = new HashMap<String, Integer>();
+public class Words {
+
+  private Map<String, Integer> m;
+
+  public Words() {
+    m = new HashMap<String, Integer>();
     m.put("zero", 0);
     m.put("one", 1);
     m.put("two", 2);
@@ -22,11 +22,9 @@ public class Words
     m.put("seven", 7);
     m.put("eight", 8);
     m.put("nine", 9);
-	}
-	
-	public int getNumber( String s )
-	{
-		return 0;   //change this
-	}
+  }
 
+  public int getNumber(String s) {
+    return 0; //change this
+  }
 }
