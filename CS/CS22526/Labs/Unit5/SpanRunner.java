@@ -20,11 +20,11 @@ public class SpanRunner {
     int numPairs = file.nextInt();
     file.nextLine();
 
-    for(int i = 0; i < numPairs; i++) {
+    for (int i = 0; i < numPairs; i++) {
       span.putEntry(file.nextLine());
     }
 
-    while(file.hasNextLine()) {
+    while (file.hasNextLine()) {
       String sentence = file.nextLine();
       System.out.println(span.translate(sentence));
     }

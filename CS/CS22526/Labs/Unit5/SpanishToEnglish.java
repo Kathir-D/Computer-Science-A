@@ -32,8 +32,8 @@ public class SpanishToEnglish {
     String output = "";
     String[] split = sent.trim().split(" ");
 
-    for(int i = 0; i < split.length; i++) {
-      if(pairs.containsKey(split[i])){
+    for (int i = 0; i < split.length; i++) {
+      if (pairs.containsKey(split[i])) {
         output += " " + pairs.get(split[i]);
       } else {
         output += " " + split[i];

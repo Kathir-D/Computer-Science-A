@@ -32,27 +32,28 @@ public class Acronyms {
       putEntry(entry);
     }
 
-    convert("I drove my PU to TSO to get a HD.  My CPU has a virus.\n"
-        + "I sometimes SO when trying to kick a FG.  I had 2 RBI\n"
-        + "at the game.  I saw 2 PDA infractions in the hall.\n");
+    convert(
+      "I drove my PU to TSO to get a HD.  My CPU has a virus.\n" +
+      "I sometimes SO when trying to kick a FG.  I had 2 RBI\n" +
+      "at the game.  I saw 2 PDA infractions in the hall.\n"
+    );
 
     toString();
-
   }
 
   public void putEntry(String entry) {
     String[] parts = entry.split(" - ");
-      String acronym = parts[0].trim();
-      String meaning = parts[1].trim();
-      acronymTable.put(acronym, meaning);
+    String acronym = parts[0].trim();
+    String meaning = parts[1].trim();
+    acronymTable.put(acronym, meaning);
   }
 
   public void convert(String sent) {
     String output = "";
     String[] split = sent.trim().split(" ");
 
-    for(int i = 0; i < split.length; i++) {
-      if(acronymTable.containsKey(split[i])){
+    for (int i = 0; i < split.length; i++) {
+      if (acronymTable.containsKey(split[i])) {
         output += " " + acronymTable.get(split[i]);
       } else {
         output += " " + split[i];

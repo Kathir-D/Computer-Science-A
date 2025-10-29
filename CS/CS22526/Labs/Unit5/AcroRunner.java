@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class AcroRunner {
 
   public static void main(String args[]) throws IOException {
-      Acronyms ac = new Acronyms();
-      System.out.println(new Acronyms());
+    Acronyms ac = new Acronyms();
+    System.out.println(new Acronyms());
   }
 }
