@@ -1,3 +1,5 @@
+package CS22526.Labs.Unit6;
+
 //(c) A+ Computer Science
 //www.apluscompsci.com
 

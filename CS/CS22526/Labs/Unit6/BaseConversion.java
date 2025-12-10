@@ -71,7 +71,7 @@ public class BaseConversion {
       if (rem < 10) {
         newNum += rem;
       } else {
-        newNum += (char)('A' + (rem - 10));
+        newNum += (char) ('A' + (rem - 10));
       }
     }
 
