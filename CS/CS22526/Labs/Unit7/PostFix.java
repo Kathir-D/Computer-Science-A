@@ -33,7 +33,6 @@ public class PostFix {
     for (char c : arr) {
       stack.push((double) c);
     }
-
   }
 
   public double calc(double one, double two, char op) {
@@ -56,7 +55,12 @@ public class PostFix {
     String[] tokens = expression.split(" ");
 
     for (String token : tokens) {
-      if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/")) {
+      if (
+        token.equals("+") ||
+        token.equals("-") ||
+        token.equals("*") ||
+        token.equals("/")
+      ) {
         double operand2 = stack.pop();
         double operand1 = stack.pop();
         char op = token.charAt(0);
@@ -67,7 +71,6 @@ public class PostFix {
       }
     }
   }
-
 
   public String toString() {
     return expression + " = " + stack.peek();

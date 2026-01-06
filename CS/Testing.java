@@ -1,8 +1,10 @@
-import static java.lang.System.out;
-
 import java.util.*;
+import java.io.*;
 
 public class Testing {
 
-  public static void main(String[] args) {}
+  public static void main(String[] args) throws Exception {
+
+
+  }
 }
