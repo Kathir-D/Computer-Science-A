@@ -25,23 +25,27 @@ public class IntQueue {
   //option 2
   private ArrayList<Integer> listOfInts;
 
-  public IntQueue() {}
+  public IntQueue() {
+    listOfInts = new ArrayList<Integer>();
+  }
 
-  public void add(int item) {}
+  public void add(int item) {
+    listOfInts.add(item);
+  }
 
   public int remove() {
-    return 0;
+    return listOfInts.remove(0);
   }
 
   public boolean isEmpty() {
-    return false;
+    return listOfInts.isEmpty();
   }
 
   public int peek() {
-    return 0;
+    return listOfInts.get(0);
   }
 
   public String toString() {
-    return "";
+    return listOfInts.toString();
   }
 }

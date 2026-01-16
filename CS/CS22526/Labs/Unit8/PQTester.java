@@ -24,14 +24,23 @@ public class PQTester {
     setPQ(list);
   }
 
-  public void setPQ(String list) {}
+  public void setPQ(String list) {
+    pQueue.clear();
+    String[] items = list.split(" ");
+    for (String item : items) {
+      pQueue.add(item);
+    }
+  }
 
   public Object getMin() {
-    return "";
+    return pQueue.peek();
   }
 
   public String getNaturalOrder() {
     String output = "";
-    return output;
+    while (!pQueue.isEmpty()) {
+      output += pQueue.remove() + " ";
+    }
+    return output.trim();
   }
 }

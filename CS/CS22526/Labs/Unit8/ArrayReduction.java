@@ -12,7 +12,28 @@ public class ArrayReduction {
 
   public static int min_cost(int[] r) {
     //MUST USE A PRIORITY QUEUE
-    return 0;
+    if (r.length == 0) return 0;
+    if (r.length == 1) return 0;
+    
+    PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+    
+    // Add all elements to the priority queue
+    for (int num : r) {
+      pq.add(num);
+    }
+    
+    int totalCost = 0;
+    
+    // Keep combining the two smallest elements until one element remains
+    while (pq.size() > 1) {
+      int first = pq.poll();
+      int second = pq.poll();
+      int sum = first + second;
+      totalCost += sum;
+      pq.add(sum);
+    }
+    
+    return totalCost;
   }
 
   public static void main(String[] args) {
