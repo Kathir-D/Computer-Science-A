@@ -44,18 +44,9 @@ public class Player {
 
   public int getHandValue() {
     int total = 0;
-    int aceCount = 0;
 
     for (Card card : hand) {
       total += card.getValue();
-      if (card.getValue() == 11) {
-        aceCount++;
-      }
-    }
-
-    while (total > 21 && aceCount > 0) {
-      total -= 10;
-      aceCount--;
     }
 
     return total;
