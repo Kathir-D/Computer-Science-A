@@ -6,28 +6,30 @@ package CS22526.Labs.Unit8.BJ;
 
 public class Dealer extends Player
 {
-	//define a deck of cards
+	private Deck deck;
 
 	public Dealer() {
+		super();
+		deck = new Deck();
 	}
 
 	public void  shuffle()
 	{
-	   //shuffle the deck
+	   deck.shuffle();
 	}
 
 	public Card  deal(){
-	   return null;
+	   return deck.nextCard();
 	}
 	
 	public int numCardsLeftInDeck()
 	{
-		return 0;
+		return deck.numCardsLeft();
 	}
 
 	public boolean hit()
 	{
-	   return false;
+	   return getHandValue() < 17;
     }
 }
 

@@ -23,7 +23,7 @@ public class Deck
 
     for (int i = 0; i < NUMSUITS; i++) {
       for (int j = 1; j <= NUMFACES; j++) {
-        StackOfCards.push(new Card(j, SUITS[i]));
+        StackOfCards.push(new BlackJackCard(j, SUITS[i]));
       }
     }
   }
@@ -31,21 +31,18 @@ public class Deck
    public void shuffle ()
 	{
     StackOfCards.clear();
-    Stack<Card> tmepDeck = new Stack<Card>();
+    Stack<Card> tempDeck = new Stack<Card>();
 
     for (int i = 0; i < NUMSUITS; i++) {
       for (int j = 1; j <= NUMFACES; j++) {
-        tmepDeck.push(new Card(j, SUITS[i]));
+        tempDeck.push(new BlackJackCard(j, SUITS[i]));
       }
     }
 
-    Collections.shuffle(StackOfCards);
-		StackOfCards = tmepDeck;
-    //add 52 cards to the stack
-		//random maybe
-	}	
+    Collections.shuffle(tempDeck);
+		StackOfCards = tempDeck;
+	}
 
-   //accessors
 	public int  size ()
 	{
 		return StackOfCards.size();

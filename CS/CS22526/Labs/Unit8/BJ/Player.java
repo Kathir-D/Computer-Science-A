@@ -44,16 +44,35 @@ public class Player
 
    public int getHandValue()
    {
-      return 0;
+      int total = 0;
+      int aceCount = 0;
+      
+      for (Card card : hand) {
+         total += card.getValue();
+         if (card.getValue() == 11) {
+            aceCount++;
+         }
+      }
+      
+      while (total > 21 && aceCount > 0) {
+         total -= 10;
+         aceCount--;
+      }
+      
+      return total;
    }
 
    public  boolean  hit( )
    {
-      return false;
+      return getHandValue() < 17;
    }
 
    public String toString()
    {
-      return "";
+      String output = "";
+      for (Card card : hand) {
+         output += card + "\n";
+      }
+      return output;
    }
 }
