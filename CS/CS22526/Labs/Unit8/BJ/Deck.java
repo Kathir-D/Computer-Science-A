@@ -1,24 +1,29 @@
 package CS22526.Labs.Unit8.BJ;
+
+import java.util.Collections;
 //(c) A+ Computer Science
 //www.apluscompsci.com
-//Name - 
+//Name -
 //Date -
 
 import java.util.Stack;
-import java.util.Collections;
 
-public class Deck
-{
-	public static final int NUMFACES = 13;
-	public static final int NUMSUITS = 4;
-	public static final int NUMCARDS = 52;
+public class Deck {
 
-	public static final String SUITS[] = {"CLUBS","SPADES","DIAMONDS","HEARTS"};
+  public static final int NUMFACES = 13;
+  public static final int NUMSUITS = 4;
+  public static final int NUMCARDS = 52;
 
-	private Stack StackOfCards;
+  public static final String SUITS[] = {
+    "CLUBS",
+    "SPADES",
+    "DIAMONDS",
+    "HEARTS",
+  };
 
-	public Deck ()
-	{
+  private Stack StackOfCards;
+
+  public Deck() {
     StackOfCards = new Stack<Card>();
 
     for (int i = 0; i < NUMSUITS; i++) {
@@ -28,8 +33,7 @@ public class Deck
     }
   }
 
-   public void shuffle ()
-	{
+  public void shuffle() {
     StackOfCards.clear();
     Stack<Card> tempDeck = new Stack<Card>();
 
@@ -40,26 +44,22 @@ public class Deck
     }
 
     Collections.shuffle(tempDeck);
-		StackOfCards = tempDeck;
-	}
+    StackOfCards = tempDeck;
+  }
 
-	public int  size ()
-	{
-		return StackOfCards.size();
-	}
+  public int size() {
+    return StackOfCards.size();
+  }
 
-	public int numCardsLeft()
-	{
-		return StackOfCards.size();
-	}
+  public int numCardsLeft() {
+    return StackOfCards.size();
+  }
 
-	public Card nextCard()
-	{
-		return (Card) StackOfCards.pop();
-	}
+  public Card nextCard() {
+    return (Card) StackOfCards.pop();
+  }
 
-	public String toString()
-	{
-		return StackOfCards.toString().replaceAll(",","\n");
-	}
- }
+  public String toString() {
+    return StackOfCards.toString().replaceAll(",", "\n");
+  }
+}

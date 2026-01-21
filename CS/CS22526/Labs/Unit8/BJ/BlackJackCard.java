@@ -19,7 +19,7 @@ public class BlackJackCard extends Card {
     switch (String.valueOf(super.getValueString())) {
       case "ZERO":
         return 0;
-     case "ACE":
+      case "ACE":
         return 11;
       case "TWO":
         return 2;
@@ -45,7 +45,6 @@ public class BlackJackCard extends Card {
         return 10;
       case "KING":
         return 10;
-
     }
 
     return 0;

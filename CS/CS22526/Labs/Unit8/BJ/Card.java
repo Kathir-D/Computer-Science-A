@@ -60,6 +60,7 @@ public class Card {
   public int getValue() {
     return face;
   }
+
   public boolean equals(Card obj) {
     return this.face == obj.getValue() && this.suit.equals(obj.getSuit());
   }
@@ -67,5 +68,4 @@ public class Card {
   public String toString() {
     return getValueString() + " of " + getSuit() + " | value = " + getValue();
   }
-
 }

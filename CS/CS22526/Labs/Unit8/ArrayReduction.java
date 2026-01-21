@@ -14,16 +14,16 @@ public class ArrayReduction {
     //MUST USE A PRIORITY QUEUE
     if (r.length == 0) return 0;
     if (r.length == 1) return 0;
-    
+
     PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
-    
+
     // Add all elements to the priority queue
     for (int num : r) {
       pq.add(num);
     }
-    
+
     int totalCost = 0;
-    
+
     // Keep combining the two smallest elements until one element remains
     while (pq.size() > 1) {
       int first = pq.poll();
@@ -32,7 +32,7 @@ public class ArrayReduction {
       totalCost += sum;
       pq.add(sum);
     }
-    
+
     return totalCost;
   }
 

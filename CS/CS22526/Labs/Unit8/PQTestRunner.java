@@ -12,7 +12,7 @@ public class PQTestRunner {
       "one two three four five six seven\n" +
       "1 2 3 4 5 one two three four five\n" +
       "a p h j e f m c i d k l g n o b";
-    
+
     String[] lines = x.split("\n");
     for (String line : lines) {
       PQTester pq = new PQTester(line);
