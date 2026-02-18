@@ -36,13 +36,18 @@ public class ThingCount implements Comparable {
   }
 
   public boolean equals(Object obj) {
-    ThingCount other = (ThingCount) obj;
-    return false;
+    return thing.toString().equals(obj.toString());
   }
 
   public int compareTo(Object obj) {
-    ThingCount other = (ThingCount) obj;
-    return -1;
+    if (obj instanceof ThingCount) {
+      ThingCount other = (ThingCount) obj;
+      if (thing.getClass() != other.getThing().getClass()) {
+        throw new RuntimeException("both objects are not of the same type");
+      }
+      return thing.toString().compareTo(other.getThing().toString());
+    }
+    return thing.toString().compareTo(obj.toString());
   }
 
   public String toString() {

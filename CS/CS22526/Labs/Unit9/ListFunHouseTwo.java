@@ -88,7 +88,6 @@ public class ListFunHouseTwo {
   public void removeXthNode(int x) {
     if (theList == null) return;
 
-    // Handle case where first node needs to be removed
     int count = 1;
     if (count % x == 0) {
       theList = theList.getNext();
