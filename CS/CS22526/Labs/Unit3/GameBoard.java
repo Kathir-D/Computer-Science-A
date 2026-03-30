@@ -1,4 +1,4 @@
-package CS22526.Labs.Unit3;
+package CS.CS22526.Labs.Unit3;
 
 import java.awt.Canvas;
 import java.awt.Color;

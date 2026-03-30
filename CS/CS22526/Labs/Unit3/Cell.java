@@ -1,4 +1,4 @@
-package CS22526.Labs.Unit3;
+package CS.CS22526.Labs.Unit3;
 
 //(c) A+ Computer Science
 //www.apluscompsci.com

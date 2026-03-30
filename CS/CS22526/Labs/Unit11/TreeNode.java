@@ -1,68 +1,59 @@
-package CS22526.Labs.Unit11;
+package CS.CS22526.Labs.Unit11;
+
 //(c) A+ Computer Science
 //www.apluscompsci.com
 
 //TreeNode class
 
-public class TreeNode implements Treeable
-{
-	private Comparable treeNodeValue;
-	private TreeNode leftTreeNode;
-	private TreeNode rightTreeNode;
+public class TreeNode implements Treeable {
 
-	public TreeNode( )
-	{
-		treeNodeValue = null;
-		leftTreeNode = null;
-		rightTreeNode = null;
-	}
+  private Comparable treeNodeValue;
+  private TreeNode leftTreeNode;
+  private TreeNode rightTreeNode;
 
-	public TreeNode(Comparable value)
-	{
-		treeNodeValue = value;
-		leftTreeNode = null;
-		rightTreeNode = null;
-	}
+  public TreeNode() {
+    treeNodeValue = null;
+    leftTreeNode = null;
+    rightTreeNode = null;
+  }
 
-	public TreeNode(Comparable value, TreeNode left, TreeNode right)
-	{
-		treeNodeValue = value;
-		leftTreeNode = left;
-		rightTreeNode = right;
-	}
+  public TreeNode(Comparable value) {
+    treeNodeValue = value;
+    leftTreeNode = null;
+    rightTreeNode = null;
+  }
 
-	public Comparable getValue()
-	{
-		return treeNodeValue;
-	}
+  public TreeNode(Comparable value, TreeNode left, TreeNode right) {
+    treeNodeValue = value;
+    leftTreeNode = left;
+    rightTreeNode = right;
+  }
 
-	public TreeNode getLeft()
-	{
-		return leftTreeNode;
-	}
+  public Comparable getValue() {
+    return treeNodeValue;
+  }
 
-	public TreeNode getRight()
-	{
-		return rightTreeNode;
-	}
+  public TreeNode getLeft() {
+    return leftTreeNode;
+  }
 
-	public void setValue(Comparable value)
-	{
-		treeNodeValue = value;
-	}
+  public TreeNode getRight() {
+    return rightTreeNode;
+  }
 
-	public void setLeft(Treeable left)
-	{
-		leftTreeNode = (TreeNode)left;
-	}
+  public void setValue(Comparable value) {
+    treeNodeValue = value;
+  }
 
-	public void setRight(Treeable right)
-	{
-		rightTreeNode = (TreeNode)right;
-	}
-	
-	public String toString()
-	{
-		return String.valueOf(treeNodeValue);
-	}
+  public void setLeft(Treeable left) {
+    leftTreeNode = (TreeNode) left;
+  }
+
+  public void setRight(Treeable right) {
+    rightTreeNode = (TreeNode) right;
+  }
+
+  public String toString() {
+    return String.valueOf(treeNodeValue);
+  }
 }

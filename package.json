@@ -3,6 +3,6 @@
     "prettier-plugin-java": "^2.6.5"
   },
   "dependencies": {
-    "pnpm": "^9.15.0"
+    "pnpm": "^10.33.0"
   }
 }

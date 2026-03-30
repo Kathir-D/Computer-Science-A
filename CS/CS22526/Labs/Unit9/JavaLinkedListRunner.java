@@ -1,4 +1,4 @@
-package CS22526.Labs.Unit9;
+package CS.CS22526.Labs.Unit9;
 
 import static java.lang.System.*;
 

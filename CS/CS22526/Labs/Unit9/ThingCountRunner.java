@@ -1,4 +1,5 @@
-package CS22526.Labs.Unit9;
+package CS.CS22526.Labs.Unit9;
+
 //(c) A+ Computer Science
 //www.apluscompsci.com
 

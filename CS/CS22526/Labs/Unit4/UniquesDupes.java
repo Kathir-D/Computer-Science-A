@@ -3,7 +3,7 @@
 
 //Name -
 
-package CS22526.Labs.Unit4;
+package CS.CS22526.Labs.Unit4;
 
 import java.util.Arrays;
 import java.util.Set;

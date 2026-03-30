@@ -1,4 +1,4 @@
-package CS22526.Labs.Unit9;
+package CS.CS22526.Labs.Unit9;
 
 import static java.lang.System.*;
 
@@ -82,7 +82,7 @@ public class HistoList {
         throw new RuntimeException("both objects are not of the same type");
       }
     }
-    
+
     int index = indexOf(obj);
     if (index == -1) {
       ThingCount tc = new ThingCount(obj, 1);

@@ -1,4 +1,4 @@
-package CS22526.Labs.Unit8.BJ;
+package CS.CS22526.Labs.Unit8.BJ;
 
 import java.util.Collections;
 //(c) A+ Computer Science

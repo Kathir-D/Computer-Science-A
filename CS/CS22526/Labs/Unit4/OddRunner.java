@@ -3,7 +3,7 @@
 
 //Name -
 
-package CS22526.Labs.Unit4;
+package CS.CS22526.Labs.Unit4;
 
 import static java.lang.System.*;
 

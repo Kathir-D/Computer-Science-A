@@ -1,4 +1,4 @@
-package CS22526.Labs.Unit1; //(c) A+ Computer Science
+package CS.CS22526.Labs.Unit1; //(c) A+ Computer Science
 
 import static java.lang.System.*;
 

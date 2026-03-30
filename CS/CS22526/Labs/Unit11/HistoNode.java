@@ -1,57 +1,48 @@
-package CS22526.Labs.Unit11;
+package CS.CS22526.Labs.Unit11;
 
-public class HistoNode
-{
-   private Comparable data;
-   private int dataCount;
-   private HistoNode left;
-   private HistoNode right;
+public class HistoNode {
 
-   public HistoNode(Comparable d, int cnt, HistoNode lft, HistoNode rt)
-   {
-      data = d;
-      dataCount = cnt;
-      left = lft;
-      right = rt;
-   }
+  private Comparable data;
+  private int dataCount;
+  private HistoNode left;
+  private HistoNode right;
 
-   public Comparable getData()
-   {
-      return data;
-   }
+  public HistoNode(Comparable d, int cnt, HistoNode lft, HistoNode rt) {
+    data = d;
+    dataCount = cnt;
+    left = lft;
+    right = rt;
+  }
 
-   public int getDataCount()
-   {
-      return dataCount;
-   }
+  public Comparable getData() {
+    return data;
+  }
 
-   public HistoNode getLeft()
-   {
-      return left;
-   }
+  public int getDataCount() {
+    return dataCount;
+  }
 
-   public HistoNode getRight()
-   {
-      return right;
-   }
+  public HistoNode getLeft() {
+    return left;
+  }
 
-   public void setData(Comparable d)
-   {
-      data = d;
-   }
+  public HistoNode getRight() {
+    return right;
+  }
 
-   public void setDataCount(int cnt)
-   {
-      dataCount = cnt;
-   }
+  public void setData(Comparable d) {
+    data = d;
+  }
 
-   public void setLeft(HistoNode lft)
-   {
-      left = lft;
-   }
+  public void setDataCount(int cnt) {
+    dataCount = cnt;
+  }
 
-   public void setRight(HistoNode rt)
-   {
-      right = rt;
-   }
+  public void setLeft(HistoNode lft) {
+    left = lft;
+  }
+
+  public void setRight(HistoNode rt) {
+    right = rt;
+  }
 }
