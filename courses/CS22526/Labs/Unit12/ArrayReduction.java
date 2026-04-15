@@ -19,8 +19,8 @@ public class ArrayReduction {
     }
 
     while (pq.size() > 1) {
-      Integer first = pq.poll();
-      Integer second = pq.poll();
+      int first = pq.poll();
+      int second = pq.poll();
       int merged = first + second;
       totalCost += merged;
       pq.add(merged);
@@ -28,17 +28,6 @@ public class ArrayReduction {
 
     return totalCost;
   }
-
-  /*
-Given array 1,2,3
-Add all values to a priority queue
-Get the 2 smallest values and add their sum back to the pq
-The queue would contain 3,3
-Get the 2 smallest values and add their sum back to the pq
-The queue would contain 6
-The loop stops when the pq has a single value
-The min cost would be 9
-	 */
 
   public static void main(String[] args) {
     int[] s0 = { 212 };

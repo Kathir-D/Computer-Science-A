@@ -1,113 +1,42 @@
 # Computer Science A
- AP Computer Science A assigments from apluscompsci.com
+### AP Computer Science A assigments from apluscompsci
+### CS2 labs and assigments
 
-### Create a issue with the name of the assigment as given
-    Filename = Unit # Day # as letter
-    
-    Example: Unit 7 Day 2 - Cool Chicken
-    ---> Unit7b - Cool Chicken
+---
 
-    Example: Unit 9 Day 1 - Dog Distance
-    ---> Unit9a - Dog Distance
+## How Everything Is Organized
 
-    Example: Unit 2 Day 4 - Sum of Chars
-    ---> Unit2d - Sum of Chars
+- `courses/CS22526/`: current CS2 labs
+- `courses/CS22526/Labs/Unit#`: lab units
+- `courses/CS22526/CodingbatLabs/`: Codingbat labs
+- `courses/CS2425/`: All the CSA labs
+- `scripts/labs-java.sh`: helper scripts to compile/run labs correctly
 
-* Add the description following markdown using three ### for title names 
-* rename the files following the example
+## Run Labs Locally
 
-### Files
-    Code from files
+From repo root:
 
-### Documentation
-    Document
+Click the run button while on the runner in your IDE
 
-# Example
+Or
 
------
+Use command line:
+```bash
+scripts/labs-java.sh compile-all
+scripts/labs-java.sh compile-unit Unit12
+scripts/labs-java.sh compile-file courses/CS22526/Labs/Unit5/PartList.java
+scripts/labs-java.sh run CS22526.Labs.Unit12.PQTestRunner
+scripts/labs-java.sh clean
+```
 
-* Second unit day 1 with assigment name as WalkingTheDog
-* Home.java and HomeRunner.java
+## How To Upload New Labs
 
-# Unit2a - WalkingTheDog
+1. Add files to the correct unit folder (example: `courses/CS22526/Labs/Unit8/`)
+2. Ensure package lines match the folder path
+3. Compile before uploading:
 
-### CSA2425.Unit2a_Home.java
-    //(c) A+ Computer Science
-    //www.apluscompsci.com
-    //Name -
-    
-    public class CSA2425.Unit2a_Home
-    { 
-	    public static double getDistance(int xOne, int yOne, int xTwo, int yTwo )
-	    {
-	    	return 0;
-	    }
-    }
+## IntelliJ / VS Code Notes
 
-### CSA2425.Unit2a_HomeRunner.java
-    //(c) A+ Computer Science
-    //www.apluscompsci.com
-    //Name -
-    //Date -
-    
-    import java.util.Scanner;
-    import static java.lang.System.*;
-    
-    public class CSA2425.Unit2a_HomeRunner
-    {
-        public static void main( String[] args )
-        {
-            Scanner sc = new Scanner( System.in );
-            CSA2425.Unit2a_Home s = new CSA2425.Unit2a_Home();
-	    }
-    }
-    
-### Documentation
-    Computer Science – Math – Distance Formula - © A+ Computer Science
-    Lab Goal : This lab was designed to teach you more about objects, input, output formatting, and the Math
-    class.
-
-    Lab Description : Every day, Janet walks her tiny dog Picasso. Picasso sometimes turns around and
-    goes in the opposite direction (-). From each set of data, calculate the total to determine how far Janet ends up
-    from her house when Picasso stops walking and waits to be carried home. Each number represents the number
-    of blocks walked before Picasso changed direction. If the answer is zero, then they ended up at home when
-    Picasso stopped walking. Any other answer represents how far from the house they are. If Picasso went too far
-    after turning, the answer may end up negative. We need the actual number of blocks from home.
-    
-    Sample Data :
-    4 -8 5 -3
-    10 -4 -2 5
-    5 -11 18 -6
-
-    Sample Output :
-    Enter X1 :: 4
-    Enter Y1 :: -8
-    Enter X2 :: 5
-    Enter Y2 :: -3
-    distance == 2
-    Enter X1 :: 10
-    Enter Y1 :: -4
-    Enter X2 :: -2
-    Enter Y2 :: 5
-    distance == 9
-    Enter X1 :: 5
-    Enter Y1 :: -11
-    Enter X2 :: 18
-    Enter Y2 :: -6
-    distance == 6
-
-    FORMATTING OUTPUT
-    //printf is a void method
-    System.out.printf("%.3f\n",9.541724); //outs 9.542
-    //format is a String return method
-    System.out.println(String.format("%.3f",9.541724)); //outs 9.542
-
-    Files Needed ::
-    Home.java
-    HomeRunner.java
-    A+ Computer Science Walking The Dog
-
-
-
-
-
+- Source root should be `courses` (not `courses/CS22526`)
+- If IntelliJ shows class-not-found errors, rebuild the project
+- `.class` files are ignored by git and should not be committed

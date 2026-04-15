@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       pnpm:
-        specifier: ^9.15.0
-        version: 9.15.0
+        specifier: ^10.33.0
+        version: 10.33.0
     devDependencies:
       prettier-plugin-java:
         specifier: ^2.6.5
@@ -50,8 +50,8 @@ packages:
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
-  pnpm@9.15.0:
-    resolution: {integrity: sha512-duI3l2CkMo7EQVgVvNZije5yevN3mqpMkU45RBVsQpmSGon5djge4QfUHxLPpLZmgcqccY8GaPoIMe1MbYulbA==}
+  pnpm@10.33.0:
+    resolution: {integrity: sha512-EFaLtKavtYyes2MNqQzJUWQXq+vT+rvmc58K55VyjaFJHp21pUTHatjrdXD1xLs9bGN7LLQb/c20f6gjyGSTGQ==}
     engines: {node: '>=18.12'}
     hasBin: true
 
@@ -106,7 +106,7 @@ snapshots:
 
   lodash@4.17.21: {}
 
-  pnpm@9.15.0: {}
+  pnpm@10.33.0: {}
 
   prettier-plugin-java@2.6.5:
     dependencies:

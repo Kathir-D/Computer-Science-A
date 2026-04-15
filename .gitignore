@@ -1,33 +1,52 @@
-# Compiled class file
-*.class
-**/*.class
+# ------------------------------
+# OS files
+# ------------------------------
+.DS_Store
 
-# Log file
+# ------------------------------
+# Logs
+# ------------------------------
 *.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
-# BlueJ files
+# ------------------------------
+# Java / JVM
+# ------------------------------
+*.class
 *.ctxt
-
-# Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
 
+# Build output directories
+out/
+build/
+target/
+bin/
 
-#src/CSA2425.Unit3b_SmileyFace.java
-#src/CSA2425.Unit3d_Shape.java
-#src/CSA2425.Unit3d_ShapePanel.java
-#src/CSA2425.Unit3b_BigHouse.java
-#src/CSA2425.Unit3c_Robot.java
-#src/CSA2425.Unit3c_SpongeBob.java
+# ------------------------------
+# Node.js
+# ------------------------------
+node_modules/
+.npm/
+.pnpm-store/
+coverage/
+dist/
+*.tsbuildinfo
+
+# ------------------------------
+# IntelliJ IDEA
+# ------------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ------------------------------
+# Environment files (local only)
+# ------------------------------
+.env
+.env.*
+!.env.example
