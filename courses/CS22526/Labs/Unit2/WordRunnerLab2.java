@@ -13,7 +13,9 @@ public class WordRunnerLab2 {
 
   public static void main(String args[]) throws IOException {
     try {
-      Scanner file = new Scanner(new File("courses/CS22526/Labs/Unit2/word.dat"));
+      Scanner file = new Scanner(
+        new File("courses/CS22526/Labs/Unit2/word.dat")
+      );
 
       int numWords = file.nextInt();
       file.nextLine();

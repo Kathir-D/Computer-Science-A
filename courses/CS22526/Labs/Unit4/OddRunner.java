@@ -14,7 +14,9 @@ import java.util.Scanner;
 public class OddRunner {
 
   public static void main(String args[]) throws IOException {
-    Scanner file = new Scanner(new File("courses/CS22526/Labs/Unit4/oddevent.dat"));
+    Scanner file = new Scanner(
+      new File("courses/CS22526/Labs/Unit4/oddevent.dat")
+    );
 
     while (file.hasNextLine()) {
       String line = file.nextLine();

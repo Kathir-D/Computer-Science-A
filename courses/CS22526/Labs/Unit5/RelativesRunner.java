@@ -14,7 +14,9 @@ import java.util.Scanner;
 public class RelativesRunner {
 
   public static void main(String args[]) throws IOException {
-    Scanner file = new Scanner(new File("courses/CS22526/Labs/Unit5/relatives.dat"));
+    Scanner file = new Scanner(
+      new File("courses/CS22526/Labs/Unit5/relatives.dat")
+    );
     Relatives relatives = new Relatives();
     int times = file.nextInt();
     file.nextLine();

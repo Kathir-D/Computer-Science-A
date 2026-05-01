@@ -17,7 +17,9 @@ import java.util.TreeSet;
 public class StudentsAndGradesRunner {
 
   public static void main(String args[]) throws IOException {
-    Scanner file1 = new Scanner(new File("courses/CS22526/Labs/Unit5/students.dat"));
+    Scanner file1 = new Scanner(
+      new File("courses/CS22526/Labs/Unit5/students.dat")
+    );
     StudentsAndGrades sg1 = new StudentsAndGrades();
     int times = file1.nextInt();
     file1.nextLine();

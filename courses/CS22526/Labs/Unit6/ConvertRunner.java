@@ -14,7 +14,9 @@ import java.util.Scanner;
 public class ConvertRunner {
 
   public static void main(String args[]) throws IOException {
-    Scanner file = new Scanner(new File("courses/CS22526/Labs/Unit6/convert.dat"));
+    Scanner file = new Scanner(
+      new File("courses/CS22526/Labs/Unit6/convert.dat")
+    );
     //file from the file
 
   }

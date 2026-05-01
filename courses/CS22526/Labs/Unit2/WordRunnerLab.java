@@ -11,7 +11,9 @@ public class WordRunnerLab {
 
   public static void main(String[] args) {
     try {
-      Scanner file = new Scanner(new File("courses/CS22526/Labs/Unit2/words.dat"));
+      Scanner file = new Scanner(
+        new File("courses/CS22526/Labs/Unit2/words.dat")
+      );
 
       int numWords = file.nextInt();
       file.nextLine();

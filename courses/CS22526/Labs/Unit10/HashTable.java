@@ -28,11 +28,13 @@ public class HashTable {
   public String toString() {
     StringBuilder output = new StringBuilder("HASHTABLE\n");
     for (int i = 0; i < table.length; i++) {
-      output.append("bucket ").append(i).append(" ");
+      output.append("bucket ").append(i);
       for (Object obj : table[i]) {
-        output.append(obj).append(" ");
+        output.append(" ").append(obj);
       }
-      output.append("\n");
+      if (i < table.length - 1) {
+        output.append("\n");
+      }
     }
     return output.toString();
   }

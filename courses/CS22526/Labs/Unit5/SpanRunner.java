@@ -15,7 +15,9 @@ public class SpanRunner {
 
   public static void main(String args[]) throws IOException {
     SpanishToEnglish span = new SpanishToEnglish();
-    Scanner file = new Scanner(new File("courses/CS22526/Labs/Unit5/spantoeng.dat"));
+    Scanner file = new Scanner(
+      new File("courses/CS22526/Labs/Unit5/spantoeng.dat")
+    );
 
     int numPairs = file.nextInt();
     file.nextLine();
