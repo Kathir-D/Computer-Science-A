@@ -3,10 +3,7 @@ package CS22526.Labs.Unit14;
 //www.apluscompsci.com
 //Name -
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
-import static java.lang.System.*;
+import java.util.*;
 
 public class GraphRun
 {
@@ -16,51 +13,47 @@ public class GraphRun
 	public GraphRun(int mainDist, int[][] adj)
 	{
 		mainRoad = mainDist;
-		distance = dijkstra(adj);
+		distance = dijkstra(adj, 0);
 	}
 
-	private int dijkstra(int[][] adj)
+	private int dijkstra(int[][] adj, int src)
 	{
-		int n = adj.length;
-		int[] dist = new int[n];
-		boolean[] visited = new boolean[n];
+		int V = adj.length;
 
-		for(int i = 0; i < n; i++)
-		{
-			dist[i] = Integer.MAX_VALUE;
-		}
-		dist[0] = 0;
+		// Min-heap (priority queue) storing pairs of (distance, node)
+		PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
 
-		for(int count = 0; count < n - 1; count++)
-		{
-			int u = -1;
-			for(int i = 0; i < n; i++)
-			{
-				if(!visited[i] && (u == -1 || dist[i] < dist[u]))
-				{
-					u = i;
-				}
-			}
+		// Distance array: stores shortest distance from source
+		int[] dist = new int[V];
+		Arrays.fill(dist, Integer.MAX_VALUE);
 
-			if(dist[u] == Integer.MAX_VALUE)
-				break;
+		// Distance from source to itself is 0
+		dist[src] = 0;
+		pq.offer(new int[]{0, src});
 
-			visited[u] = true;
+		// Process the queue until all reachable vertices are finalized
+		while (!pq.isEmpty()) {
+			int[] top = pq.poll();
+			int d = top[0];
+			int u = top[1];
 
-			for(int v = 0; v < n; v++)
-			{
-				if(adj[u][v] != 0 && !visited[v])
-				{
-					int newDist = dist[u] + adj[u][v];
-					if(newDist < dist[v])
-					{
-						dist[v] = newDist;
-					}
+			// If this distance is not the latest shortest one, skip it
+			if (d > dist[u])
+				continue;
+
+			// Explore all adjacent vertices
+			for (int v = 0; v < V; v++) {
+				int w = adj[u][v];
+
+				// If there's an edge and we found a shorter path to v through u, update it
+				if (w != 0 && dist[u] + w < dist[v]) {
+					dist[v] = dist[u] + w;
+					pq.offer(new int[]{dist[v], v});
 				}
 			}
 		}
 
-		return dist[n - 1];
+		return dist[V - 1];
 	}
 
 	public String toString()
