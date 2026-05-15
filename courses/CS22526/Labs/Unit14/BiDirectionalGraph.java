@@ -3,78 +3,67 @@
 
 //Name -
 
+import static java.lang.System.*;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
-import java.util.TreeMap;
-import java.util.Set;
-import java.util.TreeSet;
 import java.util.Scanner;
-import static java.lang.System.*;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 
-public class BiDirectionalGraph
-{
-	private TreeMap<String, TreeSet<String>> map;
-	private boolean found;
+public class BiDirectionalGraph {
 
-	public BiDirectionalGraph(String line)
-	{
-		map = new TreeMap<>();
-		found = false;
+  private TreeMap<String, TreeSet<String>> map;
+  private boolean found;
 
-		String[] list = line.trim().split("\\s+");
-		for(int i = 0; i < list.length; i += 2)
-		{
-			if(i + 1 < list.length)
-			{
-				String first = list[i];
-				String second = list[i + 1];
+  public BiDirectionalGraph(String line) {
+    map = new TreeMap<>();
+    found = false;
 
-				map.putIfAbsent(first, new TreeSet<>());
-				map.putIfAbsent(second, new TreeSet<>());
-				map.get(first).add(second);
-				map.get(second).add(first);
-			}
-		}
-	}
+    String[] list = line.trim().split("\\s+");
+    for (int i = 0; i < list.length; i += 2) {
+      if (i + 1 < list.length) {
+        String first = list[i];
+        String second = list[i + 1];
 
-	public boolean contains(String name)
-	{
-		return map.containsKey(name);
-	}
+        map.putIfAbsent(first, new TreeSet<>());
+        map.putIfAbsent(second, new TreeSet<>());
+        map.get(first).add(second);
+        map.get(second).add(first);
+      }
+    }
+  }
 
-	public void check(String first, String second, TreeSet<String> placedUsed)
-	{
-		if(!contains(first) || !contains(second))
-		{
-			found = false;
-			return;
-		}
+  public boolean contains(String name) {
+    return map.containsKey(name);
+  }
 
-		if(first.equals(second))
-		{
-			found = true;
-			return;
-		}
+  public void check(String first, String second, TreeSet<String> placedUsed) {
+    if (!contains(first) || !contains(second)) {
+      found = false;
+      return;
+    }
 
-		placedUsed.add(first);
-		TreeSet<String> connections = map.get(first);
+    if (first.equals(second)) {
+      found = true;
+      return;
+    }
 
-		for(String next : connections)
-		{
-			if(!placedUsed.contains(next))
-			{
-				check(next, second, placedUsed);
-				if(found)
-					return;
-			}
-		}
-	}
+    placedUsed.add(first);
+    TreeSet<String> connections = map.get(first);
 
-	public String toString()
-	{
-		if(found)
-			return "YAH";
-		return "NAH";
-	}
+    for (String next : connections) {
+      if (!placedUsed.contains(next)) {
+        check(next, second, placedUsed);
+        if (found) return;
+      }
+    }
+  }
+
+  public String toString() {
+    if (found) return "YAH";
+    return "NAH";
+  }
 }

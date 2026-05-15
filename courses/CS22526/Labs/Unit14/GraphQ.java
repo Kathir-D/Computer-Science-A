@@ -1,80 +1,70 @@
 package CS22526.Labs.Unit14;
+
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
 
 import java.util.*;
 
-public class GraphQ
-{
-	private HashMap<String, HashSet<String>> map;
-	private boolean found;
+public class GraphQ {
 
-	public GraphQ(String line)
-	{
-		map = new HashMap<String, HashSet<String>>();
-		String[] list = line.trim().split("\\s+");
-		for(String piece : list)
-		{
-			if(piece.length() != 2)
-				continue;
+  private HashMap<String, HashSet<String>> map;
+  private boolean found;
 
-			String first = piece.substring(0,1);
-			String second = piece.substring(1,2);
+  public GraphQ(String line) {
+    map = new HashMap<String, HashSet<String>>();
+    String[] list = line.trim().split("\\s+");
+    for (String piece : list) {
+      if (piece.length() != 2) continue;
 
-			map.putIfAbsent(first, new HashSet<String>());
-			map.putIfAbsent(second, new HashSet<String>());
-			map.get(first).add(second);
-			map.get(second).add(first);
-		}
-		found = false;
-	}
+      String first = piece.substring(0, 1);
+      String second = piece.substring(1, 2);
 
-	public boolean contains(String letter)
-	{
-		return map.containsKey(letter);
-	}
+      map.putIfAbsent(first, new HashSet<String>());
+      map.putIfAbsent(second, new HashSet<String>());
+      map.get(first).add(second);
+      map.get(second).add(first);
+    }
+    found = false;
+  }
 
-	public void check(String first, String second)
-	{
-		found = false;
-		if(first == null || second == null || !contains(first) || !contains(second))
-			return;
+  public boolean contains(String letter) {
+    return map.containsKey(letter);
+  }
 
-		Queue<String> q = new LinkedList<String>();
-		Set<String> visited = new HashSet<String>();
+  public void check(String first, String second) {
+    found = false;
+    if (
+      first == null || second == null || !contains(first) || !contains(second)
+    ) return;
 
-		q.add(first);
-		visited.add(first);
+    Queue<String> q = new LinkedList<String>();
+    Set<String> visited = new HashSet<String>();
 
-		while(!q.isEmpty() && !found)
-		{
-			String current = q.remove();
-			if(current.equals(second))
-			{
-				found = true;
-				return;
-			}
+    q.add(first);
+    visited.add(first);
 
-			HashSet<String> nexts = map.get(current);
-			if(nexts == null)
-				continue;
+    while (!q.isEmpty() && !found) {
+      String current = q.remove();
+      if (current.equals(second)) {
+        found = true;
+        return;
+      }
 
-			for(String next : nexts)
-			{
-				if(!visited.contains(next))
-				{
-					visited.add(next);
-					q.add(next);
-				}
-			}
-		}
-	}
+      HashSet<String> nexts = map.get(current);
+      if (nexts == null) continue;
 
-	public String toString()
-	{
-		if(found)
-		   return "CONNECTS";
-		return "DOES NOT CONNECT";
-	}
+      for (String next : nexts) {
+        if (!visited.contains(next)) {
+          visited.add(next);
+          q.add(next);
+        }
+      }
+    }
+  }
+
+  public String toString() {
+    if (found) return "CONNECTS";
+    return "DOES NOT CONNECT";
+  }
 }

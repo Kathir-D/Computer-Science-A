@@ -1,77 +1,73 @@
 package CS22526.Labs.Unit14;
+
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
 
 import java.util.*;
 
-public class Graph
-{
-	private HashMap<String, HashSet<String>> map;
-	private boolean found;
+public class Graph {
 
-	public Graph(String line)
-	{
-		map = new HashMap<>();
+  private HashMap<String, HashSet<String>> map;
+  private boolean found;
 
-		String[] list = line.trim().split("\\s+");
-		for(String piece : list)
-		{
-			if(piece.length() != 2)
-				continue;
+  public Graph(String line) {
+    map = new HashMap<>();
 
-			String first = piece.substring(0, 1);
-			String second = piece.substring(1, 2);
+    String[] list = line.trim().split("\\s+");
+    for (String piece : list) {
+      if (piece.length() != 2) continue;
 
-			map.putIfAbsent(first, new HashSet<>());
-			map.putIfAbsent(second, new HashSet<>());
-			map.get(first).add(second);
-			map.get(second).add(first);
-		}
+      String first = piece.substring(0, 1);
+      String second = piece.substring(1, 2);
 
-		found = false;
-	}
+      map.putIfAbsent(first, new HashSet<>());
+      map.putIfAbsent(second, new HashSet<>());
+      map.get(first).add(second);
+      map.get(second).add(first);
+    }
 
-	public boolean contains(String letter)
-	{
-		return map.containsKey(letter);
-	}
+    found = false;
+  }
 
-	public void check(String first, String second)
-	{
-		if(first == null || second == null || !contains(first) || !contains(second))
-		{
-			found = false;
-			return;
-		}
+  public boolean contains(String letter) {
+    return map.containsKey(letter);
+  }
 
-		HashSet<String> visited = new HashSet<>();
-		found = checkPath(first, second, visited);
-	}
+  public void check(String first, String second) {
+    if (
+      first == null || second == null || !contains(first) || !contains(second)
+    ) {
+      found = false;
+      return;
+    }
 
-	private boolean checkPath(String current, String target, HashSet<String> visited)
-	{
-		if(current.equals(target))
-			return true;
+    HashSet<String> visited = new HashSet<>();
+    found = checkPath(first, second, visited);
+  }
 
-		visited.add(current);
-		HashSet<String> connections = map.get(current);
-		if(connections == null)
-			return false;
+  private boolean checkPath(
+    String current,
+    String target,
+    HashSet<String> visited
+  ) {
+    if (current.equals(target)) return true;
 
-		for(String next : connections)
-		{
-			if(!visited.contains(next) && checkPath(next, target, visited))
-				return true;
-		}
+    visited.add(current);
+    HashSet<String> connections = map.get(current);
+    if (connections == null) return false;
 
-		return false;
-	}
+    for (String next : connections) {
+      if (
+        !visited.contains(next) && checkPath(next, target, visited)
+      ) return true;
+    }
 
-	public String toString()
-	{
-		if(found)
-		   return "CONNECTS";
-		return "DOES NOT CONNECT";
-	}
+    return false;
+  }
+
+  public String toString() {
+    if (found) return "CONNECTS";
+    return "DOES NOT CONNECT";
+  }
 }

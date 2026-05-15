@@ -1,4 +1,7 @@
 package CS22526.Labs.Unit14;
+
+import static java.lang.System.*;
+
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
@@ -6,41 +9,36 @@ package CS22526.Labs.Unit14;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
-import static java.lang.System.*;
 
-public class MazeQRunner
-{
-	public static void main(String args[]) throws IOException
-	{
-		Scanner file = new Scanner(new File("courses/CS22526/Labs/Unit14/maze_short.dat"));
-		while(file.hasNext())
-		{
-			int rc = file.nextInt();
-			char[][] maze = new char[rc][rc];
-			file.nextLine();
+public class MazeQRunner {
 
-			for(int r = 0; r < rc; r++)
-			{
-				char[] ln = file.next().toCharArray();
-				for(int c = 0; c < rc; c++)
-				{
-					maze[r][c] = ln[c];
-				}
-				file.nextLine();
-			}
+  public static void main(String args[]) throws IOException {
+    Scanner file = new Scanner(
+      new File("courses/CS22526/Labs/Unit14/maze_short.dat")
+    );
+    while (file.hasNext()) {
+      int rc = file.nextInt();
+      char[][] maze = new char[rc][rc];
+      file.nextLine();
 
-			MazeQ test = new MazeQ(maze);
+      for (int r = 0; r < rc; r++) {
+        char[] ln = file.next().toCharArray();
+        for (int c = 0; c < rc; c++) {
+          maze[r][c] = ln[c];
+        }
+        file.nextLine();
+      }
 
-			System.out.println(test);
+      MazeQ test = new MazeQ(maze);
 
-			test.findShortestPath();
+      System.out.println(test);
 
-			if(test.found())
-				System.out.println(test.getSteps() + " steps\n");
-			else
-				System.out.println("no exit found\n");
-		}
+      test.findShortestPath();
 
-		file.close();
-	}
+      if (test.found()) System.out.println(test.getSteps() + " steps\n");
+      else System.out.println("no exit found\n");
+    }
+
+    file.close();
+  }
 }
