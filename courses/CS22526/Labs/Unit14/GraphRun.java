@@ -35,13 +35,14 @@ public class GraphRun {
       if (currentDistance > dist[currentVertex]) continue;
 
       for (int neighbor = 0; neighbor < vertexCount; neighbor++) {
-				int edgeWeight = graph[currentVertex][neighbor];
+        int edgeWeight = graph[currentVertex][neighbor];
 
-        if (edgeWeight != 0 && dist[currentVertex] + edgeWeight < dist[neighbor]) {
+        if (
+          edgeWeight != 0 && dist[currentVertex] + edgeWeight < dist[neighbor]
+        ) {
           dist[neighbor] = dist[currentVertex] + edgeWeight;
           pq.offer(new int[] { dist[neighbor], neighbor });
         }
-
       }
     }
 
