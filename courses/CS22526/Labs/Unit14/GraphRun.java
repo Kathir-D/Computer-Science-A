@@ -32,7 +32,9 @@ public class GraphRun {
       int currentDistance = current[0];
       int currentVertex = current[1];
 
-      if (currentDistance > dist[currentVertex]) continue;
+      if (currentDistance > dist[currentVertex]) {
+				continue;
+			}
 
       for (int neighbor = 0; neighbor < vertexCount; neighbor++) {
         int edgeWeight = graph[currentVertex][neighbor];
